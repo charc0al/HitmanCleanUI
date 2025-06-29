@@ -1,0 +1,51 @@
+{
+  "tempHash": "0092AAB2AF8AC127",
+  "tbluHash": "00FD344E2C85A39D",
+  "patch": [
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowContractTargetColor",
+            "value": "#74000070"
+          }
+        }
+      ]
+    },
+    {
+        "SubEntityOperation": [
+          "f55806ff6135965f",
+          {
+            "SetPropertyValue": {
+              "property_name": "m_GlowContractTargetOutlineColor",
+              "value": "#FF000000"
+            }
+          }
+        ]
+      },
+      {
+        "SubEntityOperation": [
+          "f55806ff6135965f",
+          {
+            "SetPropertyValue": {
+              "property_name": "m_GlowObjectivesColor",
+              "value": "#74000070"
+            }
+          }
+        ]
+      },
+      {
+        "SubEntityOperation": [
+          "f55806ff6135965f",
+          {
+            "SetPropertyValue": {
+              "property_name": "m_GlowObjectivesOutlineColor",
+              "value": "#FF0000FF"
+            }
+          }
+        ]
+      }
+  ],
+  "patchVersion": 6
+}

@@ -1,0 +1,29 @@
+{
+  "tempHash": "0092AAB2AF8AC127",
+  "tbluHash": "00FD344E2C85A39D",
+  "patch": [
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowTraversalColor",
+            "value": "#003B7375"
+          }
+        }
+      ]
+    },
+    {
+        "SubEntityOperation": [
+          "f55806ff6135965f",
+          {
+            "SetPropertyValue": {
+              "property_name": "m_GlowTraversalOutlineColor",
+              "value": "#00A7FF00"
+            }
+          }
+        ]
+      }
+  ],
+  "patchVersion": 6
+}

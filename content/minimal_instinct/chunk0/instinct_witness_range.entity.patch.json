@@ -1,0 +1,21 @@
+{
+    "tempHash": "0092AAB2AF8AC127",
+    "tbluHash": "00FD344E2C85A39D",
+    "patch": [
+        {
+            "SubEntityOperation": [
+                "f55806ff6135965f",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_vGlowLTMemoryFadeNearFar",
+                        "value": {
+                            "x": 9999.0,
+                            "y": 9999.0
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "patchVersion": 6
+}

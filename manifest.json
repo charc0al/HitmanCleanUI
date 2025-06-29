@@ -1,9 +1,104 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"version": "1.0.0",
+	"updateCheck": "https://github.com/charc0al/HitmanCleanUI/releases/latest/download/updates.json",
+	"id": "Charc0al.MinimalistUI",
+	"name": "Minimalist UI by Charc0al",
+	"description": "Removes unnecessary HUD clutter that can't be disabled via the menu.",
+	"authors": ["Charc0al", "Burn, the witch"],
+	"frameworkVersion": "2.33.26",
+	"loadAfter": ["BurnTheWitch.HeritageUI"],
+	"options": [
+		{
+			"name": "Vanilla (no changes)",
+			"tooltip": "Vanilla UI version",
+			"group": "HUD",
+			"image": "smf/vanilla.png",
+			"type": "select"
+		},
+		{
+			"name": "Minimalist | Vanilla UI",
+			"tooltip": "Vanilla UI version",
+			"group": "HUD",
+			"type": "select",
+			"image": "smf/minimal.png",
+			"contentFolders": [
+				"content/minhud_vanilla"
+			]
+		},
+		{
+			"name": "Minimalist | HeritageUI",
+			"tooltip": "Minimalist HUD - HeritageUI compatible version",
+			"group": "HUD",
+			"enabledByDefault": true,
+			"type": "select",
+			"image": "smf/heritage.png",
+			"contentFolders": [
+				"content/minhud_heritage"
+			]
+		},
+		{
+			"name": "Minimalist | HeritageUI (SA icon inverted)",
+			"tooltip": "Minimalist HUD - SA icon hidden when GREEN, shown otherwise",
+			"group": "HUD",
+			"type": "select",
+			"image": "smf/heritage.png",
+			"contentFolders": [
+				"content/minhud_sa_inverted"
+			]
+		},
+		{
+			"name": "Remove Exit Icon from HUD",
+			"tooltip": "Remove Exit Icon",
+			"group": "Other",
+			"type": "checkbox",
+			"image": "smf/exit.png",
+			"enabledByDefault": true,
+			"contentFolders": [
+				"content/hide_exit_icon"
+			]
+		},
+		{
+			"name": "Throw | Dot Reticle",
+			"tooltip": "Changes the thrown object reticle into a dot",
+			"group": "Throw",
+			"type": "checkbox",
+			"image": "smf/throw.png",
+			"enabledByDefault": true,
+			"contentFolders": [
+				"content/throw_target"
+			]
+		},
+		{
+			"name": "Throw | Hide Arc",
+			"tooltip": "Hides the 3D throw arc",
+			"group": "Throw",
+			"type": "checkbox",
+			"image": "smf/throwarc.png",
+			"enabledByDefault": true,
+			"contentFolders": [
+				"content/throw_arc"
+			]
+		},
+		{
+			"name": "Throw | Hide Impact",
+			"tooltip": "Hides the throw aiming landing circle animation",
+			"group": "Throw",
+			"type": "checkbox",
+			"image": "smf/throwimpact.png",
+			"contentFolders": [
+				"content/throw_impact"
+			]
+		},
+		{
+			"name": "Hide Interaction Outline",
+			"tooltip": "Hides the white outline including around NPCs. In-game menu option only affects items.",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"image": "smf/npc_interaction.png",
+			"contentFolders": [
+				"content/npc_interact"
+			]
+		}
+	]
 }

@@ -1,0 +1,29 @@
+{
+  "tempHash": "0092AAB2AF8AC127",
+  "tbluHash": "00FD344E2C85A39D",
+  "patch": [
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowGunsColor",
+            "value": "#003B7300"
+          }
+        }
+      ]
+    },
+    {
+        "SubEntityOperation": [
+          "f55806ff6135965f",
+          {
+            "SetPropertyValue": {
+              "property_name": "m_GlowGunsOutlineColor",
+              "value": "#00A7FFAA"
+            }
+          }
+        ]
+      }
+  ],
+  "patchVersion": 6
+}
