@@ -1,0 +1,133 @@
+removes: 
+- Interaction squares - E8 - Sprites 1709, 1711
+
+- Hit markers - E8 - Sprites 1417, 1418
+
+- Damage taken indicator - E8 - image files
+
+- Hold Button circle outline - E8 - Sprite 1715
+
+- Flashbang HUD - E8
+
+- Exit icon - GFXI files
+
+- Distance HUD for flashbang - E8 - ItemBreadCrumb
+
+- Distance HUD for exit icon - 51 - ImageBoxSpatial
+
+- Throw lock circle - TEXT files convert with TonyTools - find in GlacierKit - toss_targetDisc
+
+- Dot reticle - including blindfire and weapon lowered - E8 - Reticle:
+				public function setType(param1:Number) : void
+				  {
+					 this.currentType = param1;
+					 switch(param1)
+					 {
+						case 0:
+						   this.m_view.gotoAndStop("NONE");
+						   this.m_view.center_mc.alpha = 0;
+						   break;
+						case 1:
+						   this.m_view.gotoAndStop("PISTOL");
+						   this.m_view.center_mc.alpha = 0.5;
+						   break;
+						case 2:
+						   this.m_view.gotoAndStop("REVOLVER");
+						   this.m_view.center_mc.alpha = 0.5;
+						   break;
+						case 3:
+						   this.m_view.gotoAndStop("SMG");
+						   this.m_view.center_mc.alpha = 0.5;
+						   break;
+						case 4:
+						   this.m_view.gotoAndStop("RIFLE");
+						   this.m_view.center_mc.alpha = 0.5;
+						   break;
+						case 5:
+						   this.m_view.gotoAndStop("SHOTGUN");
+						   this.m_view.center_mc.alpha = 0;
+						   break;
+						case 6:
+						   this.m_view.gotoAndStop("SNIPER");
+						   this.m_view.center_mc.alpha = 0;
+						   break;
+						case 7:
+						   this.m_view.gotoAndStop("HARDBALLER");
+						   this.m_view.center_mc.alpha = 1;
+						   break;
+						case 8:
+						   this.m_view.gotoAndStop("NONE");
+						   break;
+						case 9:
+						   this.m_view.gotoAndStop("POINTER");
+						   this.m_view.center_mc.alpha = 0;
+						   break;
+						case 10:
+						   this.m_view.gotoAndStop("WORLDMAP");
+						   break;
+						case 11:
+						   this.m_view.gotoAndStop("NONE");
+						   this.m_view.center_mc.alpha = 0;
+						   break;
+						case 12:
+						   this.m_view.gotoAndStop("RANGEDINDICATOR");
+						   this.m_view.center_mc.alpha = 0;
+						   break;
+						case 13:
+						   this.m_view.gotoAndStop("NONE");
+						   this.m_view.center_mc.alpha = 0;
+						   break;
+						default:
+						   this.m_view.gotoAndStop("NONE");
+						   this.m_view.center_mc.alpha = 0;
+					 }
+				  }
+
+- Freelancer progress instinct view - E8 - CampaignProgress.showSlimView and onFolderScreen:
+
+			if (this.m_slimView && !this.m_onFolderScreen) {
+				this.m_view.visible = false;
+        	} else {
+				this.m_view.visible = true;
+	        }
+			 
+- Silent Assassin Fail icon - E8 - SilentAssassinIcon:
+				this.m_view.bg.alpha = 0;
+
+				public function onSAStatusChanged(param1:Boolean, param2:Boolean) : void
+				{
+					if(param1)
+					{
+						this.m_view.iconMc.visible = false;
+					}
+					else
+					{
+						this.m_view.iconMc.visible = true;
+			    		this.m_view.iconMc.gotoAndStop(param2 ? "recovery_recorded" : "active");
+					}
+				}
+
+- Silent Assassin icon - Green hidden:
+	public function onSAStatusChanged(param1:Boolean, param2:Boolean) : void
+      	{
+         if(param1)
+         {
+            this.m_view.iconMc.gotoAndStop("inactive");
+            this.m_view.iconMc.visible = true;
+         }
+         else if(param2)
+         {
+            this.m_view.iconMc.gotoAndStop("recovery_recorded");
+            this.m_view.iconMc.visible = true;
+         }
+         else
+         {
+            this.m_view.iconMc.visible = false;
+         }
+      }
+
+- Illegal Action icons: in showActionButton in BOTH HUDActionPrompts and InteractionIndicator, replace if-else around the illegal icon stuff:
+		param1.illegalIcon_mc.visible = false;
+		param1.prompt_mc.x = param3 ? -28 : 28;
+
+- Weapon select background: remove the last line of WeaponSelector.onSetViewport (the one with drawRect)
