@@ -3,10 +3,7 @@
 	"tbluHash": "00E738E7CF7A35E1",
 	"patch": [
 		{
-			"SubEntityOperation": [
-				"2044d275428ff35d",
-				{ "RemovePropertyByName": "m_materialArch" }
-			]
+			"SubEntityOperation": ["2044d275428ff35d", { "RemovePropertyByName": "m_materialArch" }]
 		}
 	],
 	"patchVersion": 6

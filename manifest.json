@@ -21,9 +21,7 @@
 			"group": "HUD",
 			"type": "select",
 			"image": "smf/minimal.png",
-			"contentFolders": [
-				"content/minhud_vanilla"
-			]
+			"contentFolders": ["content/minhud_vanilla"]
 		},
 		{
 			"name": "Minimalist | HeritageUI",
@@ -32,9 +30,7 @@
 			"enabledByDefault": true,
 			"type": "select",
 			"image": "smf/heritage.png",
-			"contentFolders": [
-				"content/minhud_heritage"
-			]
+			"contentFolders": ["content/minhud_heritage"]
 		},
 		{
 			"name": "Minimalist | HeritageUI (SA icon inverted)",
@@ -42,9 +38,7 @@
 			"group": "HUD",
 			"type": "select",
 			"image": "smf/heritage.png",
-			"contentFolders": [
-				"content/minhud_sa_inverted"
-			]
+			"contentFolders": ["content/minhud_sa_inverted"]
 		},
 		{
 			"name": "Remove Exit Icon from HUD",
@@ -53,9 +47,7 @@
 			"type": "checkbox",
 			"image": "smf/exit.png",
 			"enabledByDefault": true,
-			"contentFolders": [
-				"content/hide_exit_icon"
-			]
+			"contentFolders": ["content/hide_exit_icon"]
 		},
 		{
 			"name": "Throw | Dot Reticle",
@@ -64,9 +56,7 @@
 			"type": "checkbox",
 			"image": "smf/throw.png",
 			"enabledByDefault": true,
-			"contentFolders": [
-				"content/throw_target"
-			]
+			"contentFolders": ["content/throw_target"]
 		},
 		{
 			"name": "Throw | Hide Arc",
@@ -75,9 +65,7 @@
 			"type": "checkbox",
 			"image": "smf/throwarc.png",
 			"enabledByDefault": true,
-			"contentFolders": [
-				"content/throw_arc"
-			]
+			"contentFolders": ["content/throw_arc"]
 		},
 		{
 			"name": "Throw | Hide Impact",
@@ -85,9 +73,7 @@
 			"group": "Throw",
 			"type": "checkbox",
 			"image": "smf/throwimpact.png",
-			"contentFolders": [
-				"content/throw_impact"
-			]
+			"contentFolders": ["content/throw_impact"]
 		},
 		{
 			"name": "Hide Interaction Outline",
@@ -96,9 +82,7 @@
 			"type": "checkbox",
 			"enabledByDefault": true,
 			"image": "smf/npc_interaction.png",
-			"contentFolders": [
-				"content/npc_interact"
-			]
+			"contentFolders": ["content/npc_interact"]
 		}
 	]
 }
