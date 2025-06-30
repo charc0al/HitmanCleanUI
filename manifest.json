@@ -83,6 +83,14 @@
 			"enabledByDefault": true,
 			"image": "smf/npc_interaction.png",
 			"contentFolders": ["content/npc_interact"]
+		},
+		{
+			"name": "Minimal Instinct",
+			"tooltip": "No instinct filter, no outlines, more faint NPC highlights",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/minimal_instinct"]
 		}
 	]
 }
