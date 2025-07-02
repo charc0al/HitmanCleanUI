@@ -26,11 +26,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"3a2ceb8e51213782"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "3a2ceb8e51213782"]
 				}
 			]
 		},
@@ -38,11 +34,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"d95d27138b7bfc9b"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "d95d27138b7bfc9b"]
 				}
 			]
 		},
@@ -50,11 +42,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"c85a2dd498226001"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "c85a2dd498226001"]
 				}
 			]
 		},
@@ -62,11 +50,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"c99a898787907c5e"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "c99a898787907c5e"]
 				}
 			]
 		},
@@ -74,11 +58,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"0b5f7f2d107512d6"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "0b5f7f2d107512d6"]
 				}
 			]
 		},
@@ -86,11 +66,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"974ea4633b9bbf8a"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "974ea4633b9bbf8a"]
 				}
 			]
 		},
@@ -98,11 +74,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"e82cd2c5378f3571"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "e82cd2c5378f3571"]
 				}
 			]
 		},
@@ -110,11 +82,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"b1dc7a0df5de3db8"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "b1dc7a0df5de3db8"]
 				}
 			]
 		},
@@ -122,11 +90,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"4e5c86a5cfddba7a"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "4e5c86a5cfddba7a"]
 				}
 			]
 		},
@@ -134,11 +98,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"5eb40a044d092a5e"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "5eb40a044d092a5e"]
 				}
 			]
 		},
@@ -146,11 +106,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"aa3095d2ef19d5be"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "aa3095d2ef19d5be"]
 				}
 			]
 		},
@@ -158,11 +114,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"6e85515e7c7cdf9d"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "6e85515e7c7cdf9d"]
 				}
 			]
 		},
@@ -170,11 +122,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"5cc5c934fe5aa4ac"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "5cc5c934fe5aa4ac"]
 				}
 			]
 		},
@@ -182,11 +130,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"5f23f3fb559c1468"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "5f23f3fb559c1468"]
 				}
 			]
 		},
@@ -194,11 +138,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"055e50cdd8898f2c"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "055e50cdd8898f2c"]
 				}
 			]
 		},
@@ -206,11 +146,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"a736684d2a00a48a"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "a736684d2a00a48a"]
 				}
 			]
 		},
@@ -218,11 +154,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"bf65512cd2c4fa0d"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "bf65512cd2c4fa0d"]
 				}
 			]
 		},
@@ -230,11 +162,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"959bc8f7d6871278"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "959bc8f7d6871278"]
 				}
 			]
 		},
@@ -242,11 +170,7 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"b090cc3ca82f8ad9"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "b090cc3ca82f8ad9"]
 				}
 			]
 		},
@@ -254,28 +178,18 @@
 			"SubEntityOperation": [
 				"bcffb20bbb8579a4",
 				{
-					"RemoveEventConnection": [
-						"OnStopped",
-						"MakeInvisible",
-						"c033511b6d7c1f21"
-					]
+					"RemoveEventConnection": ["OnStopped", "MakeInvisible", "c033511b6d7c1f21"]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"4b0c3293abd34fb1",
-				{ "RemoveAllEventConnectionsForEvent": "Out" }
-			]
+			"SubEntityOperation": ["4b0c3293abd34fb1", { "RemoveAllEventConnectionsForEvent": "Out" }]
 		},
 		{
 			"SubEntityOperation": [
 				"26eba7d9a2044b4e",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"Out",
-						"MakeInvisible"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["Out", "MakeInvisible"]
 				}
 			]
 		},
@@ -283,60 +197,33 @@
 			"SubEntityOperation": [
 				"5a0436067639e3a7",
 				{
-					"PatchArrayPropertyValue": [
-						"m_aRenderables",
-						[{ "RemoveItemByValue": "959bc8f7d6871278" }]
-					]
+					"PatchArrayPropertyValue": ["m_aRenderables", [{ "RemoveItemByValue": "959bc8f7d6871278" }]]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"b1ed3505d8b763a1",
-				{ "RemovePropertyByName": "TransformPositionA_2" }
-			]
+			"SubEntityOperation": ["b1ed3505d8b763a1", { "RemovePropertyByName": "TransformPositionA_2" }]
 		},
 		{
-			"SubEntityOperation": [
-				"b1ed3505d8b763a1",
-				{ "RemovePropertyByName": "TransformPositionA_1" }
-			]
+			"SubEntityOperation": ["b1ed3505d8b763a1", { "RemovePropertyByName": "TransformPositionA_1" }]
 		},
 		{
-			"SubEntityOperation": [
-				"b1ed3505d8b763a1",
-				{ "RemovePropertyByName": "TransformPositionA_3" }
-			]
+			"SubEntityOperation": ["b1ed3505d8b763a1", { "RemovePropertyByName": "TransformPositionA_3" }]
 		},
 		{
-			"SubEntityOperation": [
-				"b1ed3505d8b763a1",
-				{ "RemovePropertyByName": "TransformPositionA_4" }
-			]
+			"SubEntityOperation": ["b1ed3505d8b763a1", { "RemovePropertyByName": "TransformPositionA_4" }]
 		},
 		{
-			"SubEntityOperation": [
-				"b1ed3505d8b763a1",
-				{ "RemovePropertyByName": "TransformPositionA_5" }
-			]
+			"SubEntityOperation": ["b1ed3505d8b763a1", { "RemovePropertyByName": "TransformPositionA_5" }]
 		},
 		{
-			"SubEntityOperation": [
-				"b1ed3505d8b763a1",
-				{ "RemovePropertyByName": "TransformPositionA_6" }
-			]
+			"SubEntityOperation": ["b1ed3505d8b763a1", { "RemovePropertyByName": "TransformPositionA_6" }]
 		},
 		{
-			"SubEntityOperation": [
-				"b1ed3505d8b763a1",
-				{ "RemovePropertyByName": "TransformPositionA_7" }
-			]
+			"SubEntityOperation": ["b1ed3505d8b763a1", { "RemovePropertyByName": "TransformPositionA_7" }]
 		},
 		{
-			"SubEntityOperation": [
-				"b1ed3505d8b763a1",
-				{ "RemovePropertyByName": "TransformPositionA_8" }
-			]
+			"SubEntityOperation": ["b1ed3505d8b763a1", { "RemovePropertyByName": "TransformPositionA_8" }]
 		},
 		{
 			"SubEntityOperation": [
@@ -374,11 +261,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"959bc8f7d6871278"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "959bc8f7d6871278"]
 				}
 			]
 		},
@@ -386,11 +269,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"a736684d2a00a48a"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "a736684d2a00a48a"]
 				}
 			]
 		},
@@ -398,11 +277,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"c033511b6d7c1f21"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "c033511b6d7c1f21"]
 				}
 			]
 		},
@@ -410,11 +285,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"055e50cdd8898f2c"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "055e50cdd8898f2c"]
 				}
 			]
 		},
@@ -422,11 +293,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"4e5c86a5cfddba7a"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "4e5c86a5cfddba7a"]
 				}
 			]
 		},
@@ -434,11 +301,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"5f23f3fb559c1468"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "5f23f3fb559c1468"]
 				}
 			]
 		},
@@ -446,11 +309,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"b1dc7a0df5de3db8"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "b1dc7a0df5de3db8"]
 				}
 			]
 		},
@@ -458,11 +317,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"974ea4633b9bbf8a"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "974ea4633b9bbf8a"]
 				}
 			]
 		},
@@ -470,11 +325,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"0b5f7f2d107512d6"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "0b5f7f2d107512d6"]
 				}
 			]
 		},
@@ -482,11 +333,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"6e85515e7c7cdf9d"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "6e85515e7c7cdf9d"]
 				}
 			]
 		},
@@ -494,11 +341,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"5cc5c934fe5aa4ac"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "5cc5c934fe5aa4ac"]
 				}
 			]
 		},
@@ -506,11 +349,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"c85a2dd498226001"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "c85a2dd498226001"]
 				}
 			]
 		},
@@ -518,11 +357,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"e82cd2c5378f3571"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "e82cd2c5378f3571"]
 				}
 			]
 		},
@@ -530,11 +365,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"c99a898787907c5e"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "c99a898787907c5e"]
 				}
 			]
 		},
@@ -542,11 +373,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"aa3095d2ef19d5be"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "aa3095d2ef19d5be"]
 				}
 			]
 		},
@@ -554,11 +381,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"5eb40a044d092a5e"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "5eb40a044d092a5e"]
 				}
 			]
 		},
@@ -566,11 +389,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"bf65512cd2c4fa0d"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "bf65512cd2c4fa0d"]
 				}
 			]
 		},
@@ -578,11 +397,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"3a2ceb8e51213782"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "3a2ceb8e51213782"]
 				}
 			]
 		},
@@ -590,11 +405,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"d95d27138b7bfc9b"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "d95d27138b7bfc9b"]
 				}
 			]
 		},
@@ -602,11 +413,7 @@
 			"SubEntityOperation": [
 				"2ae6c1f6d3aff84d",
 				{
-					"RemoveInputCopyConnection": [
-						"Activate",
-						"MakeVisible",
-						"b090cc3ca82f8ad9"
-					]
+					"RemoveInputCopyConnection": ["Activate", "MakeVisible", "b090cc3ca82f8ad9"]
 				}
 			]
 		},
