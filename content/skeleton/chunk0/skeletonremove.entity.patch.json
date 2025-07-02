@@ -1,0 +1,895 @@
+{
+	"tempHash": "00C6C5F7D5970931",
+	"tbluHash": "0092B428970A3922",
+	"patch": [
+		{ "RemoveEntityByID": "aa3095d2ef19d5be" },
+		{ "RemoveEntityByID": "6e85515e7c7cdf9d" },
+		{ "RemoveEntityByID": "a736684d2a00a48a" },
+		{ "RemoveEntityByID": "c033511b6d7c1f21" },
+		{ "RemoveEntityByID": "d95d27138b7bfc9b" },
+		{ "RemoveEntityByID": "5f23f3fb559c1468" },
+		{ "RemoveEntityByID": "959bc8f7d6871278" },
+		{ "RemoveEntityByID": "e82cd2c5378f3571" },
+		{ "RemoveEntityByID": "3a2ceb8e51213782" },
+		{ "RemoveEntityByID": "5cc5c934fe5aa4ac" },
+		{ "RemoveEntityByID": "b1dc7a0df5de3db8" },
+		{ "RemoveEntityByID": "bf65512cd2c4fa0d" },
+		{ "RemoveEntityByID": "055e50cdd8898f2c" },
+		{ "RemoveEntityByID": "b090cc3ca82f8ad9" },
+		{ "RemoveEntityByID": "974ea4633b9bbf8a" },
+		{ "RemoveEntityByID": "c99a898787907c5e" },
+		{ "RemoveEntityByID": "4e5c86a5cfddba7a" },
+		{ "RemoveEntityByID": "5eb40a044d092a5e" },
+		{ "RemoveEntityByID": "c85a2dd498226001" },
+		{ "RemoveEntityByID": "0b5f7f2d107512d6" },
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"3a2ceb8e51213782"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"d95d27138b7bfc9b"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"c85a2dd498226001"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"c99a898787907c5e"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"0b5f7f2d107512d6"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"974ea4633b9bbf8a"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"e82cd2c5378f3571"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"b1dc7a0df5de3db8"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"4e5c86a5cfddba7a"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"5eb40a044d092a5e"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"aa3095d2ef19d5be"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"6e85515e7c7cdf9d"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"5cc5c934fe5aa4ac"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"5f23f3fb559c1468"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"055e50cdd8898f2c"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"a736684d2a00a48a"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"bf65512cd2c4fa0d"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"959bc8f7d6871278"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"b090cc3ca82f8ad9"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"bcffb20bbb8579a4",
+				{
+					"RemoveEventConnection": [
+						"OnStopped",
+						"MakeInvisible",
+						"c033511b6d7c1f21"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"4b0c3293abd34fb1",
+				{ "RemoveAllEventConnectionsForEvent": "Out" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"26eba7d9a2044b4e",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"Out",
+						"MakeInvisible"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5a0436067639e3a7",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aRenderables",
+						[{ "RemoveItemByValue": "959bc8f7d6871278" }]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b1ed3505d8b763a1",
+				{ "RemovePropertyByName": "TransformPositionA_2" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b1ed3505d8b763a1",
+				{ "RemovePropertyByName": "TransformPositionA_1" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b1ed3505d8b763a1",
+				{ "RemovePropertyByName": "TransformPositionA_3" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b1ed3505d8b763a1",
+				{ "RemovePropertyByName": "TransformPositionA_4" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b1ed3505d8b763a1",
+				{ "RemovePropertyByName": "TransformPositionA_5" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b1ed3505d8b763a1",
+				{ "RemovePropertyByName": "TransformPositionA_6" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b1ed3505d8b763a1",
+				{ "RemovePropertyByName": "TransformPositionA_7" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b1ed3505d8b763a1",
+				{ "RemovePropertyByName": "TransformPositionA_8" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b3ee51968c34a3c2",
+				{
+					"PatchArrayPropertyValue": [
+						"Clients",
+						[
+							{ "RemoveItemByValue": "d95d27138b7bfc9b" },
+							{ "RemoveItemByValue": "3a2ceb8e51213782" },
+							{ "RemoveItemByValue": "974ea4633b9bbf8a" },
+							{ "RemoveItemByValue": "e82cd2c5378f3571" },
+							{ "RemoveItemByValue": "aa3095d2ef19d5be" },
+							{ "RemoveItemByValue": "c99a898787907c5e" },
+							{ "RemoveItemByValue": "0b5f7f2d107512d6" },
+							{ "RemoveItemByValue": "c85a2dd498226001" },
+							{ "RemoveItemByValue": "4e5c86a5cfddba7a" },
+							{ "RemoveItemByValue": "b1dc7a0df5de3db8" },
+							{ "RemoveItemByValue": "5eb40a044d092a5e" },
+							{ "RemoveItemByValue": "a736684d2a00a48a" },
+							{ "RemoveItemByValue": "c033511b6d7c1f21" },
+							{ "RemoveItemByValue": "055e50cdd8898f2c" },
+							{ "RemoveItemByValue": "bf65512cd2c4fa0d" },
+							{ "RemoveItemByValue": "5f23f3fb559c1468" },
+							{ "RemoveItemByValue": "959bc8f7d6871278" },
+							{ "RemoveItemByValue": "6e85515e7c7cdf9d" },
+							{ "RemoveItemByValue": "b090cc3ca82f8ad9" },
+							{ "RemoveItemByValue": "5cc5c934fe5aa4ac" }
+						]
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"959bc8f7d6871278"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"a736684d2a00a48a"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"c033511b6d7c1f21"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"055e50cdd8898f2c"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"4e5c86a5cfddba7a"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"5f23f3fb559c1468"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"b1dc7a0df5de3db8"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"974ea4633b9bbf8a"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"0b5f7f2d107512d6"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"6e85515e7c7cdf9d"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"5cc5c934fe5aa4ac"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"c85a2dd498226001"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"e82cd2c5378f3571"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"c99a898787907c5e"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"aa3095d2ef19d5be"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"5eb40a044d092a5e"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"bf65512cd2c4fa0d"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"3a2ceb8e51213782"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"d95d27138b7bfc9b"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveInputCopyConnection": [
+						"Activate",
+						"MakeVisible",
+						"b090cc3ca82f8ad9"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "b1dc7a0df5de3db8"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "5f23f3fb559c1468"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "959bc8f7d6871278"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "3a2ceb8e51213782"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "055e50cdd8898f2c"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "d95d27138b7bfc9b"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "974ea4633b9bbf8a"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "e82cd2c5378f3571"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "aa3095d2ef19d5be"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "c033511b6d7c1f21"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "c99a898787907c5e"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "bf65512cd2c4fa0d"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "a736684d2a00a48a"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "b090cc3ca82f8ad9"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "6e85515e7c7cdf9d"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "5cc5c934fe5aa4ac"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "5eb40a044d092a5e"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "4e5c86a5cfddba7a"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "0b5f7f2d107512d6"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"2ae6c1f6d3aff84d",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"m_linkedEntity",
+						{
+							"originalProperty": "m_linkedEntity",
+							"originalEntity": "c85a2dd498226001"
+						}
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

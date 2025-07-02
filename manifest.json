@@ -91,6 +91,15 @@
 			"type": "checkbox",
 			"enabledByDefault": true,
 			"contentFolders": ["content/minimal_instinct"]
+		},
+		{
+			"name": "Hide Electrocution Skeleton",
+			"tooltip": "Hides the cartoonish skeleton showing when people get electrocuted. Like HM2016",
+			"group": "Other",
+			"type": "checkbox",
+			"image": "smf/skeletor.webp",
+			"enabledByDefault": true,
+			"contentFolders": ["content/skeleton"]
 		}
 	]
 }
