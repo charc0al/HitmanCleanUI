@@ -24,6 +24,14 @@
 			"contentFolders": ["content/minhud_vanilla"]
 		},
 		{
+			"name": "Minimalist | Vanilla UI (normal crosshair)",
+			"tooltip": "Vanilla UI version - crosshair unchanged",
+			"group": "HUD",
+			"type": "select",
+			"image": "smf/minimal.png",
+			"contentFolders": ["content/minhud_vanilla_normalcrosshair"]
+		},
+		{
 			"name": "Minimalist | HeritageUI",
 			"tooltip": "Minimalist HUD - HeritageUI compatible version",
 			"group": "HUD",
@@ -89,6 +97,7 @@
 			"tooltip": "No instinct filter, no outlines, more faint NPC highlights",
 			"group": "Other",
 			"type": "checkbox",
+			"image": "smf/instinct.png",
 			"enabledByDefault": true,
 			"contentFolders": ["content/minimal_instinct"]
 		},
