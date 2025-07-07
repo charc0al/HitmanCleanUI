@@ -1,5 +1,5 @@
 {
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"updateCheck": "https://github.com/charc0al/HitmanCleanUI/releases/latest/download/updates.json",
 	"id": "Charc0al.MinimalistUI",
 	"name": "Minimalist UI by Charc0al",
