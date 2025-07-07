@@ -131,3 +131,34 @@ removes:
 		param1.prompt_mc.x = param3 ? -28 : 28;
 
 - Weapon select background: remove the last line of WeaponSelector.onSetViewport (the one with drawRect)
+- Move HUD interact buttons to top right - HUDInteractionPrompts
+	- set x and y values
+		        this.m_view = new HUDActionPromptsView();
+			this.m_view.x = 925;
+			this.m_view.y = -800;
+	- Set  text to left side only - before showActionButton in onSetData() change: 
+		_loc10_ = true;
+	- DELETE BODY OF ShowExtraButtonsBelow - just leave an empty function
+	- Align buttons to right side (bottom of while loop in constructor):
+            this.getButtonClip(2).y = 0;
+            this.getButtonClip(3).y = 25;
+            this.getButtonClip(0).y = 50;
+            this.getButtonClip(1).y = 75;
+            this.getButtonClip(5).y = 100;
+            this.getButtonClip(6).y = 125;
+            this.getButtonClip(4).y = 150;
+            this.getButtonClip(0).x = 0;
+            this.getButtonClip(1).x = 0;
+            this.getButtonClip(2).x = 0;
+            this.getButtonClip(3).x = 0;
+            this.getButtonClip(4).x = 1;
+            this.getButtonClip(5).x = 0;
+            this.getButtonClip(6).x = 0;
+	- Smaller button prompts:
+		param1.prompt.scaleX = param1.prompt.scaleY = param4 == "key" ? 0.6 : 0.7;
+
+- Smaller button prompts
+	- InteractionIndicator: 
+		this.m_view.promptHolder_mc.scaleX = this.m_view.promptHolder_mc.scaleY = this.m_promptImage.platform == "key" ? 0.6 : 0.7;
+	- Shrink button hold sprite - ~1838 or search indicator_hold_animation
+		- Edit sprite, scale to 67% (32px but pixel scaling doesn't work properly for this sprite sometimes)
