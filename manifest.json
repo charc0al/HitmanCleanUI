@@ -49,15 +49,6 @@
 			"contentFolders": ["content/minhud_sa_inverted"]
 		},
 		{
-			"name": "Remove Exit Icon from HUD",
-			"tooltip": "Remove Exit Icon",
-			"group": "Other",
-			"type": "checkbox",
-			"image": "smf/exit.png",
-			"enabledByDefault": true,
-			"contentFolders": ["content/hide_exit_icon"]
-		},
-		{
 			"name": "Throw | Dot Reticle",
 			"tooltip": "Changes the thrown object reticle into a dot",
 			"group": "Throw",
@@ -82,6 +73,23 @@
 			"type": "checkbox",
 			"image": "smf/throwimpact.png",
 			"contentFolders": ["content/throw_impact"]
+		},
+		{
+			"name": "Remove Exit Icon from HUD",
+			"tooltip": "Remove Exit Icon",
+			"group": "Other",
+			"type": "checkbox",
+			"image": "smf/exit.png",
+			"enabledByDefault": true,
+			"contentFolders": ["content/hide_exit_icon"]
+		},
+		{
+			"name": "Hide Passport icon (Safehouse)",
+			"tooltip": "Remove Passport icon from the freelancer safehouse",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": ["content/hide_passport"]
 		},
 		{
 			"name": "Hide Interaction Outline",
