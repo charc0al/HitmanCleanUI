@@ -49,6 +49,14 @@
 			"contentFolders": ["content/minhud_sa_inverted"]
 		},
 		{
+			"name": "Minimalist | Charc0al's Custom Config",
+			"tooltip": "Minimalist HUD - Charc0al's personal config - mix of heritage and vanilla stuff, with a few other changes. Use only if you have excellent taste.",
+			"group": "HUD",
+			"type": "select",
+			"image": "smf/heritage.png",
+			"contentFolders": ["content/minhud_charc0al"]
+		},
+		{
 			"name": "Throw | Dot Reticle",
 			"tooltip": "Changes the thrown object reticle into a dot",
 			"group": "Throw",
