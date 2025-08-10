@@ -135,7 +135,7 @@
 		},
 		{
 			"name": "Experimental - Dont use",
-			"tooltip": "Hides a bunch of unnecessary or redundant text in prompts for an even more minimal UI experience",
+			"tooltip": "Don't use this",
 			"group": "Minimal Prompt Text",
 			"type": "select",
 			"localisationOverrides": {
@@ -173,21 +173,21 @@
 			"localisationOverrides": {
 				"008C4B8D68BA3D1E": {
 					"english": {
-						"3319243970": "XKO",
+						"3319243970": "",
 						"1313700175": "XDisg",
-						"1693114477": "XTakeDn",
+						"1693114477": "",
 						"3227164674": "XDropD",
 						"808498535": "XScale",
-						"3169527694": "XGar",
+						"3169527694": "",
 						"351400216": "XDrag",
 						"3106615678": "XClose Door",
 						"3181889275": "XSnap",
 						"3150438812": "XSilentAtt",
 						"277304703": "XChoke",
-						"3935942020": "XClimb Windo",
+						"3935942020": "",
 						"1699365532": "CoverChange",
-						"3667079457": "PickupItem",
-						"1452032764": "XOpen",
+						"3667079457": "",
+						"1452032764": "",
 						"831111755": "XKnockOut",
 						"204206315": "XInjectLethal",
 						"3198883733": "XInjectEmetic",
