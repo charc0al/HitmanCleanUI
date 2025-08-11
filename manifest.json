@@ -16,43 +16,27 @@
 			"type": "select"
 		},
 		{
-			"name": "Minimalist | Vanilla UI",
-			"tooltip": "Vanilla UI version",
+			"name": "Minimalist | Vanilla UI (normal crosshair)",
+			"tooltip": "Vanilla UI version - crosshair unchanged",
 			"group": "HUD",
 			"type": "select",
 			"image": "smf/minimal.png",
 			"contentFolders": ["content/minhud_vanilla"]
 		},
 		{
-			"name": "Minimalist | Vanilla UI (normal crosshair)",
-			"tooltip": "Vanilla UI version - crosshair unchanged",
-			"group": "HUD",
-			"type": "select",
-			"image": "smf/minimal.png",
-			"contentFolders": ["content/minhud_vanilla_normalcrosshair"]
-		},
-		{
-			"name": "Minimalist | HeritageUI",
+			"name": "Minimalist | HeritageUI (dot crosshair 50% transparent)",
 			"tooltip": "Minimalist HUD - HeritageUI compatible version",
 			"group": "HUD",
-			"enabledByDefault": true,
 			"type": "select",
 			"image": "smf/heritage.png",
 			"contentFolders": ["content/minhud_heritage"]
 		},
 		{
-			"name": "Minimalist | HeritageUI (SA icon inverted)",
-			"tooltip": "Minimalist HUD - SA icon hidden when GREEN, shown otherwise",
+			"name": "Minimalist | DEFINITIVE EDITION",
+			"tooltip": "Minimalist HUD - The definitive edition of this mod. All the base changes of this mod built on top of Heritage UI hud. Dot crosshair no transparency. I've changed some of the freelancer icons back to green, the SA indicator his hidden when green, and the best part - customizeable action prompts. You can edit the manifest.json to decide for a bunch of different prompts if you want to hide the button, the top text, or both from the interaction hud.",
 			"group": "HUD",
 			"type": "select",
-			"image": "smf/heritage.png",
-			"contentFolders": ["content/minhud_sa_inverted"]
-		},
-		{
-			"name": "Minimalist | Charc0al's Custom Config",
-			"tooltip": "Minimalist HUD - Charc0al's personal config - mix of heritage and vanilla stuff, with a few other changes. Use only if you have excellent taste.",
-			"group": "HUD",
-			"type": "select",
+			"enabledByDefault": true,
 			"image": "smf/heritage.png",
 			"contentFolders": ["content/minhud_charc0al"]
 		},
@@ -129,53 +113,131 @@
 		{
 			"name": "Vanilla - No changes",
 			"tooltip": "No changes to prompt text",
-			"group": "Minimal Prompt Text",
+			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
 			"enabledByDefault": true
 		},
 		{
-			"name": "Experimental - Dont use",
-			"tooltip": "Don't use this",
-			"group": "Minimal Prompt Text",
-			"type": "select",
-			"localisationOverrides": {
-				"008C4B8D68BA3D1E": {
-					"english": {
-						"3319243970": "XKO",
-						"1313700175": "XDisg",
-						"1693114477": "XTakeDn",
-						"3227164674": "XDropD",
-						"808498535": "XScale",
-						"3169527694": "XGar",
-						"351400216": "XDrag",
-						"3106615678": "XClose Door",
-						"3181889275": "XSnap",
-						"3150438812": "XSilentAtt",
-						"277304703": "XChoke",
-						"3935942020": "XClimb Windo",
-						"1699365532": "CoverChange",
-						"3667079457": "PickupItem",
-						"1452032764": "XOpen Door",
-						"831111755": "XKnockOut",
-						"204206315": "XInjectLethal",
-						"3198883733": "XInjectEmetic",
-						"1642639113": "XInjectSed",
-						"2780461307": "Boom!"
-					}
-				}
-			}
-		},
-		{
-			"name": "Minimal",
-			"tooltip": "Hides a bunch of unnecessary or redundant text in prompts for an even more minimal UI experience",
-			"group": "Minimal Prompt Text",
+			"name": "Minimalist",
+			"tooltip": "Custom configuration of hidden button prompts and text. You can see what's changed in the manifest.json. The characters prefixing the localisation entries determine what is hidden from the UI.",
+			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
 			"localisationOverrides": {
 				"008C4B8D68BA3D1E": {
 					"english": {
 						"3704432103": "Attack",
-						"463640731": "Eliminate0",
-						"2957015252": "Eliminate1",
+						"463640731": ".Eliminate",
+						"2957015252": ".Execute",
+						"3319243970": "Pacify",
+						"1313700175": "^Disguise",
+						"1693114477": "-Takedown",
+						"3227164674": "-Drop Down",
+						"808498535": "-Scale",
+						"3169527694": ".Garotte",
+						"351400216": "=Drag",
+						"3106615678": "-Close Door",
+						"3181889275": "-Snap Neck",
+						"3150438812": "^Silent Attack",
+						"277304703": "-Pacify",
+						"3935942020": "-Climb Through",
+						"1699365532": "-Change Cover",
+						"1942981858": "-Scale Cover",
+						"3667079457": "^Pick Up",
+						"1452032764": "-Open Door",
+						"831111755": "-Knock Out",
+						"204206315": "-Inject (Lethal)",
+						"3198883733": "-Inject (Emetic)",
+						"1642639113": "-Inject (Sedative)",
+						"2808614347": "-Ledge",
+						"492610946": "-Climb Down",
+						"3227164674": "-Drop Down",
+						"120465944": "-Jump To Ledge",
+						"591845826": "-Vault",
+						"519454523": "Hang",
+						"1905228101": "Up",
+						"1862578249": "Peek",
+						"1184689942": "Peek",
+						"4067482698": "Pull",
+						"88301328": "Push",
+						"2780461307": "Detonate",
+						"1455552734": "-Hide",
+						"3664745619": "Enter",
+						"2834224702": "Stop Hiding",
+						"708180447": "-Climb Drain",
+						"1455485052": "-Climb Ladder",
+						"326068265": "-Conceal",
+						"2152444189": "Retrieve",
+						"562869186": "-Move Past Window"
+					}
+				}
+			}
+		},
+		{
+			"name": "Bare Bones",
+			"tooltip": "Extra minimal button prompts. Silent attack, disguise, drag body, open door, completely hidden from interaction HUD, among others.",
+			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
+			"type": "select",
+			"localisationOverrides": {
+				"008C4B8D68BA3D1E": {
+					"english": {
+						"3704432103": "Attack",
+						"463640731": "_Eliminate",
+						"2957015252": "_Execute",
+						"3319243970": "=Pacify",
+						"1313700175": "+Disguise",
+						"1693114477": "-Takedown",
+						"3227164674": "-Drop Down",
+						"808498535": "-Scale",
+						"3169527694": "-Garotte",
+						"351400216": "=Drag",
+						"3106615678": "=Close Door",
+						"3181889275": "=Snap Neck",
+						"3150438812": "^Silent Attack",
+						"277304703": ".Pacify",
+						"3935942020": "-Climb Through",
+						"1699365532": "-Change Cover",
+						"1942981858": "-Scale Cover",
+						"3667079457": "^Pick Up",
+						"1452032764": "=Open Door",
+						"831111755": "-Knock Out",
+						"204206315": "-Inject",
+						"3198883733": "-Inject",
+						"1642639113": "-Inject",
+						"2808614347": "-Ledge",
+						"492610946": "-Climb Down",
+						"3227164674": "-Drop Down",
+						"120465944": "-Jump To Ledge",
+						"591845826": "-Vault",
+						"519454523": "-Hang",
+						"1905228101": "-Up",
+						"1862578249": "Peek",
+						"1184689942": "Peek",
+						"4067482698": "-Pull",
+						"88301328": "-Push",
+						"2780461307": "Detonate",
+						"1455552734": "-Hide",
+						"3664745619": "-Enter",
+						"2834224702": "-Stop Hiding",
+						"708180447": "-Climb Drain",
+						"1455485052": "-Climb Ladder",
+						"326068265": "-Conceal",
+						"2152444189": "Retrieve",
+						"562869186": "-Move Past Window"
+					}
+				}
+			}
+		},
+		{
+			"name": "YOUR Custom Version",
+			"tooltip": "Placeholder for your own customized version of button prompts. Just edit the manifest.json file, I made this so easy any idiot with notepad can customize these prompts.",
+			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
+			"type": "select",
+			"localisationOverrides": {
+				"008C4B8D68BA3D1E": {
+					"english": {
+						"3704432103": "Attack",
+						"463640731": "-Eliminate",
+						"2957015252": "-Eliminate",
 						"3319243970": "_Pacify",
 						"1313700175": "+Disguise",
 						"1693114477": "-Takedown",
@@ -200,18 +262,21 @@
 						"3227164674": "-Drop Down",
 						"120465944": "-Jump To Ledge",
 						"591845826": "-Vault",
-						"519454523": "Hang",
+						"519454523": "-Hang",
 						"1905228101": "Up",
 						"1862578249": "Peek",
 						"1184689942": "Peek",
 						"4067482698": "Pull",
 						"88301328": "Push",
 						"2780461307": "Detonate",
-						"1455552734": "Hide",
+						"1455552734": "-Hide",
 						"3664745619": "Enter",
 						"2834224702": "Stop Hiding",
 						"708180447": "-Climb Drain",
 						"1455485052": "-Climb Ladder",
+						"326068265": "-Conceal",
+						"2152444189": "Retrieve",
+						"562869186": "-Move Past Window"
 					}
 				}
 			}
