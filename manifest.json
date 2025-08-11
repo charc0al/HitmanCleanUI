@@ -189,9 +189,9 @@
 						"3667079457": "^Pick Up",
 						"1452032764": "-Open Door",
 						"831111755": "-Knock Out",
-						"204206315": "Inject Lethal",
-						"3198883733": ".Inject Emetic",
-						"1642639113": ",Inject Sedative",
+						"204206315": "Inject (L)",
+						"3198883733": "Inject (E)",
+						"1642639113": "Inject (S)",
 						"2780461307": "Boom!"
 					}
 				}
