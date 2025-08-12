@@ -142,7 +142,7 @@
 						"831111755": "-Knock Out",
 						"1184689942": "Peek",
 						"1313700175": "^Disguise",
-						"1452032764": "-Open Door",
+						"1452032764": "=Open Door",
 						"1455485052": "-Climb Ladder",
 						"1455552734": "-Hide",
 						"1642639113": "-Inject",
@@ -168,6 +168,34 @@
 						"3704432103": "Attack",
 						"3935942020": "-Climb Through",
 						"4067482698": "Pull"
+					}
+				},
+				"0082FCF9BF0CA18E": {
+					"english": {
+						"885282319": "-Conceal item",
+						"2574416600": "^Retrieve",
+						"3878743332": "Retrieve Weapon",
+						"3988840944": "Place",
+						"1167109539": "Talk",
+						"3302935930": "Blend",
+						"2599135266": "$Poison",
+						"4050649666": "^Swap",
+						"2072302537": "Drown",
+						"585323054": "Activate",
+						"2475685382": "Dump",
+						"40710893": "Leave",
+						"548237907": "Enter",
+						"2214730067": "Release",
+						"965810984": "Overflow",
+						"3431879619": "Cannot Blend In",
+						"2469694804": "Destroy Evidence",
+						"3248237727": "Disable Recorder",
+						"322888608": "Detonate",
+						"398767406": "Trigger",
+						"3251754523": "Use Sedative Poison",
+						"2091980654": "Use Lethal Poison",
+						"4243520597": "Use Emetic Poison",
+						"68380762": "Busy"
 					}
 				}
 			}
@@ -197,7 +225,7 @@
 						"831111755": ".Knock Out",
 						"1184689942": ".Peek",
 						"1313700175": ",Disguise",
-						"1452032764": ".Open Door",
+						"1452032764": ".Open",
 						"1455485052": ".Climb Ladder",
 						"1455552734": ".Hide",
 						"1642639113": ".Inject",
@@ -222,7 +250,52 @@
 						"3667079457": ",Pick Up",
 						"3704432103": "Attack",
 						"3935942020": ".Climb Through",
-						"4067482698": ".Pull"
+						"4067482698": ".Pull",
+						"478017972": ".Unlock",
+						"3968273918": ".Place",
+						"4286021879": ".Open",
+						"437895206": ".Use"
+					}
+				},
+				"0082FCF9BF0CA18E": {
+					"english": {
+						"159056260": ".Unlock",
+						"329994206": ".Erase Recording",
+						"1739448726": ".Break Lock",
+						"3017738067": ".Turn Off",
+						"3100411306": ".Turn On",
+						"2329687033": ".Close",
+						"1888683143": ".Open",
+						"885282319": ".Conceal item",
+						"2574416600": ",Retrieve",
+						"3878743332": ".Retrieve Weapon",
+						"3988840944": ".Place",
+						"1167109539": ".Talk",
+						"3302935930": ".Blend",
+						"2599135266": "%Poison",
+						"4050649666": ".Swap",
+						"2072302537": ".Drown",
+						"585323054": ".Activate",
+						"2475685382": ".Dump",
+						"40710893": ".Leave",
+						"548237907": ".Enter",
+						"2214730067": ".Release",
+						"965810984": ".Overflow",
+						"3431879619": ".Cannot Blend In",
+						"2469694804": ".Destroy Evidence",
+						"3248237727": ".Disable Recorder",
+						"322888608": ".Detonate",
+						"398767406": ".Trigger",
+						"3251754523": ".Use Sedative Poison",
+						"2091980654": ".Use Lethal Poison",
+						"4243520597": ".Use Emetic Poison",
+						"68380762": ".Busy"
+					}
+				},
+				"001F0F3B7F11E788": {
+					"english": {
+						"93AFD674": ".Conceal",
+						"95115CEA": ".Retrieve!"
 					}
 				}
 			}
@@ -239,7 +312,7 @@
 						"88301328": "-Push",
 						"120465944": "-Jump To Ledge",
 						"204206315": "_Inject (Lethal)",
-						"277304703": ".Pacify",
+						"277304703": "=Choke",
 						"326068265": "-Conceal",
 						"351400216": "=Drag",
 						"463640731": "_Eliminate",
@@ -261,8 +334,8 @@
 						"1862578249": "Peek",
 						"1905228101": "-Up",
 						"1942981858": "-Scale Cover",
-						"2152444189": "Retrieve",
-						"2780461307": "Detonate",
+						"2152444189": "^Retrieve",
+						"2780461307": "^Detonate",
 						"2808614347": "-Ledge",
 						"2834224702": "-Stop Hiding",
 						"2957015252": "_Execute",
@@ -279,6 +352,34 @@
 						"3935942020": "-Climb Through",
 						"4067482698": "-Pull"
 					}
+				},
+				"0082FCF9BF0CA18E": {
+					"english": {
+						"885282319": "-Conceal item",
+						"2574416600": "^Retrieve",
+						"3878743332": "-Retrieve Weapon",
+						"3988840944": "-Place",
+						"1167109539": "-Talk",
+						"3302935930": "-Blend",
+						"2599135266": "$Poison",
+						"4050649666": "_Swap",
+						"2072302537": "-Drown",
+						"585323054": "Activate",
+						"2475685382": "-Dump",
+						"40710893": "-Leave",
+						"548237907": "-Enter",
+						"2214730067": "-Release",
+						"965810984": "-Overflow",
+						"3431879619": "-Cannot Blend In",
+						"2469694804": "-Destroy Evidence",
+						"3248237727": "-Disable Recorder",
+						"322888608": "-Detonate",
+						"398767406": "-Trigger",
+						"3251754523": "-Use Sedative Poison",
+						"2091980654": "-Use Lethal Poison",
+						"4243520597": "-Use Emetic Poison",
+						"68380762": "-Busy"
+					}
 				}
 			}
 		},
@@ -290,13 +391,13 @@
 			"localisationOverrides": {
 				"008C4B8D68BA3D1E": {
 					"english": {
-						"88301328": "Push",
+						"88301328": "-Push",
 						"120465944": "-Jump To Ledge",
-						"204206315": ".Inject (L)",
-						"277304703": "-Pacify",
+						"204206315": "_Inject (Lethal)",
+						"277304703": "=Choke",
 						"326068265": "-Conceal",
 						"351400216": "=Drag",
-						"463640731": "-Eliminate",
+						"463640731": "_Eliminate",
 						"492610946": "-Climb Down",
 						"519454523": "-Hang",
 						"562869186": "-Move Past Window",
@@ -306,31 +407,60 @@
 						"831111755": "-Knock Out",
 						"1184689942": "Peek",
 						"1313700175": "+Disguise",
-						"1452032764": "-Open Door",
+						"1452032764": "=Open Door",
 						"1455485052": "-Climb Ladder",
 						"1455552734": "-Hide",
-						"1642639113": "=Inject (S)",
+						"1642639113": "_Inject (Sedative)",
 						"1693114477": "-Takedown",
 						"1699365532": "-Change Cover",
 						"1862578249": "Peek",
-						"1905228101": "Up",
-						"2152444189": "Retrieve",
-						"2780461307": "Detonate",
+						"1905228101": "-Up",
+						"1942981858": "-Scale Cover",
+						"2152444189": "^Retrieve",
+						"2780461307": "^Detonate",
 						"2808614347": "-Ledge",
-						"2834224702": "Stop Hiding",
-						"2957015252": "-Eliminate",
-						"3106615678": "-Close Door",
+						"2834224702": "-Stop Hiding",
+						"2957015252": "_Execute",
+						"3106615678": "=Close Door",
 						"3150438812": "^Silent Attack",
-						"3169527694": ".Garotte",
-						"3181889275": "-Snap Neck",
-						"3198883733": ",Inject (E)",
+						"3169527694": "-Garotte",
+						"3181889275": "=Snap Neck",
+						"3198883733": "_Inject (Emetic)",
 						"3227164674": "-Drop Down",
 						"3319243970": "_Pacify",
-						"3664745619": "Enter",
+						"3664745619": "_Enter",
 						"3667079457": "^Pick Up",
 						"3704432103": "Attack",
 						"3935942020": "-Climb Through",
-						"4067482698": "Pull"
+						"4067482698": "-Pull"
+					}
+				},
+				"0082FCF9BF0CA18E": {
+					"english": {
+						"885282319": "-Conceal item",
+						"2574416600": "^Retrieve",
+						"3878743332": "-Retrieve Weapon",
+						"3988840944": "-Place",
+						"1167109539": "-Talk",
+						"3302935930": "-Blend",
+						"2599135266": "$Poison",
+						"4050649666": "^Swap",
+						"2072302537": "Drown",
+						"585323054": "Activate",
+						"2475685382": "Dump",
+						"40710893": "Leave",
+						"548237907": "Enter",
+						"2214730067": "Release",
+						"965810984": "-Overflow",
+						"3431879619": "-Cannot Blend In",
+						"2469694804": "Destroy Evidence",
+						"3248237727": "Disable Recorder",
+						"322888608": "Boom!",
+						"398767406": "Trigger",
+						"3251754523": "Use Sedative Poison",
+						"2091980654": "Use Lethal Poison",
+						"4243520597": "Use Emetic Poison",
+						"68380762": "-Busy"
 					}
 				}
 			}
