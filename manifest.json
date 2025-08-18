@@ -12,7 +12,7 @@
 			"name": "Vanilla (no changes)",
 			"tooltip": "Vanilla UI version",
 			"group": "HUD",
-			"image": "smf/vanilla.png",
+			"image": "smf/vanilla.webp",
 			"type": "select"
 		},
 		{
@@ -20,7 +20,7 @@
 			"tooltip": "Vanilla UI version - crosshair unchanged",
 			"group": "HUD",
 			"type": "select",
-			"image": "smf/minimal.png",
+			"image": "smf/minimal.webp",
 			"contentFolders": ["content/minhud_vanilla"]
 		},
 		{
@@ -28,7 +28,7 @@
 			"tooltip": "Minimalist HUD - HeritageUI compatible version",
 			"group": "HUD",
 			"type": "select",
-			"image": "smf/heritage.png",
+			"image": "smf/heritage.webp",
 			"contentFolders": ["content/minhud_heritage"]
 		},
 		{
@@ -37,7 +37,7 @@
 			"group": "HUD",
 			"type": "select",
 			"enabledByDefault": true,
-			"image": "smf/definitive.png",
+			"image": "smf/definitive.webp",
 			"contentFolders": ["content/minhud_charc0al"]
 		},
 		{
@@ -45,7 +45,7 @@
 			"tooltip": "Changes the thrown object reticle into a dot",
 			"group": "Throw",
 			"type": "checkbox",
-			"image": "smf/throw.png",
+			"image": "smf/throw.webp",
 			"enabledByDefault": true,
 			"contentFolders": ["content/throw_target"]
 		},
@@ -54,7 +54,7 @@
 			"tooltip": "Hides the 3D throw arc",
 			"group": "Throw",
 			"type": "checkbox",
-			"image": "smf/throwarc.png",
+			"image": "smf/throwarc.webp",
 			"enabledByDefault": true,
 			"contentFolders": ["content/throw_arc"]
 		},
@@ -63,7 +63,7 @@
 			"tooltip": "Hides the throw aiming landing circle animation",
 			"group": "Throw",
 			"type": "checkbox",
-			"image": "smf/throwimpact.png",
+			"image": "smf/throwimpact.webp",
 			"contentFolders": ["content/throw_impact"]
 		},
 		{
@@ -71,7 +71,7 @@
 			"tooltip": "Remove Exit Icon",
 			"group": "Other",
 			"type": "checkbox",
-			"image": "smf/exit.png",
+			"image": "smf/exit.webp",
 			"enabledByDefault": true,
 			"contentFolders": ["content/hide_exit_icon"]
 		},
@@ -89,7 +89,7 @@
 			"group": "Other",
 			"type": "checkbox",
 			"enabledByDefault": true,
-			"image": "smf/npc_interaction.png",
+			"image": "smf/npc_interaction.webp",
 			"contentFolders": ["content/npc_interact"]
 		},
 		{
@@ -97,7 +97,7 @@
 			"tooltip": "No instinct filter, no outlines, more faint NPC highlights",
 			"group": "Other",
 			"type": "checkbox",
-			"image": "smf/instinct.png",
+			"image": "smf/instinct.webp",
 			"enabledByDefault": true,
 			"contentFolders": ["content/minimal_instinct"]
 		},
@@ -122,17 +122,17 @@
 			"tooltip": "Drag hidden, simplified Pick Up and Disguise prompts (only shows weapon name and disguise name), many other common prompts are button-only. You can see what's changed in the manifest.json. The characters prefixing the localisation entries determine what is hidden from the UI.",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
-			"image": "smf/prompt_minimalist.png",
+			"image": "smf/prompt_minimalist.webp",
 			"localisationOverrides": {
 				"008C4B8D68BA3D1E": {
 					"english": {
-						"88301328": "Push",
+						"88301328": "$Push",
 						"120465944": "-Jump To Ledge",
 						"204206315": "-Inject",
 						"277304703": "-Pacify",
 						"326068265": "-Conceal",
 						"351400216": "=Drag",
-						"463640731": ".Eliminate",
+						"463640731": "Eliminate",
 						"492610946": "-Climb Down",
 						"519454523": "Hang",
 						"562869186": "-Move Past Window",
@@ -155,11 +155,11 @@
 						"2780461307": "Detonate",
 						"2808614347": "-Ledge",
 						"2834224702": "Stop Hiding",
-						"2957015252": ".Execute",
+						"2957015252": "Execute",
 						"3106615678": "-Close Door",
 						"3150438812": "^Silent Attack",
-						"3169527694": ".Garotte",
-						"3181889275": "-Snap Neck",
+						"3169527694": "-Garotte",
+						"3181889275": "=Snap Neck",
 						"3198883733": "-Inject",
 						"3227164674": "-Drop Down",
 						"3319243970": "Pacify",
@@ -275,11 +275,11 @@
 			"tooltip": "Custom example config with all text prompts. Looks pretty clean.",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
-			"image": "smf/prompt_textonly.png",
+			"image": "smf/prompt_textonly.webp",
 			"localisationOverrides": {
 				"008C4B8D68BA3D1E": {
 					"english": {
-						"88301328": ".Push",
+						"88301328": "%Push",
 						"120465944": ".Jump To Ledge",
 						"204206315": ".Inject",
 						"277304703": ".Pacify",
@@ -456,7 +456,7 @@
 			"tooltip": "Extra minimal button prompts. Pacify, Subdue, Disguise, Drag body, Open door, completely hidden from interaction HUD, among others.",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
-			"image": "smf/prompt_barebones.png",
+			"image": "smf/prompt_barebones.webp",
 			"localisationOverrides": {
 				"008C4B8D68BA3D1E": {
 					"english": {
@@ -609,6 +609,7 @@
 			"tooltip": "Placeholder for your own customized version of button prompts. Just edit the manifest.json file, I made this so easy any idiot with notepad can customize these prompts.",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
+			"image": "smf/chart.webp",
 			"localisationOverrides": {
 				"008C4B8D68BA3D1E": {
 					"english": {
