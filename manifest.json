@@ -93,6 +93,15 @@
 			"contentFolders": ["content/npc_interact"]
 		},
 		{
+			"name": "Hide Suspect Phone Fx",
+			"tooltip": "Removes the pulsing circle and camera filter from the freelancer suspect burner phones.",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"image": "smf/phonefx.webp",
+			"contentFolders": ["content/phonefx"]
+		},
+		{
 			"name": "Minimal Instinct",
 			"tooltip": "No instinct filter, no outlines, more faint NPC highlights",
 			"group": "Other",
@@ -111,6 +120,14 @@
 			"contentFolders": ["content/skeleton"]
 		},
 		{
+			"name": "Fix - stadia icons",
+			"tooltip": "Check this box ONLY IF you're not using Heritage UI AND have hide exit icon unchecked",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": ["content/heritagefix"]
+		},
+		{
 			"name": "Vanilla - No changes",
 			"tooltip": "No changes to prompt text",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
@@ -119,7 +136,7 @@
 		},
 		{
 			"name": "Minimalist",
-			"tooltip": "Drag hidden, simplified Pick Up and Disguise prompts (only shows weapon name and disguise name), many other common prompts are button-only. You can see what's changed in the manifest.json. The characters prefixing the localisation entries determine what is hidden from the UI.",
+			"tooltip": "Drag body and open/close door fully hidden (unlock door still shows). Simplified Pick Up and Disguise prompts (only shows weapon name and disguise name), many other common prompts are button-only. You can see what's changed in the manifest.json. The characters prefixing the localisation entries determine what is hidden from the UI.",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
 			"image": "smf/prompt_minimalist.webp",
@@ -156,7 +173,7 @@
 						"2808614347": "-Ledge",
 						"2834224702": "Stop Hiding",
 						"2957015252": "Execute",
-						"3106615678": "-Close Door",
+						"3106615678": "=Close Door",
 						"3150438812": "^Silent Attack",
 						"3169527694": "-Garotte",
 						"3181889275": "=Snap Neck",
@@ -606,7 +623,7 @@
 		},
 		{
 			"name": "YOUR Custom Version",
-			"tooltip": "Placeholder for your own customized version of button prompts. Just edit the manifest.json file, I made this so easy any idiot with notepad can customize these prompts.",
+			"tooltip": "Placeholder for your own customized version of button prompts. Just edit the manifest.json file, I made this so easy anyone with a text editor can customize these prompts.",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
 			"image": "smf/chart.webp",

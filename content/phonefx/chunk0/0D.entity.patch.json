@@ -1,0 +1,83 @@
+{
+	"tempHash": "00FA8B9999A2DD0D",
+	"tbluHash": "00FDC65D3617899A",
+	"patch": [
+		{ "RemoveEntityByID": "d7daea23081787de" },
+		{ "RemoveEntityByID": "23d75865973cc046" },
+		{
+			"SubEntityOperation": [
+				"97c24df40378a340",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"Out",
+						"Activate"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f24558e7b9d59988",
+				{ "RemoveAllEventConnectionsForEvent": "EventReceived" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"b54bc8d16a89bd52",
+				{ "RemoveAllEventConnectionsForEvent": "Out" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"07a3a391be1bb3b1",
+				{ "RemoveAllEventConnectionsForEvent": "Out02" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"70ab2c79a5d34c71",
+				{
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnTrue",
+						"Detach"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"e6a31697d664e656",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"HueShift",
+						{
+							"originalProperty": "HueShift",
+							"originalEntity": "23d75865973cc046"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"e6a31697d664e656",
+				{
+					"RemoveConnectionForPropertyAlias": [
+						"HueShift",
+						{
+							"originalProperty": "HueShift",
+							"originalEntity": "d7daea23081787de"
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ae920970f0d31909",
+				{ "RemovePropertyByName": "m_eidParent" }
+			]
+		}
+	],
+	"patchVersion": 6
+}
