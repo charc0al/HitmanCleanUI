@@ -1,11 +1,11 @@
 {
-	"version": "3.4.1",
+	"version": "3.4.2",
 	"updateCheck": "https://github.com/charc0al/HitmanCleanUI/releases/latest/download/updates.json",
 	"id": "Charc0al.MinimalistUI",
 	"name": "Minimalist HUD",
 	"description": "Removes unnecessary HUD clutter that can't be disabled via the menu.",
 	"authors": ["Charc0al", "Burn, the witch"],
-	"frameworkVersion": "2.33.26",
+	"frameworkVersion": "2.33.27",
 	"loadAfter": ["BurnTheWitch.HeritageUI"],
 	"options": [
 		{
