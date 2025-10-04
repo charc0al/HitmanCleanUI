@@ -78,7 +78,7 @@ package hud
       private function setupTextFields() : void
       {
          var _loc1_:Object = MenuConstants.InteractionIndicatorFontSpecs[this.m_nFontSizeCurrent];
-         MenuUtils.setupText(this.m_view.prompt_mc.label_txt,this.m_sLabelCurrent,_loc1_.fontSizeLabel,MenuConstants.FONT_TYPE_BOLD,MenuConstants.FontColorWhite);
+         MenuUtils.setupText(this.m_view.prompt_mc.label_txt,this.m_sLabelCurrent,_loc1_.fontSizeLabel,MenuConstants.FONT_TYPE_NORMAL,MenuConstants.FontColorWhite);
          MenuUtils.setupText(this.m_view.prompt_mc.desc_txt,this.m_sDescriptionCurrent,_loc1_.fontSizeDesc,MenuConstants.FONT_TYPE_NORMAL,MenuConstants.FontColorWhite);
       }
       
@@ -139,18 +139,18 @@ package hud
             this.m_view.illegalIcon_mc.visible = false;
             if(param1.m_bInRange)
             {
-               this.m_view.collapsedFull_mc.alpha = 1;
+               this.m_view.collapsedFull_mc.alpha = 0;
                this.m_view.collapsedEmpty_mc.alpha = 0;
             }
             else if(param1.m_bContainsItem)
             {
-               this.m_view.collapsedFull_mc.alpha = 1;
+               this.m_view.collapsedFull_mc.alpha = 0;
                this.m_view.collapsedEmpty_mc.alpha = 0;
             }
             else
             {
                this.m_view.collapsedFull_mc.alpha = 0;
-               this.m_view.collapsedEmpty_mc.alpha = 1;
+               this.m_view.collapsedEmpty_mc.alpha = 0;
             }
             if(ControlsMain.isVrModeActive())
             {
@@ -204,36 +204,12 @@ package hud
          param2 = StringUtil.trim(param2);
          param3 = StringUtil.trim(param3);
          var _loc12_:Boolean = param11 === true && ControlsMain.isVrModeActive();
-         if(param8 || param7 || param6 || _loc12_)
-         {
-            _loc16_ = 0.46;
-            _loc17_ = 58;
-            _loc18_ = this.m_view.hold_mc.visible ? 39 : 35;
-            if(this.m_nFontSizeCurrent == MenuConstants.INTERACTIONPROMPTSIZE_MEDIUM)
-            {
-               _loc16_ = 0.52;
-               _loc17_ = 60;
-               _loc18_ = this.m_view.hold_mc.visible ? 40 : 36;
-            }
-            else if(this.m_nFontSizeCurrent >= MenuConstants.INTERACTIONPROMPTSIZE_LARGE)
-            {
-               _loc16_ = 0.65;
-               _loc17_ = 67;
-               _loc18_ = this.m_view.hold_mc.visible ? 44 : 40;
-            }
-            if(ControlsMain.isVrModeActive() && !this.m_view.hold_mc.visible && param10 && param2.length == 0 && param3.length == 0)
-            {
-               _loc18_ = 0;
-               _loc16_ *= 0.5;
-            }
-            this.m_view.illegalIcon_mc.scaleX = this.m_view.illegalIcon_mc.scaleY = _loc16_;
-            this.m_view.prompt_mc.x = param9 ? -_loc17_ : _loc17_;
-            this.m_view.illegalIcon_mc.x = param9 ? -_loc18_ : _loc18_;
-         }
+         this.m_view.illegalIcon_mc.visible = false;
+         this.m_view.prompt_mc.x = param9 ? -28 : 28;
          this.m_view.prompt_mc.label_txt.autoSize = param9 ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT;
          this.m_view.prompt_mc.desc_txt.autoSize = param9 ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT;
          this.m_promptImage.platform = ControlsMain.getControllerType();
-         this.m_view.promptHolder_mc.scaleX = this.m_view.promptHolder_mc.scaleY = this.m_promptImage.platform == "key" ? 0.8 : 1;
+         this.m_view.promptHolder_mc.scaleX = this.m_view.promptHolder_mc.scaleY = this.m_promptImage.platform == "key" ? 0.6 : 0.7;
          if(param5 != null && param5.length > 0)
          {
             this.m_promptImage.visible = false;
@@ -253,31 +229,103 @@ package hud
                this.m_promptImage.customKey = param4;
             }
          }
-         var _loc13_:String = param2;
-         if(_loc13_ != this.m_sLabelCurrent)
+         var labelWasVisible:Boolean = Boolean(this.m_view.prompt_mc.label_txt.visible);
+         var descWasVisible:Boolean = Boolean(this.m_view.prompt_mc.desc_txt.visible);
+         var _loc13_:String = param2 != null ? String(param2) : "";
+         var hideTop:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "-" || _loc13_.charAt(0) == "^" || _loc13_.charAt(0) == ",");
+         var hideEverything:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "_" || _loc13_.charAt(0) == "+" || _loc13_.charAt(0) == "=");
+         var hideBottom:Boolean = hideEverything || _loc13_.length > 0 && (_loc13_.charAt(0) == "$" || _loc13_.charAt(0) == "%");
+         var hidePrompt:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "+" || _loc13_.charAt(0) == "=" || _loc13_.charAt(0) == "." || _loc13_.charAt(0) == "," || _loc13_.charAt(0) == "%");
+         if(hideTop || hidePrompt || hideEverything || hideBottom)
          {
-            this.m_view.prompt_mc.label_txt.htmlText = _loc13_;
-            this.m_sLabelCurrent = _loc13_;
+            _loc13_ = _loc13_.substr(1);
+         }
+         if(hidePrompt)
+         {
+            this.m_promptImage.visible = false;
+         }
+         if(hideTop || hideEverything)
+         {
+            this.m_view.prompt_mc.label_txt.visible = false;
+            this.m_view.prompt_mc.label_txt.htmlText = "";
+            this.m_sLabelCurrent = "";
+         }
+         else
+         {
+            this.m_view.prompt_mc.label_txt.visible = true;
+         }
+         if(this.m_view.prompt_mc.label_txt.visible)
+         {
+            if(_loc13_ != this.m_sLabelCurrent || !labelWasVisible)
+            {
+               this.m_view.prompt_mc.label_txt.htmlText = _loc13_;
+               this.m_sLabelCurrent = _loc13_;
+            }
          }
          var _loc14_:Object = MenuConstants.InteractionIndicatorFontSpecs[this.m_nFontSizeCurrent];
-         if(Boolean(param3) && param3.length > 0)
+         if(!hideBottom && (Boolean(param3) && param3.length > 0))
          {
-            this.m_view.prompt_mc.desc_txt.visible = true;
-            _loc19_ = param3;
-            if(_loc19_ != this.m_sDescriptionCurrent)
+            _loc19_ = param3 != null ? String(param3) : "";
+            var descHideAll:Boolean = _loc19_.length > 0 && (_loc19_.charAt(0) == "=" || _loc19_.charAt(0) == "+");
+            var descHideEverything:Boolean = descHideAll || _loc19_ == "NOT FOUND";
+            var descHideBoth:Boolean = descHideEverything || _loc19_.length > 0 && _loc19_.charAt(0) == "_";
+            var descHideTop:Boolean = descHideBoth || _loc19_.length > 0 && (_loc19_.charAt(0) == "," || _loc19_.charAt(0) == "-" || _loc19_.charAt(0) == "^");
+            var descHideButton:Boolean = descHideEverything || _loc19_.length > 0 && (_loc19_.charAt(0) == "." || _loc19_.charAt(0) == ",");
+            if(descHideTop || descHideBoth || descHideButton || descHideAll)
             {
-               this.m_view.prompt_mc.desc_txt.htmlText = _loc19_;
-               this.m_sDescriptionCurrent = _loc19_;
+               _loc19_ = _loc19_.substr(1);
             }
-            this.m_view.prompt_mc.label_txt.y = _loc14_.yOffsetLabel;
-            this.m_view.prompt_mc.desc_txt.y = _loc14_.yOffsetDesc;
+            if(descHideButton)
+            {
+               this.m_promptImage.visible = false;
+            }
+            if(descHideBoth || descHideEverything)
+            {
+               this.m_view.prompt_mc.desc_txt.visible = false;
+               this.m_view.prompt_mc.label_txt.visible = false;
+               this.m_view.prompt_mc.desc_txt.text = "";
+               this.m_view.prompt_mc.label_txt.text = "";
+               this.m_sDescriptionCurrent = "";
+               this.m_sLabelCurrent = "";
+            }
+            else if(!(hideTop || descHideTop))
+            {
+               this.m_view.prompt_mc.desc_txt.visible = true;
+               this.m_view.prompt_mc.label_txt.visible = true;
+               if(_loc19_ != this.m_sDescriptionCurrent || !descWasVisible)
+               {
+                  this.m_view.prompt_mc.desc_txt.htmlText = _loc19_;
+                  this.m_sDescriptionCurrent = _loc19_;
+               }
+               this.m_view.prompt_mc.label_txt.y = _loc14_.yOffsetLabel;
+               this.m_view.prompt_mc.desc_txt.y = _loc14_.yOffsetDesc;
+            }
+            else
+            {
+               this.m_view.prompt_mc.desc_txt.visible = false;
+               this.m_view.prompt_mc.desc_txt.text = "";
+               this.m_sDescriptionCurrent = "";
+               this.m_view.prompt_mc.label_txt.visible = true;
+               this.m_view.prompt_mc.label_txt.y = _loc14_.yOffsetLabelSolo;
+               if(_loc19_ != this.m_sLabelCurrent || !labelWasVisible)
+               {
+                  this.m_view.prompt_mc.label_txt.htmlText = _loc19_;
+                  this.m_sLabelCurrent = _loc19_;
+               }
+            }
          }
          else
          {
             this.m_view.prompt_mc.desc_txt.visible = false;
             this.m_view.prompt_mc.desc_txt.text = "";
             this.m_sDescriptionCurrent = "";
+            this.m_view.prompt_mc.label_txt.visible = true;
             this.m_view.prompt_mc.label_txt.y = _loc14_.yOffsetLabelSolo;
+            if(this.m_view.prompt_mc.label_txt.visible && !labelWasVisible && _loc13_ != this.m_sLabelCurrent)
+            {
+               this.m_view.prompt_mc.label_txt.htmlText = _loc13_;
+               this.m_sLabelCurrent = _loc13_;
+            }
          }
          if(_loc12_)
          {
@@ -286,13 +334,11 @@ package hud
          }
          else if(param8)
          {
-            this.m_view.illegalIcon_mc.visible = true;
-            this.m_view.illegalIcon_mc.gotoAndStop("susarmed");
+            this.m_view.illegalIcon_mc.visible = false;
          }
          else if(param7 || param6)
          {
-            this.m_view.illegalIcon_mc.visible = true;
-            this.m_view.illegalIcon_mc.gotoAndStop("visarmed");
+            this.m_view.illegalIcon_mc.visible = false;
          }
          else
          {
@@ -308,6 +354,11 @@ package hud
          {
             this.m_view.prompt_mc.label_txt.x = _loc15_;
             this.m_view.prompt_mc.desc_txt.x = _loc15_;
+         }
+         if(hideTop || hidePrompt || hideEverything || hideBottom)
+         {
+            this.m_view.prompt_mc.desc_txt.visible = false;
+            this.m_view.prompt_mc.desc_txt.text = "";
          }
       }
       
@@ -327,4 +378,3 @@ package hud
       }
    }
 }
-
