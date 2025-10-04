@@ -1,5 +1,5 @@
 {
-	"version": "3.5.1",
+	"version": "4.0.0",
 	"updateCheck": "https://github.com/charc0al/HitmanCleanUI/releases/latest/download/updates.json",
 	"id": "Charc0al.MinimalistUI",
 	"name": "Minimalist HUD",
@@ -40,7 +40,7 @@
 			"image": "smf/definitive.webp",
 			"contentFolders": ["content/minhud_charc0al"]
 		},
-{
+		{
 			"name": "Minimalist | DEFINITIVE EDITION (v3.230)",
 			"tooltip": "Minimalist HUD - Definitive edition for users (like me) who want to stay on the old patch since 3.240.1 breaks too much stuff",
 			"group": "HUD",
