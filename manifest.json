@@ -16,22 +16,6 @@
 			"type": "select"
 		},
 		{
-			"name": "Minimalist | Vanilla UI (normal crosshair)",
-			"tooltip": "Vanilla UI version - crosshair unchanged",
-			"group": "HUD",
-			"type": "select",
-			"image": "smf/minimal.webp",
-			"contentFolders": ["content/minhud_vanilla"]
-		},
-		{
-			"name": "Minimalist | HeritageUI (dot crosshair 50% transparent)",
-			"tooltip": "Minimalist HUD - HeritageUI compatible version",
-			"group": "HUD",
-			"type": "select",
-			"image": "smf/heritage.webp",
-			"contentFolders": ["content/minhud_heritage"]
-		},
-		{
 			"name": "Minimalist | DEFINITIVE EDITION",
 			"tooltip": "Minimalist HUD - The definitive edition of this mod. All the base changes of this mod built on top of Heritage UI hud. Dot crosshair no transparency. I've changed some of the freelancer icons back to green, the SA indicator his hidden when green, and the best part - customizeable action prompts. You can edit the manifest.json to decide for a bunch of different prompts if you want to hide the button, the top text, or both from the interaction hud.",
 			"group": "HUD",
