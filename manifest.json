@@ -26,7 +26,7 @@
 		},
 		{
 			"name": "Minimalist | DEFINITIVE EDITION (v3.230)",
-			"tooltip": "Minimalist HUD - Definitive edition for users (like me) who want to stay on the old patch since 3.240.1 breaks too much stuff",
+			"tooltip": "Minimalist HUD - Definitive edition for users (like me) who want to stay on the old patch since 3.240.1 breaks too much stuff. Includes Hide Exit Icon, don't check that option with this.",
 			"group": "HUD",
 			"type": "select",
 			"image": "smf/definitive.webp",
