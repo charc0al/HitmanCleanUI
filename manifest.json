@@ -123,8 +123,7 @@
 			"name": "Vanilla - No changes",
 			"tooltip": "No changes to prompt text",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
-			"type": "select",
-			"enabledByDefault": true
+			"type": "select"
 		},
 		{
 			"name": "Minimalist",
@@ -132,6 +131,7 @@
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
 			"image": "smf/prompt_minimalist.webp",
+			"enabledByDefault": true,
 			"localisationOverrides": {
 				"008C4B8D68BA3D1E": {
 					"english": {
