@@ -385,6 +385,13 @@ package hud
             param1.prompt_mc.desc_txt.visible = false;
             param1.prompt_mc.desc_txt.text = "";
             param1.prompt_mc.label_txt.y = _loc16_.yOffsetLabelSolo;
+            if(hideTop)
+            {
+               param1.prompt_mc.desc_txt.visible = false;
+               param1.prompt_mc.label_txt.visible = false;
+               param1.tap_mc.visible = false;
+               param1.hold_mc.visible = false;
+            }
          }
          if(_loc10_)
          {
@@ -398,7 +405,7 @@ package hud
          {
             param1.illegalIcon_mc.visible = false;
          }
-         param1.prompt.scaleX = param1.prompt.scaleY = param4 == "key" ? 0.6 : 0.7;
+         param1.prompt.scaleX = param1.prompt.scaleY = param4 == "key" ? 0.6 : 0.6;
          if(_loc5_ == -1)
          {
             param1.prompt.customKey = _loc14_;
@@ -448,6 +455,14 @@ package hud
             param1.prompt_mc.label_txt.x = param3 ? 5 - param1.prompt_mc.label_txt.textWidth : -7;
             param1.prompt_mc.desc_txt.x = param3 ? 5 - param1.prompt_mc.desc_txt.textWidth : -7;
          }
+         var hideAll:Boolean = _loc6_ != null && _loc6_.charAt(0) == ":";
+         if(hideAll)
+         {
+            param1.prompt_mc.desc_txt.visible = false;
+            param1.prompt_mc.label_txt.visible = false;
+            param1.tap_mc.visible = false;
+            param1.hold_mc.visible = false;
+         }
       }
       
       private function hintActionButton(param1:MovieClip, param2:int, param3:String) : void
@@ -465,6 +480,7 @@ package hud
          param1.prompt.button = param2;
          param1.tap_mc.visible = false;
          param1.hold_mc.visible = false;
+         param1.illegalIcon_mc.visible = false;
       }
       
       private function getDefaultButtonId(param1:int) : int
