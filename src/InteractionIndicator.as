@@ -249,6 +249,10 @@ package hud
             this.m_view.prompt_mc.label_txt.visible = false;
             this.m_view.prompt_mc.label_txt.htmlText = "";
             this.m_sLabelCurrent = "";
+            if(hideEverything)
+            {
+               _loc13_ = "";
+            }
          }
          else
          {
@@ -378,3 +382,4 @@ package hud
       }
    }
 }
+

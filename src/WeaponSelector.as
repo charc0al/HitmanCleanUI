@@ -419,14 +419,7 @@ package hud
             this.m_view.prompt_txt.visible = !param1;
             this.m_promptsContainer.visible = !param1;
             this.m_background.visible = !param1;
-            if(this.m_isInworldUI)
-            {
-               MenuUtils.addDropShadowFilter(this.m_weaponInfo.label_text);
-            }
-            else
-            {
-               MenuUtils.removeDropShadowFilter(this.m_weaponInfo.label_text);
-            }
+            MenuUtils.addDropShadowFilter(this.m_weaponInfo.label_text);
             this.reservePerks(this.m_perkElements.length,true);
          }
          this.m_center3DWheel = param3;
@@ -784,6 +777,7 @@ package hud
             this.m_textObj.tf = this.m_weaponInfo.label_text;
             this.m_weaponInfo.label_text.htmlText = param1.label;
             MenuUtils.setTextColor(this.m_weaponInfo.label_text,_loc5_);
+            MenuUtils.addDropShadowFilter(this.m_weaponInfo.label_text);
             if(MenuUtils.truncateTextfield(this.m_weaponInfo.label_text,1,_loc4_))
             {
                if(!this.m_textTicker)
