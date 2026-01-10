@@ -162,3 +162,5 @@ removes:
 		this.m_view.promptHolder_mc.scaleX = this.m_view.promptHolder_mc.scaleY = this.m_promptImage.platform == "key" ? 0.6 : 0.7;
 	- Shrink button hold sprite - ~1838 or search indicator_hold_animation
 		- Edit sprite, scale to 67% (32px but pixel scaling doesn't work properly for this sprite sometimes)
+
+- Black buttons with rounded corners - 343F.GFXF - DefineShape 625 and 665, replace with SVGs
