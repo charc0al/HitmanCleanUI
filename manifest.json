@@ -120,6 +120,14 @@
 			"contentFolders": ["content/heritagefix"]
 		},
 		{
+			"name": "Shotgun - Dot Crosshair",
+			"tooltip": "The main mod removes the shotgun crosshair entirely, which I think is more fun. But you can enable this option to add a dot crosshair back, if you can't aim ;)",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": ["content/shotgun_dot"]
+		},
+		{
 			"name": "Vanilla - No changes",
 			"tooltip": "No changes to prompt text",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
