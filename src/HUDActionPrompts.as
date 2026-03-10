@@ -20,6 +20,10 @@ package hud
       private const IDX_FIRST_EXTRA_PROMPT:int = 4;
       
       private const MAX_PROMPTS:int = 7;
+
+      private const PROMPT_LAYOUT_ORDER:Array = [2,3,0,1,5,6,4];
+
+      private const PROMPT_VERTICAL_SPACING:int = 25;
       
       private var m_view:*;
       
@@ -303,6 +307,28 @@ package hud
                this.m_view.scaleY = _loc4_.fScaleGroup;
                this.setCustomPositions(this.m_customPositions);
             }
+         }
+         this.layoutVisibleButtons();
+      }
+
+      private function layoutVisibleButtons() : void
+      {
+         var _loc1_:MovieClip = null;
+         var _loc2_:int = 0;
+         var _loc3_:int = 0;
+         if(this.m_isCustomPositionActive)
+         {
+            return;
+         }
+         while(_loc2_ < this.PROMPT_LAYOUT_ORDER.length)
+         {
+            _loc1_ = this.m_buttonClips[int(this.PROMPT_LAYOUT_ORDER[_loc2_])];
+            if(_loc1_ != null && _loc1_.visible)
+            {
+               _loc1_.y = _loc3_ * this.PROMPT_VERTICAL_SPACING;
+               _loc3_++;
+            }
+            _loc2_++;
          }
       }
       
