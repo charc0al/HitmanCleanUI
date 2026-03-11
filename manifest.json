@@ -2228,8 +2228,8 @@
 			}
 		},
 		{
-			"name": "YOUR Custom Version",
-			"tooltip": "Placeholder for your own customized version of button prompts. Just edit the manifest.json file, I made this so easy anyone with a text editor can customize these prompts.",
+			"name": "Charc0al's Custom Config",
+			"tooltip": "My custom version which I play with, so obviously this option is the best. Somewhere between minimalist and bare bones. Just right.",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
 			"image": "smf/chart.webp",
