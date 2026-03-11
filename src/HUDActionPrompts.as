@@ -377,6 +377,9 @@ package hud
          }
          var _loc16_:Object = MenuConstants.InteractionIndicatorFontSpecs[param2.m_nFontSize ? param2.m_nFontSize : MenuConstants.INTERACTIONPROMPTSIZE_DEFAULT];
          var _loc17_:int = _loc9_ || _loc10_ ? 81 : 1;
+         var _loc21_:uint = _loc9_ ? 16744576 : 16777215;
+         param1.prompt_mc.label_txt.textColor = _loc21_;
+         param1.prompt_mc.desc_txt.textColor = _loc21_;
          param1.illegalIcon_mc.visible = false;
          param1.prompt_mc.x = param3 ? -28 : 28;
          param1.prompt.alpha = _loc12_ ? 0.33 : 1;
@@ -523,4 +526,5 @@ package hud
       }
    }
 }
+
 
