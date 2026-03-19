@@ -232,8 +232,6 @@ package hud
                this.m_promptImage.customKey = param4;
             }
          }
-         var labelWasVisible:Boolean = Boolean(this.m_view.prompt_mc.label_txt.visible);
-         var descWasVisible:Boolean = Boolean(this.m_view.prompt_mc.desc_txt.visible);
          var _loc13_:String = param2 != null ? String(param2) : "";
          var hideTop:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "-" || _loc13_.charAt(0) == "^" || _loc13_.charAt(0) == ",");
          var hideEverything:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "_" || _loc13_.charAt(0) == "+" || _loc13_.charAt(0) == "=");
@@ -263,7 +261,7 @@ package hud
          }
          if(this.m_view.prompt_mc.label_txt.visible)
          {
-            if(_loc13_ != this.m_sLabelCurrent || !labelWasVisible)
+            if(_loc13_ != this.m_sLabelCurrent)
             {
                this.m_view.prompt_mc.label_txt.htmlText = _loc13_;
                this.m_sLabelCurrent = _loc13_;
@@ -299,7 +297,7 @@ package hud
             {
                this.m_view.prompt_mc.desc_txt.visible = true;
                this.m_view.prompt_mc.label_txt.visible = true;
-               if(_loc19_ != this.m_sDescriptionCurrent || !descWasVisible)
+               if(_loc19_ != this.m_sDescriptionCurrent)
                {
                   this.m_view.prompt_mc.desc_txt.htmlText = _loc19_;
                   this.m_sDescriptionCurrent = _loc19_;
@@ -312,12 +310,20 @@ package hud
                this.m_view.prompt_mc.desc_txt.visible = false;
                this.m_view.prompt_mc.desc_txt.text = "";
                this.m_sDescriptionCurrent = "";
-               this.m_view.prompt_mc.label_txt.visible = true;
-               this.m_view.prompt_mc.label_txt.y = _loc14_.yOffsetLabelSolo;
-               if(_loc19_ != this.m_sLabelCurrent || !labelWasVisible)
+               this.m_view.prompt_mc.label_txt.visible = !hideTop;
+               if(this.m_view.prompt_mc.label_txt.visible)
                {
-                  this.m_view.prompt_mc.label_txt.htmlText = _loc19_;
-                  this.m_sLabelCurrent = _loc19_;
+                  this.m_view.prompt_mc.label_txt.y = _loc14_.yOffsetLabelSolo;
+                  if(_loc19_ != this.m_sLabelCurrent)
+                  {
+                     this.m_view.prompt_mc.label_txt.htmlText = _loc19_;
+                     this.m_sLabelCurrent = _loc19_;
+                  }
+               }
+               else
+               {
+                  this.m_view.prompt_mc.label_txt.text = "";
+                  this.m_sLabelCurrent = "";
                }
             }
          }
@@ -326,12 +332,20 @@ package hud
             this.m_view.prompt_mc.desc_txt.visible = false;
             this.m_view.prompt_mc.desc_txt.text = "";
             this.m_sDescriptionCurrent = "";
-            this.m_view.prompt_mc.label_txt.visible = true;
-            this.m_view.prompt_mc.label_txt.y = _loc14_.yOffsetLabelSolo;
-            if(this.m_view.prompt_mc.label_txt.visible && !labelWasVisible && _loc13_ != this.m_sLabelCurrent)
+            this.m_view.prompt_mc.label_txt.visible = !(hideTop || hideEverything);
+            if(this.m_view.prompt_mc.label_txt.visible)
             {
-               this.m_view.prompt_mc.label_txt.htmlText = _loc13_;
-               this.m_sLabelCurrent = _loc13_;
+               this.m_view.prompt_mc.label_txt.y = _loc14_.yOffsetLabelSolo;
+               if(_loc13_ != this.m_sLabelCurrent)
+               {
+                  this.m_view.prompt_mc.label_txt.htmlText = _loc13_;
+                  this.m_sLabelCurrent = _loc13_;
+               }
+            }
+            else
+            {
+               this.m_view.prompt_mc.label_txt.text = "";
+               this.m_sLabelCurrent = "";
             }
          }
          if(_loc12_)
@@ -364,8 +378,12 @@ package hud
          }
          if(hideTop || hidePrompt || hideEverything || hideBottom)
          {
+            this.m_view.prompt_mc.label_txt.visible = false;
+            this.m_view.prompt_mc.label_txt.text = "";
+            this.m_sLabelCurrent = "";
             this.m_view.prompt_mc.desc_txt.visible = false;
             this.m_view.prompt_mc.desc_txt.text = "";
+            this.m_sDescriptionCurrent = "";
          }
       }
       

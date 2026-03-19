@@ -22,6 +22,8 @@ package hud
       
       private static const LEGALSTATE_ILLEGAL:int = 2;
       
+      private static const ILLEGAL_WEAPON_TINT:uint = 13382400;
+      
       private static const PX_BLUR:Number = 4;
       
       private var m_view:WeaponView;
@@ -225,6 +227,7 @@ package hud
                   this.m_primaryLegalState = LEGALSTATE_CLEAR;
                }
                this.updatePrimaryImageVisibility(_loc9_,this.m_primaryLegalState);
+               this.applyWeaponLegalTint(this.m_view.imageHolderPri_mc,this.m_primaryLegalState);
                if(this.m_primaryLegalState != this.m_previousPrimaryLegalState || this.m_previousIsPrimaryHolsteredOnBack != _loc9_)
                {
                   this.setStateIcon(this.m_view.iconPri_mc,0.46,this.m_primaryLegalState,_loc9_ && ControlsMain.isVrModeActive());
@@ -242,6 +245,7 @@ package hud
             this.setStateIcon(this.m_view.iconPri_mc,0.46,LEGALSTATE_CLEAR);
             this.m_previousPrimaryLegalState = LEGALSTATE_CLEAR;
             this.m_previousIsPrimaryHolsteredOnBack = false;
+            this.applyWeaponLegalTint(this.m_view.imageHolderPri_mc,LEGALSTATE_CLEAR);
             this.m_lastWeaponData.bHasItemToShow = false;
             this.m_finalWeaponWasDropped = true;
             this.m_primaryLoader.visible = false;
@@ -268,6 +272,7 @@ package hud
                {
                   this.m_secondaryLegalState = LEGALSTATE_CLEAR;
                }
+               this.applyWeaponLegalTint(this.m_view.imageHolderSec_mc,this.m_secondaryLegalState);
                this.setStateIcon(this.m_view.iconSec_mc,0.23,this.m_secondaryLegalState,ControlsMain.isVrModeActive());
                this.m_secondaryLoader.visible = true;
             }
@@ -277,12 +282,14 @@ package hud
             this.m_secondaryLoader.visible = false;
             this.setStateIcon(this.m_view.iconSec_mc,0.23,LEGALSTATE_CLEAR);
             this.m_secondaryLegalState = LEGALSTATE_CLEAR;
+            this.applyWeaponLegalTint(this.m_view.imageHolderSec_mc,LEGALSTATE_CLEAR);
             _loc3_.bHasItemToShow = false;
             this.m_secondaryIsShown = false;
          }
          else
          {
             this.m_secondaryLoader.visible = false;
+            this.applyWeaponLegalTint(this.m_view.imageHolderSec_mc,LEGALSTATE_CLEAR);
             _loc3_.bHasItemToShow = false;
             this.m_secondaryIsShown = false;
          }
@@ -579,7 +586,7 @@ package hud
          {
             if(param3 == LEGALSTATE_ILLEGAL)
             {
-               param1.gotoAndStop("visarmed");
+               return;
             }
             else
             {
@@ -622,6 +629,20 @@ package hud
             "scaleY":param2,
             "alpha":1
          },Animate.ExpoOut,this.pulsateStateIcon_StepA,param1,param2);
+      }
+      
+      private function applyWeaponLegalTint(param1:MovieClip, param2:int) : void
+      {
+         var _loc3_:Color = new Color();
+         if(param2 == LEGALSTATE_ILLEGAL)
+         {
+            _loc3_.setTint(ILLEGAL_WEAPON_TINT,1);
+         }
+         else
+         {
+            _loc3_.setTint(16777215,1);
+         }
+         param1.transform.colorTransform = _loc3_;
       }
       
       private function setHolsterEffect(param1:Boolean, param2:MovieClip) : void
