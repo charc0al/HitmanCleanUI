@@ -633,6 +633,8 @@ package hud
       
       private function applyWeaponLegalTint(param1:MovieClip, param2:int) : void
       {
+         var _loc4_:Array = null;
+         var _loc5_:GlowFilter = null;
          var _loc3_:Color = new Color();
          if(param2 == LEGALSTATE_ILLEGAL)
          {
@@ -643,6 +645,16 @@ package hud
             _loc3_.setTint(16777215,1);
          }
          param1.transform.colorTransform = _loc3_;
+         _loc4_ = param1.filters;
+         if(!(_loc4_ == null || _loc4_.length == 0))
+         {
+            _loc5_ = _loc4_[0] as GlowFilter;
+            if(_loc5_ != null)
+            {
+               _loc5_.color = param2 == LEGALSTATE_ILLEGAL ? ILLEGAL_WEAPON_TINT : 16777215;
+               param1.filters = _loc4_;
+            }
+         }
       }
       
       private function setHolsterEffect(param1:Boolean, param2:MovieClip) : void
@@ -664,7 +676,7 @@ package hud
             {
                _loc6_ = Math.max(1,this.m_fScaleAccum) * PX_BLUR;
                _loc7_ = new GlowFilter();
-               _loc7_.color = 16777215;
+               _loc7_.color = param2 == this.m_view.imageHolderPri_mc && this.m_primaryLegalState == LEGALSTATE_ILLEGAL || param2 == this.m_view.imageHolderSec_mc && this.m_secondaryLegalState == LEGALSTATE_ILLEGAL ? ILLEGAL_WEAPON_TINT : 16777215;
                _loc7_.blurX = _loc7_.blurY = _loc6_;
                _loc7_.knockout = true;
                _loc7_.strength = 20;
