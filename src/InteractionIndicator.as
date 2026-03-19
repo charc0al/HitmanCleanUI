@@ -235,6 +235,7 @@ package hud
          var labelWasVisible:Boolean = Boolean(this.m_view.prompt_mc.label_txt.visible);
          var descWasVisible:Boolean = Boolean(this.m_view.prompt_mc.desc_txt.visible);
          var _loc13_:String = param2 != null ? String(param2) : "";
+         var forceHideAllText:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "-" || _loc13_.charAt(0) == "_" || _loc13_.charAt(0) == "+" || _loc13_.charAt(0) == "=");
          var hideTop:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "-" || _loc13_.charAt(0) == "^" || _loc13_.charAt(0) == ",");
          var hideEverything:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "_" || _loc13_.charAt(0) == "+" || _loc13_.charAt(0) == "=");
          var hideBottom:Boolean = hideEverything || _loc13_.length > 0 && (_loc13_.charAt(0) == "$" || _loc13_.charAt(0) == "%");
@@ -362,10 +363,14 @@ package hud
             this.m_view.prompt_mc.label_txt.x = _loc15_;
             this.m_view.prompt_mc.desc_txt.x = _loc15_;
          }
-         if(hideTop || hidePrompt || hideEverything || hideBottom)
+         if(forceHideAllText)
          {
+            this.m_view.prompt_mc.label_txt.visible = false;
+            this.m_view.prompt_mc.label_txt.text = "";
+            this.m_sLabelCurrent = "";
             this.m_view.prompt_mc.desc_txt.visible = false;
             this.m_view.prompt_mc.desc_txt.text = "";
+            this.m_sDescriptionCurrent = "";
          }
       }
       
