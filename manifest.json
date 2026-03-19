@@ -29,7 +29,6 @@
 			"tooltip": "Minimalist HUD - Definitive edition for users who want to stay on the old patch since 3.240.1 breaks too much stuff. Includes Hide Exit Icon, don't check that option with this.",
 			"group": "HUD",
 			"type": "select",
-			"image": "smf/definitive.webp",
 			"contentFolders": ["content/minhud_charc0al_legacy"]
 		},
 		{
@@ -94,15 +93,6 @@
 			"contentFolders": ["content/phonefx"]
 		},
 		{
-			"name": "Minimal Instinct",
-			"tooltip": "No instinct filter, no outlines, more faint NPC highlights",
-			"group": "Other",
-			"type": "checkbox",
-			"image": "smf/instinct.webp",
-			"enabledByDefault": true,
-			"contentFolders": ["content/minimal_instinct"]
-		},
-		{
 			"name": "Hide Skeleton",
 			"tooltip": "Hides the cartoonish skeleton showing when people get electrocuted. Like HM2016",
 			"group": "Other",
@@ -112,12 +102,13 @@
 			"contentFolders": ["content/skeleton"]
 		},
 		{
-			"name": "Fix - stadia icons",
-			"tooltip": "Check this box ONLY IF you're not using Heritage UI AND have hide exit icon unchecked",
+			"name": "Minimal Instinct",
+			"tooltip": "No instinct filter, no outlines, more faint NPC highlights",
 			"group": "Other",
 			"type": "checkbox",
-			"enabledByDefault": false,
-			"contentFolders": ["content/heritagefix"]
+			"image": "smf/instinct.webp",
+			"enabledByDefault": true,
+			"contentFolders": ["content/minimal_instinct"]
 		},
 		{
 			"name": "Shotgun - Dot Crosshair",
@@ -128,9 +119,18 @@
 			"contentFolders": ["content/shotgun_dot"]
 		},
 		{
+			"name": "Fix - stadia icons",
+			"tooltip": "Check this box ONLY IF you're not using Heritage UI AND have hide exit icon unchecked",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": ["content/heritagefix"]
+		},
+		{
 			"name": "Vanilla - No changes",
 			"tooltip": "No changes to prompt text",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
+			"image": "smf/vanilla.webp",
 			"type": "select"
 		},
 		{
@@ -2232,7 +2232,7 @@
 			"tooltip": "My custom version which I play with, so obviously this option is the best. Somewhere between minimalist and bare bones. Just right.",
 			"group": "DEFINITIVE EDITION | Minimal Prompt Text",
 			"type": "select",
-			"image": "smf/chart.webp",
+			"image": "smf/prompt_charc0al.webp",
 			"localisationOverrides": {
 				"008C4B8D68BA3D1E": {
 					"english": {
