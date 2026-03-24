@@ -7,10 +7,7 @@
 			"SubEntityOperation": [
 				"b998ca13b5ac605b",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnTrue",
-						"Show"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnTrue", "Show"]
 				}
 			]
 		},
@@ -18,10 +15,7 @@
 			"SubEntityOperation": [
 				"b998ca13b5ac605b",
 				{
-					"RemoveAllEventConnectionsForTrigger": [
-						"OnFalse",
-						"Hide"
-					]
+					"RemoveAllEventConnectionsForTrigger": ["OnFalse", "Hide"]
 				}
 			]
 		}
