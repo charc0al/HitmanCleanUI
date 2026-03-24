@@ -4,34 +4,21 @@
 	"patch": [
 		{ "RemoveEntityByID": "6b95342804dea48f" },
 		{
-			"SubEntityOperation": [
-				"30cbfbb146a597b4",
-				{ "RemoveAllEventConnectionsForTrigger": ["Out", "Show"] }
-			]
+			"SubEntityOperation": ["30cbfbb146a597b4", { "RemoveAllEventConnectionsForTrigger": ["Out", "Show"] }]
 		},
 		{
 			"SubEntityOperation": [
 				"374c0d0d577a1c97",
 				{
-					"RemoveEventConnection": [
-						"OnFalse",
-						"Hide",
-						"6b95342804dea48f"
-					]
+					"RemoveEventConnection": ["OnFalse", "Hide", "6b95342804dea48f"]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"ddb9a11203e09c7e",
-				{ "RemoveAllInputCopyConnectionsForInput": "Show" }
-			]
+			"SubEntityOperation": ["ddb9a11203e09c7e", { "RemoveAllInputCopyConnectionsForInput": "Show" }]
 		},
 		{
-			"SubEntityOperation": [
-				"cafd9f6f1c5e5676",
-				{ "RemoveAllEventConnectionsForTrigger": ["Out", "Hide"] }
-			]
+			"SubEntityOperation": ["cafd9f6f1c5e5676", { "RemoveAllEventConnectionsForTrigger": ["Out", "Hide"] }]
 		}
 	],
 	"patchVersion": 6
