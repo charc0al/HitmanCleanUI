@@ -83,6 +83,14 @@
 			"contentFolders": ["content/supplier_icon"]
 		},
 		{
+			"name": "Hide Freelancer Crate Icon",
+			"tooltip": "Remove freelancer crate icon. Eventually I'll make figure out how to enable it in instinct but for now, this option removes it completely.",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/freelancer_stash"]
+		},
+		{
 			"name": "Hide Interaction Outline",
 			"tooltip": "Hides the white outline including around NPCs. In-game menu option only affects items.",
 			"group": "Other",
