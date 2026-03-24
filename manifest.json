@@ -75,6 +75,14 @@
 			"contentFolders": ["content/hide_passport"]
 		},
 		{
+			"name": "Hide Freelancer Supplier Icon",
+			"tooltip": "Remove freelancer supplier icon when not using instinct",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/supplier_icon"]
+		},
+		{
 			"name": "Hide Interaction Outline",
 			"tooltip": "Hides the white outline including around NPCs. In-game menu option only affects items.",
 			"group": "Other",
