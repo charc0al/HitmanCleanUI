@@ -2310,7 +2310,7 @@
 						"2072302537": "Drown",
 						"2091980654": "Use Lethal Poison",
 						"2214730067": "Release",
-						"2469694804": "Destroy Evidence",
+						"2469694804": "$Destroy Evidence",
 						"2475685382": "Dump",
 						"2574416600": "^Retrieve",
 						"2599135266": "$Poison",
@@ -2321,7 +2321,27 @@
 						"3878743332": "-Retrieve Weapon",
 						"3988840944": "-Place",
 						"4050649666": "^Swap",
-						"4243520597": "Use Emetic Poison"
+						"4243520597": "Use Emetic Poison",
+						"3017738067": "$Turn Off",
+						"3100411306": "$Turn On",
+						"159056260": "$Unlock",
+						"3716204958": "$Tamper",
+						"781781397": "Missing Key",
+						"1354329974": "^Need {0}",
+						"1248849117": "^Ring Bell",
+						"2575144850": "Puncture",
+						"1922426760": "Lower Fork",
+						"17472522080": "Lower Flag",
+						"867377630": "Raise Fork",
+						"1504481854": "Raise Flag",
+						"2346291527": "Push",
+						"3248629148": "Push Pin",
+						"2941233616": "$Loosen Valve",
+						"2133460148": "^Release",
+						"351249808": "$Gas Leak",
+						"3570668326": "$Oil Leak",
+						"2468488309": "$Puncture",
+						"2276631323": "Unlock (Key!)",
 					}
 				},
 				"001F0F3B7F11E788": {
@@ -2329,7 +2349,21 @@
 						"2477774452": "-Conceal",
 						"2500943082": "^Retrieve"
 					}
+				},
+				"00F5817876E691F1": {
+					"english": {
+						"1698695347": "Missing Item",
+						"1729746056": "Missing",
+						"3880361675": "×"
+					}
+				},
+				"00749106596AFD39": {
+					"english": {
+						"1904239696": "$Start Mission",
+						"3094776970": "Travel To Destination",
+					}
 				}
+				
 			}
 		}
 	]
