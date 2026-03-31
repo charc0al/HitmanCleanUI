@@ -87,7 +87,8 @@ package hud
       private function setLabelBold(param1:Boolean) : void
       {
          var _loc2_:Object = MenuConstants.InteractionIndicatorFontSpecs[this.m_nFontSizeCurrent];
-         MenuUtils.setupText(this.m_view.prompt_mc.label_txt,"",_loc2_.fontSizeLabel,param1 ? MenuConstants.FONT_TYPE_BOLD : MenuConstants.FONT_TYPE_NORMAL,MenuConstants.FontColorWhite);
+         var _loc3_:String = this.m_view.prompt_mc.label_txt.htmlText;
+         MenuUtils.setupText(this.m_view.prompt_mc.label_txt,_loc3_,_loc2_.fontSizeLabel,param1 ? MenuConstants.FONT_TYPE_BOLD : MenuConstants.FONT_TYPE_NORMAL,MenuConstants.FontColorWhite);
       }
       
       public function onSetData(param1:Object) : void
