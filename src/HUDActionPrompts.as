@@ -165,7 +165,7 @@ package hud
          _loc6_.size = _loc4_.fontSizeDesc;
          _loc3_.prompt_mc.desc_txt.defaultTextFormat = _loc6_;
       }
-      
+
       public function set ShowExtraButtonsBelow(param1:Boolean) : void
       {
       }
@@ -387,6 +387,8 @@ package hud
          param1.prompt_mc.x = param3 ? -28 : 28;
          param1.prompt.alpha = _loc12_ ? 0.33 : 1;
          param1.icon.alpha = param1.prompt.alpha;
+         param1.prompt_mc.label_txt.alpha = param1.prompt.alpha;
+         param1.prompt_mc.desc_txt.alpha = param1.prompt.alpha;
          param1.prompt_mc.label_txt.visible = true;
          param1.prompt_mc.label_txt.htmlText = _loc6_;
          _loc8_ = StringUtil.trim(_loc8_);

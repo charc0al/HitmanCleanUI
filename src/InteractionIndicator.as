@@ -83,7 +83,7 @@ package hud
          MenuUtils.setupText(this.m_view.prompt_mc.label_txt,this.m_sLabelCurrent,_loc1_.fontSizeLabel,MenuConstants.FONT_TYPE_BOLD,MenuConstants.FontColorWhite);
          MenuUtils.setupText(this.m_view.prompt_mc.desc_txt,this.m_sDescriptionCurrent,_loc1_.fontSizeDesc,MenuConstants.FONT_TYPE_NORMAL,MenuConstants.FontColorWhite);
       }
-      
+
       public function onSetData(param1:Object) : void
       {
          var _loc2_:int = param1.m_nFontSize ? int(param1.m_nFontSize) : 0;
@@ -101,6 +101,8 @@ package hud
          {
             this.m_promptImage.alpha = param1.m_bNoActionAvailable ? 0.33 : 1;
             this.m_icon.alpha = this.m_promptImage.alpha;
+            this.m_view.prompt_mc.label_txt.alpha = this.m_promptImage.alpha;
+            this.m_view.prompt_mc.desc_txt.alpha = this.m_promptImage.alpha;
             this.m_holdAnimFrameOffset = Boolean(param1.m_bIllegal) || Boolean(param1.m_bIllegalItem) || Boolean(param1.m_bSuspiciousItem) ? 81 : 1;
             this.m_view.prompt_mc.x = param1.m_bIsTxtDirReversed ? -28 : 28;
             if(param1.m_eTypeId == TYPE_HOLD || param1.m_eTypeId == TYPE_HOLD_DOWN)

@@ -2801,7 +2801,8 @@
 						"3667079457": "^Pick Up",
 						"3704432103": "Attack",
 						"3935942020": "-Climb Through",
-						"4067482698": "-Pull"
+						"4067482698": "-Pull",
+						"2554645010": "^Need {0}"
 					},
 					"japanese": {
 						"88301328": "-押す",
@@ -3201,7 +3202,12 @@
 						"3988840944": "-Place",
 						"4050649666": "^Swap",
 						"4243520597": "Use Emetic Poison",
-						"17472522080": "Lower Flag"
+						"17472522080": "Lower Flag",
+						"3046316998": "Break Mounting",
+						"4284833297": "$Loosen Mounting",
+						"702986323": "^Need poison",
+						"781781397": "^Need Key",
+						"969156469": "^Need Wrench"
 					},
 					"japanese": {
 						"40710893": "立ち去る",
@@ -3687,6 +3693,11 @@
 						"3695877882": "^Completa una campaña para desbloquearlo",
 						"3748007860": "^No se ha fijado ningún destino",
 						"4032494691": "^Buscar"
+					}
+				},
+				"00212D5C62DFFC1F": {
+					"english": {
+						"2202956759": "^Need Keycard"
 					}
 				}
 			}
