@@ -83,6 +83,12 @@ package hud
          MenuUtils.setupText(this.m_view.prompt_mc.label_txt,this.m_sLabelCurrent,_loc1_.fontSizeLabel,MenuConstants.FONT_TYPE_BOLD,MenuConstants.FontColorWhite);
          MenuUtils.setupText(this.m_view.prompt_mc.desc_txt,this.m_sDescriptionCurrent,_loc1_.fontSizeDesc,MenuConstants.FONT_TYPE_NORMAL,MenuConstants.FontColorWhite);
       }
+
+      private function setLabelBold(param1:Boolean) : void
+      {
+         var _loc2_:Object = MenuConstants.InteractionIndicatorFontSpecs[this.m_nFontSizeCurrent];
+         MenuUtils.setupText(this.m_view.prompt_mc.label_txt,"",_loc2_.fontSizeLabel,param1 ? MenuConstants.FONT_TYPE_BOLD : MenuConstants.FONT_TYPE_NORMAL,MenuConstants.FontColorWhite);
+      }
       
       public function onSetData(param1:Object) : void
       {
@@ -211,6 +217,7 @@ package hud
          this.m_view.prompt_mc.label_txt.autoSize = param9 ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT;
          this.m_view.prompt_mc.desc_txt.autoSize = param9 ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT;
          var _loc20_:uint = (param6 || param7) && !param12 ? ILLEGAL_ACTION_TEXT_COLOR : 16777215;
+         this.setLabelBold(!param12);
          this.m_view.prompt_mc.label_txt.textColor = _loc20_;
          this.m_view.prompt_mc.desc_txt.textColor = _loc20_;
          this.m_promptImage.platform = ControlsMain.getControllerType();
