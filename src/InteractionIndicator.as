@@ -274,7 +274,7 @@ package hud
             }
          }
          var _loc14_:Object = MenuConstants.InteractionIndicatorFontSpecs[this.m_nFontSizeCurrent];
-         if(!hideBottom && (Boolean(param3) && param3.length > 0))
+         if(Boolean(param3) && param3.length > 0)
          {
             _loc19_ = param3 != null ? String(param3) : "";
             var descC:String = _loc19_.length > 0 ? _loc19_.charAt(0) : "";
@@ -324,6 +324,14 @@ package hud
                   this.m_view.prompt_mc.label_txt.htmlText = _loc19_;
                   this.m_sLabelCurrent = _loc19_;
                }
+            }
+            if(hideBottom && !descHideTop)
+            {
+               this.m_view.prompt_mc.desc_txt.visible = false;
+               this.m_view.prompt_mc.desc_txt.text = "";
+               this.m_sDescriptionCurrent = "";
+               this.m_view.prompt_mc.label_txt.visible = true;
+               this.m_view.prompt_mc.label_txt.y = _loc14_.yOffsetLabelSolo;
             }
          }
          else
