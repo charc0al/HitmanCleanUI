@@ -166,14 +166,6 @@ package hud
          _loc3_.prompt_mc.desc_txt.defaultTextFormat = _loc6_;
       }
 
-      private function setLabelBold(param1:MovieClip, param2:Boolean) : void
-      {
-         var _loc3_:int = this.m_buttonClips.indexOf(param1);
-         var _loc4_:int = _loc3_ >= 0 ? this.m_buttonFontSize[_loc3_] : MenuConstants.INTERACTIONPROMPTSIZE_DEFAULT;
-         var _loc5_:Object = MenuConstants.InteractionIndicatorFontSpecs[_loc4_];
-         MenuUtils.setupText(param1.prompt_mc.label_txt,"",_loc5_.fontSizeLabel,param2 ? MenuConstants.FONT_TYPE_BOLD : MenuConstants.FONT_TYPE_NORMAL,MenuConstants.FontColorWhite);
-      }
-      
       public function set ShowExtraButtonsBelow(param1:Boolean) : void
       {
       }
@@ -389,13 +381,14 @@ package hud
          var _loc16_:Object = MenuConstants.InteractionIndicatorFontSpecs[param2.m_nFontSize ? param2.m_nFontSize : MenuConstants.INTERACTIONPROMPTSIZE_DEFAULT];
          var _loc17_:int = _loc9_ || _loc10_ ? 81 : 1;
          var _loc21_:uint = uint(_loc9_ && !_loc12_ ? this.ILLEGAL_ACTION_TEXT_COLOR : 16777215);
-         this.setLabelBold(param1,!_loc12_);
          param1.prompt_mc.label_txt.textColor = _loc21_;
          param1.prompt_mc.desc_txt.textColor = _loc21_;
          param1.illegalIcon_mc.visible = false;
          param1.prompt_mc.x = param3 ? -28 : 28;
          param1.prompt.alpha = _loc12_ ? 0.33 : 1;
          param1.icon.alpha = param1.prompt.alpha;
+         param1.prompt_mc.label_txt.alpha = param1.prompt.alpha;
+         param1.prompt_mc.desc_txt.alpha = param1.prompt.alpha;
          param1.prompt_mc.label_txt.visible = true;
          param1.prompt_mc.label_txt.htmlText = _loc6_;
          _loc8_ = StringUtil.trim(_loc8_);

@@ -84,13 +84,6 @@ package hud
          MenuUtils.setupText(this.m_view.prompt_mc.desc_txt,this.m_sDescriptionCurrent,_loc1_.fontSizeDesc,MenuConstants.FONT_TYPE_NORMAL,MenuConstants.FontColorWhite);
       }
 
-      private function setLabelBold(param1:Boolean) : void
-      {
-         var _loc2_:Object = MenuConstants.InteractionIndicatorFontSpecs[this.m_nFontSizeCurrent];
-         var _loc3_:String = this.m_view.prompt_mc.label_txt.htmlText;
-         MenuUtils.setupText(this.m_view.prompt_mc.label_txt,_loc3_,_loc2_.fontSizeLabel,param1 ? MenuConstants.FONT_TYPE_BOLD : MenuConstants.FONT_TYPE_NORMAL,MenuConstants.FontColorWhite);
-      }
-      
       public function onSetData(param1:Object) : void
       {
          var _loc2_:int = param1.m_nFontSize ? int(param1.m_nFontSize) : 0;
@@ -220,7 +213,6 @@ package hud
          this.m_view.prompt_mc.label_txt.autoSize = param9 ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT;
          this.m_view.prompt_mc.desc_txt.autoSize = param9 ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT;
          var _loc20_:uint = (param6 || param7) && !param12 ? ILLEGAL_ACTION_TEXT_COLOR : 16777215;
-         this.setLabelBold(!param12);
          this.m_view.prompt_mc.label_txt.textColor = _loc20_;
          this.m_view.prompt_mc.desc_txt.textColor = _loc20_;
          this.m_promptImage.platform = ControlsMain.getControllerType();
@@ -280,7 +272,6 @@ package hud
             if(_loc13_ != this.m_sLabelCurrent || !labelWasVisible)
             {
                this.m_view.prompt_mc.label_txt.htmlText = _loc13_;
-               this.setLabelBold(!param12);
                this.m_sLabelCurrent = _loc13_;
             }
          }
@@ -333,7 +324,6 @@ package hud
                if(_loc19_ != this.m_sLabelCurrent || !labelWasVisible)
                {
                   this.m_view.prompt_mc.label_txt.htmlText = _loc19_;
-                  this.setLabelBold(!param12);
                   this.m_sLabelCurrent = _loc19_;
                }
             }
@@ -356,7 +346,6 @@ package hud
             if(this.m_view.prompt_mc.label_txt.visible && !labelWasVisible && _loc13_ != this.m_sLabelCurrent)
             {
                this.m_view.prompt_mc.label_txt.htmlText = _loc13_;
-               this.setLabelBold(!param12);
                this.m_sLabelCurrent = _loc13_;
             }
          }
