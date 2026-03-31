@@ -4,9 +4,14 @@
 	"id": "Charc0al.MinimalistUI",
 	"name": "Minimalist HUD",
 	"description": "Removes unnecessary HUD clutter that can't be disabled via the menu.",
-	"authors": ["Charc0al", "Burn, the witch"],
+	"authors": [
+		"Charc0al",
+		"Burn, the witch"
+	],
 	"frameworkVersion": "2.33.26",
-	"loadAfter": ["BurnTheWitch.HeritageUI"],
+	"loadAfter": [
+		"BurnTheWitch.HeritageUI"
+	],
 	"options": [
 		{
 			"name": "Vanilla (no changes)",
@@ -17,19 +22,14 @@
 		},
 		{
 			"name": "Minimalist | DEFINITIVE EDITION",
-			"tooltip": "Minimalist HUD - The definitive edition of this mod. All the base changes of this mod built on top of Heritage UI hud. Dot crosshair no transparency. I've changed some of the freelancer icons back to green, the SA indicator his hidden when green, and the best part - customizeable action prompts. You can edit the manifest.json to decide for a bunch of different prompts if you want to hide the button, the top text, or both from the interaction hud.",
+			"tooltip": "Minimalist HUD - This is the HUD file which contains all the main mod changes for this mod, as well as enabling you to use customized button prompts. See mod page for details on both.",
 			"group": "HUD",
 			"type": "select",
 			"enabledByDefault": true,
 			"image": "smf/definitive.webp",
-			"contentFolders": ["content/minhud_charc0al"]
-		},
-		{
-			"name": "Minimalist | v3.230 (old version)",
-			"tooltip": "Minimalist HUD - Definitive edition for users who want to stay on the old patch since 3.240.1 breaks too much stuff. Includes Hide Exit Icon, don't check that option with this.",
-			"group": "HUD",
-			"type": "select",
-			"contentFolders": ["content/minhud_charc0al_legacy"]
+			"contentFolders": [
+				"content/minhud_charc0al"
+			]
 		},
 		{
 			"name": "Throw | Dot Reticle",
@@ -38,7 +38,9 @@
 			"type": "checkbox",
 			"image": "smf/throw.webp",
 			"enabledByDefault": true,
-			"contentFolders": ["content/throw_target"]
+			"contentFolders": [
+				"content/throw_target"
+			]
 		},
 		{
 			"name": "Throw | Hide Arc",
@@ -47,7 +49,9 @@
 			"type": "checkbox",
 			"image": "smf/throwarc.webp",
 			"enabledByDefault": true,
-			"contentFolders": ["content/throw_arc"]
+			"contentFolders": [
+				"content/throw_arc"
+			]
 		},
 		{
 			"name": "Throw | Hide Impact",
@@ -55,7 +59,9 @@
 			"group": "Throw",
 			"type": "checkbox",
 			"image": "smf/throwimpact.webp",
-			"contentFolders": ["content/throw_impact"]
+			"contentFolders": [
+				"content/throw_impact"
+			]
 		},
 		{
 			"name": "Remove Exit Icon from HUD",
@@ -64,7 +70,9 @@
 			"type": "checkbox",
 			"image": "smf/exit.webp",
 			"enabledByDefault": true,
-			"contentFolders": ["content/hide_exit_icon"]
+			"contentFolders": [
+				"content/hide_exit_icon"
+			]
 		},
 		{
 			"name": "Hide Passport icon (Safehouse)",
@@ -72,7 +80,9 @@
 			"group": "Other",
 			"type": "checkbox",
 			"enabledByDefault": false,
-			"contentFolders": ["content/hide_passport"]
+			"contentFolders": [
+				"content/hide_passport"
+			]
 		},
 		{
 			"name": "Hide Freelancer Supplier Icon",
@@ -80,7 +90,9 @@
 			"group": "Other",
 			"type": "checkbox",
 			"enabledByDefault": true,
-			"contentFolders": ["content/supplier_icon"]
+			"contentFolders": [
+				"content/supplier_icon"
+			]
 		},
 		{
 			"name": "Hide Freelancer Crate Icon",
@@ -88,7 +100,9 @@
 			"group": "Other",
 			"type": "checkbox",
 			"enabledByDefault": true,
-			"contentFolders": ["content/freelancer_stash"]
+			"contentFolders": [
+				"content/freelancer_stash"
+			]
 		},
 		{
 			"name": "Hide Interaction Outline",
@@ -97,7 +111,9 @@
 			"type": "checkbox",
 			"enabledByDefault": true,
 			"image": "smf/npc_interaction.webp",
-			"contentFolders": ["content/npc_interact"]
+			"contentFolders": [
+				"content/npc_interact"
+			]
 		},
 		{
 			"name": "Hide Suspect Phone Fx",
@@ -106,7 +122,9 @@
 			"type": "checkbox",
 			"enabledByDefault": true,
 			"image": "smf/phonefx.webp",
-			"contentFolders": ["content/phonefx"]
+			"contentFolders": [
+				"content/phonefx"
+			]
 		},
 		{
 			"name": "Hide Skeleton",
@@ -115,7 +133,9 @@
 			"type": "checkbox",
 			"image": "smf/skeletor.webp",
 			"enabledByDefault": true,
-			"contentFolders": ["content/skeleton"]
+			"contentFolders": [
+				"content/skeleton"
+			]
 		},
 		{
 			"name": "Minimal Instinct",
@@ -124,7 +144,9 @@
 			"type": "checkbox",
 			"image": "smf/instinct.webp",
 			"enabledByDefault": true,
-			"contentFolders": ["content/minimal_instinct"]
+			"contentFolders": [
+				"content/minimal_instinct"
+			]
 		},
 		{
 			"name": "Shotgun - Dot Crosshair",
@@ -132,7 +154,9 @@
 			"group": "Other",
 			"type": "checkbox",
 			"enabledByDefault": false,
-			"contentFolders": ["content/shotgun_dot"]
+			"contentFolders": [
+				"content/shotgun_dot"
+			]
 		},
 		{
 			"name": "Fix - stadia icons",
@@ -140,7 +164,9 @@
 			"group": "Other",
 			"type": "checkbox",
 			"enabledByDefault": false,
-			"contentFolders": ["content/heritagefix"]
+			"contentFolders": [
+				"content/heritagefix"
+			]
 		},
 		{
 			"name": "Vanilla - No changes",
@@ -200,7 +226,8 @@
 						"3667079457": "^Pick Up",
 						"3704432103": "Attack",
 						"3935942020": "-Climb Through",
-						"4067482698": "Pull"
+						"4067482698": "Pull",
+						"2554645010": "^Use {0}"
 					},
 					"japanese": {
 						"88301328": "押す",
@@ -244,7 +271,8 @@
 						"3667079457": "^拾う",
 						"3704432103": "攻撃",
 						"3935942020": "-通り抜ける",
-						"4067482698": "引っ張る"
+						"4067482698": "引っ張る",
+						"2554645010": "^{0} が必要"
 					},
 					"spanish": {
 						"88301328": "$Empujar",
@@ -288,7 +316,8 @@
 						"3667079457": "^Coger",
 						"3704432103": "Atacar",
 						"3935942020": "-Atravesar",
-						"4067482698": "Tirar"
+						"4067482698": "Tirar",
+						"2554645010": "^{0} no disponible"
 					},
 					"french": {
 						"88301328": "$Pousser",
@@ -332,7 +361,8 @@
 						"3667079457": "^Prendre",
 						"3704432103": "Attaquer",
 						"3935942020": "-Passer à travers",
-						"4067482698": "Tirer"
+						"4067482698": "Tirer",
+						"2554645010": "^Manquant : {0}"
 					},
 					"german": {
 						"88301328": "$Schubsen",
@@ -376,7 +406,8 @@
 						"3667079457": "^Nehmen",
 						"3704432103": "Angreifen",
 						"3935942020": "-Durchklettern",
-						"4067482698": "Ziehen"
+						"4067482698": "Ziehen",
+						"2554645010": "^{0} fehlt"
 					},
 					"italian": {
 						"88301328": "$Spingere",
@@ -420,7 +451,8 @@
 						"3667079457": "^Raccogli",
 						"3704432103": "Attacca",
 						"3935942020": "-Attraversa",
-						"4067482698": "Tira"
+						"4067482698": "Tira",
+						"2554645010": "^{0} mancante"
 					},
 					"russian": {
 						"88301328": "$Толкнуть",
@@ -464,7 +496,8 @@
 						"3667079457": "^Взять",
 						"3704432103": "Атаковать",
 						"3935942020": "-Пролезть",
-						"4067482698": "Потянуть"
+						"4067482698": "Потянуть",
+						"2554645010": "^{0} отсутствует"
 					},
 					"chineseSimplified": {
 						"88301328": "$推",
@@ -508,7 +541,8 @@
 						"3667079457": "^拾取",
 						"3704432103": "攻击",
 						"3935942020": "-攀爬通过",
-						"4067482698": "拉"
+						"4067482698": "拉",
+						"2554645010": "^缺少{0}"
 					},
 					"chineseTraditional": {
 						"88301328": "$推",
@@ -552,7 +586,8 @@
 						"3667079457": "^拾取",
 						"3704432103": "攻擊",
 						"3935942020": "-爬過",
-						"4067482698": "拉動"
+						"4067482698": "拉動",
+						"2554645010": "^缺少{0}"
 					}
 				},
 				"0082FCF9BF0CA18E": {
@@ -568,10 +603,10 @@
 						"781781397": "Missing Key",
 						"867377630": "Raise Fork",
 						"885282319": "-Conceal item",
-						"965810984": "^Overflow",
+						"965810984": "$Overflow",
 						"1167109539": "Talk",
 						"1248849117": "^Ring Bell",
-						"1354329974": "^Need {0}",
+						"1354329974": "^Use {0}",
 						"1504481854": "Raise Flag",
 						"1922426760": "Lower Fork",
 						"2072302537": "Drown",
@@ -600,7 +635,11 @@
 						"3988840944": "Place",
 						"4050649666": "^Swap",
 						"4243520597": "Use Emetic Poison",
-						"17472522080": "Lower Flag"
+						"17472522080": "Lower Flag",
+						"3046316998": "Break Mounting",
+						"4284833297": "$Loosen Mounting",
+						"702986323": "^Use Poison",
+						"969156469": "^Use Wrench"
 					},
 					"japanese": {
 						"40710893": "立ち去る",
@@ -614,7 +653,7 @@
 						"781781397": "キーを所持していない",
 						"867377630": "フォークを上げる",
 						"885282319": "-隠す",
-						"965810984": "^溢れさせる",
+						"965810984": "$溢れさせる",
 						"1167109539": "話す",
 						"1248849117": "^ベルを鳴らす",
 						"1354329974": "^{0}を所持していない",
@@ -646,7 +685,11 @@
 						"3988840944": "置く",
 						"4050649666": "入れ替える",
 						"4243520597": "催吐毒を使用",
-						"17472522080": "旗を降ろす"
+						"17472522080": "旗を降ろす",
+						"3046316998": "土台を壊す",
+						"4284833297": "$土台を緩める",
+						"702986323": "^毒を所持していない",
+						"969156469": "^レンチを所持していない"
 					},
 					"french": {
 						"40710893": "Quitter",
@@ -660,7 +703,7 @@
 						"781781397": "Clé manquante",
 						"867377630": "Élever la fourche",
 						"885282319": "-Dissimuler l'objet",
-						"965810984": "^Déborder",
+						"965810984": "$Déborder",
 						"1167109539": "Parler",
 						"1248849117": "^Sonner la cloche",
 						"1354329974": "^Manquant : {0}",
@@ -692,7 +735,11 @@
 						"3988840944": "Placer",
 						"4050649666": "^Échanger",
 						"4243520597": "Utiliser poison émétique",
-						"17472522080": "Abaisser le drapeau"
+						"17472522080": "Abaisser le drapeau",
+						"3046316998": "Briser le socle",
+						"4284833297": "$Desserrer le socle",
+						"702986323": "^Poison manquant",
+						"969156469": "^Clé anglaise manquante"
 					},
 					"german": {
 						"40710893": "Verlassen",
@@ -706,7 +753,7 @@
 						"781781397": "Fehlender Schlüssel",
 						"867377630": "Gabel heben",
 						"885282319": "-Gegenstand verbergen",
-						"965810984": "^Überlaufen",
+						"965810984": "$Überlaufen",
 						"1167109539": "Reden",
 						"1248849117": "^Glocke läuten",
 						"1354329974": "^{0} fehlt",
@@ -738,7 +785,11 @@
 						"3988840944": "Platzieren",
 						"4050649666": "^Tauschen",
 						"4243520597": "Brechmittel verwenden",
-						"17472522080": "Flagge einholen"
+						"17472522080": "Flagge einholen",
+						"3046316998": "Befestigung zerstören",
+						"4284833297": "$Befestigung lockern",
+						"702986323": "^Gift fehlt",
+						"969156469": "^Schraubenschlüssel fehlt"
 					},
 					"italian": {
 						"40710893": "Lasciare",
@@ -752,7 +803,7 @@
 						"781781397": "Chiave mancante",
 						"867377630": "Alza la forca",
 						"885282319": "-Nascondere oggetto",
-						"965810984": "^Tracimare",
+						"965810984": "$Tracimare",
 						"1167109539": "Parlare",
 						"1248849117": "^Suona la campana",
 						"1354329974": "^{0} mancante",
@@ -784,7 +835,11 @@
 						"3988840944": "Posizionare",
 						"4050649666": "^Scambia",
 						"4243520597": "Usa veleno emetico",
-						"17472522080": "Abbassa la bandiera"
+						"17472522080": "Abbassa la bandiera",
+						"3046316998": "Rompi il supporto",
+						"4284833297": "$Allenta il supporto",
+						"702986323": "^Veleno mancante",
+						"969156469": "^Chiave inglese mancante"
 					},
 					"russian": {
 						"40710893": "Уйти",
@@ -798,7 +853,7 @@
 						"781781397": "Нет ключа",
 						"867377630": "Поднять вилку",
 						"885282319": "-Скрыть предмет",
-						"965810984": "^Переполнить",
+						"965810984": "$Переполнить",
 						"1167109539": "Говорить",
 						"1248849117": "^Позвонить",
 						"1354329974": "^{0} отсутствует",
@@ -830,7 +885,11 @@
 						"3988840944": "Поместить",
 						"4050649666": "^Обменять",
 						"4243520597": "Использовать рвотный яд",
-						"17472522080": "Опустить флаг"
+						"17472522080": "Опустить флаг",
+						"3046316998": "Сломать крепление",
+						"4284833297": "$Ослабить крепление",
+						"702986323": "^Яд отсутствует",
+						"969156469": "^Гаечный ключ отсутствует"
 					},
 					"chineseSimplified": {
 						"40710893": "离开",
@@ -844,7 +903,7 @@
 						"781781397": "缺少钥匙",
 						"867377630": "举起餐叉",
 						"885282319": "-隐藏物品",
-						"965810984": "^溢出",
+						"965810984": "$溢出",
 						"1167109539": "交谈",
 						"1248849117": "^响铃",
 						"1354329974": "^缺少{0}",
@@ -876,7 +935,11 @@
 						"3988840944": "放置",
 						"4050649666": "^交换",
 						"4243520597": "使用催吐毒药",
-						"17472522080": "放下旗帜"
+						"17472522080": "放下旗帜",
+						"3046316998": "破坏固定架",
+						"4284833297": "$拧松固定架",
+						"702986323": "^需要毒药",
+						"969156469": "^缺少扳手"
 					},
 					"chineseTraditional": {
 						"40710893": "離開",
@@ -890,7 +953,7 @@
 						"781781397": "缺少鑰匙",
 						"867377630": "舉起叉子",
 						"885282319": "-隱藏物品",
-						"965810984": "^溢出",
+						"965810984": "$溢出",
 						"1167109539": "交談",
 						"1248849117": "^響起鈴聲",
 						"1354329974": "^缺少{0}",
@@ -922,7 +985,11 @@
 						"3988840944": "放置",
 						"4050649666": "^交換",
 						"4243520597": "使用催吐毒藥",
-						"17472522080": "降旗"
+						"17472522080": "降旗",
+						"3046316998": "破壞裝置",
+						"4284833297": "$鬆動裝置",
+						"702986323": "^缺少的毒藥",
+						"969156469": "^缺少扳手"
 					},
 					"spanish": {
 						"40710893": "Salir",
@@ -936,7 +1003,7 @@
 						"781781397": "Llave no disponible",
 						"867377630": "Subir montacargas",
 						"885282319": "-Ocultar objeto",
-						"965810984": "^Desbordar",
+						"965810984": "$Desbordar",
 						"1167109539": "Hablar",
 						"1248849117": "^Tocar el timbre",
 						"1354329974": "^Necesitas {0}",
@@ -968,7 +1035,11 @@
 						"3988840944": "Colocar",
 						"4050649666": "^Cambiar",
 						"4243520597": "Usar veneno emético",
-						"17472522080": "Bajar bandera"
+						"17472522080": "Bajar bandera",
+						"3046316998": "Romper soporte",
+						"4284833297": "$Aflojar soporte",
+						"702986323": "^Falta el veneno",
+						"969156469": "^Llave inglesa no disponible"
 					}
 				},
 				"001F0F3B7F11E788": {
@@ -1139,7 +1210,8 @@
 						"3935942020": ".Climb Through",
 						"3968273918": ".Place",
 						"4067482698": ".Pull",
-						"4286021879": ".Open"
+						"4286021879": ".Open",
+						"2554645010": ",Use {0}"
 					},
 					"japanese": {
 						"88301328": "%押す",
@@ -1187,7 +1259,8 @@
 						"3935942020": ".通り抜ける",
 						"3968273918": ".置く",
 						"4067482698": ".引っ張る",
-						"4286021879": ".開ける"
+						"4286021879": ".開ける",
+						"2554645010": ",{0} が必要"
 					},
 					"french": {
 						"88301328": "%Pousser",
@@ -1235,7 +1308,8 @@
 						"3935942020": ".Passer à travers",
 						"3968273918": ".Placer",
 						"4067482698": ".Tirer",
-						"4286021879": ".Ouvrir"
+						"4286021879": ".Ouvrir",
+						"2554645010": ",Manquant : {0}"
 					},
 					"german": {
 						"88301328": "%Schubsen",
@@ -1283,7 +1357,8 @@
 						"3935942020": ".Durchklettern",
 						"3968273918": ".Platzieren",
 						"4067482698": ".Ziehen",
-						"4286021879": ".Öffnen"
+						"4286021879": ".Öffnen",
+						"2554645010": ",{0} fehlt"
 					},
 					"italian": {
 						"88301328": "%Spingere",
@@ -1331,7 +1406,8 @@
 						"3935942020": ".Attraversa",
 						"3968273918": ".Posizionare",
 						"4067482698": ".Tira",
-						"4286021879": ".Apri"
+						"4286021879": ".Apri",
+						"2554645010": ",{0} mancante"
 					},
 					"russian": {
 						"88301328": "%Толкнуть",
@@ -1379,7 +1455,8 @@
 						"3935942020": ".Пролезть",
 						"3968273918": ".Поместить",
 						"4067482698": ".Потянуть",
-						"4286021879": ".Открыть"
+						"4286021879": ".Открыть",
+						"2554645010": ",{0} отсутствует"
 					},
 					"chineseSimplified": {
 						"88301328": "%推",
@@ -1427,7 +1504,8 @@
 						"3935942020": ".攀爬通过",
 						"3968273918": ".放置",
 						"4067482698": ".拉",
-						"4286021879": ".打开"
+						"4286021879": ".打开",
+						"2554645010": ",缺少{0}"
 					},
 					"chineseTraditional": {
 						"88301328": "%推",
@@ -1475,7 +1553,8 @@
 						"3935942020": ".爬過",
 						"3968273918": ".放置",
 						"4067482698": ".拉動",
-						"4286021879": ".打開"
+						"4286021879": ".打開",
+						"2554645010": ",缺少{0}"
 					},
 					"spanish": {
 						"88301328": "%Empujar",
@@ -1523,7 +1602,8 @@
 						"3935942020": ".Atravesar",
 						"3968273918": ".Colocar",
 						"4067482698": ".Tirar",
-						"4286021879": ".Abrir"
+						"4286021879": ".Abrir",
+						"2554645010": ",{0} no disponible"
 					}
 				},
 				"0082FCF9BF0CA18E": {
@@ -1537,7 +1617,7 @@
 						"548237907": ".Enter",
 						"585323054": ".Activate",
 						"885282319": ".Conceal item",
-						"965810984": ".Overflow",
+						"965810984": "%Overflow",
 						"1167109539": ".Talk",
 						"1739448726": ".Break Lock",
 						"1888683143": ".Open",
@@ -1549,16 +1629,37 @@
 						"2475685382": ".Dump",
 						"2574416600": ",Retrieve",
 						"2599135266": "%Poison",
-						"3017738067": ".Turn Off",
-						"3100411306": ".Turn On",
-						"3248237727": ".Disable Recorder",
+						"3017738067": "%Turn Off",
+						"3100411306": "%Turn On",
+						"3248237727": ",Disable Recorder",
 						"3251754523": ".Use Sedative Poison",
 						"3302935930": ".Blend",
 						"3431879619": ".Cannot Blend In",
 						"3878743332": ".Retrieve Weapon",
 						"3988840944": ".Place",
 						"4050649666": ".Swap",
-						"4243520597": ".Use Emetic Poison"
+						"4243520597": ".Use Emetic Poison",
+						"351249808": "%Gas Leak",
+						"781781397": "Missing Key",
+						"867377630": "Raise Fork",
+						"1248849117": ",Ring Bell",
+						"1354329974": ",Use {0}",
+						"1504481854": "Raise Flag",
+						"1922426760": "Lower Fork",
+						"2133460148": ",Release",
+						"2276631323": "Unlock (Key)",
+						"2346291527": "Push",
+						"2468488309": "%Puncture",
+						"2575144850": "Puncture",
+						"2941233616": "%Loosen Valve",
+						"3248629148": "Push Pin",
+						"3570668326": "%Oil Leak",
+						"3716204958": "%Tamper",
+						"17472522080": "Lower Flag",
+						"3046316998": "Break Mounting",
+						"4284833297": "%Loosen Mounting",
+						"702986323": ",Use Poison",
+						"969156469": ",Use Wrench"
 					},
 					"japanese": {
 						"40710893": ".立ち去る",
@@ -1591,7 +1692,28 @@
 						"3878743332": ".武器を回収",
 						"3988840944": ".置く",
 						"4050649666": ".入れ替える",
-						"4243520597": ".催吐毒を使用"
+						"4243520597": ".催吐毒を使用",
+						"351249808": "%ガス漏れを起こす",
+						"781781397": "キーを所持していない",
+						"867377630": "フォークを上げる",
+						"1248849117": ",ベルを鳴らす",
+						"1354329974": ",{0}を所持していない",
+						"1504481854": "旗を揚げる",
+						"1922426760": "フォークを下げる",
+						"2133460148": ",放つ",
+						"2276631323": "解除する（鍵を使用）",
+						"2346291527": "押す",
+						"2468488309": "%水漏れを起こす",
+						"2575144850": "穴をあける",
+						"2941233616": "%バルブを緩める",
+						"3248629148": "ピンを押す",
+						"3570668326": "%オイル漏れを起こす",
+						"3716204958": "%改ざんする",
+						"17472522080": "旗を降ろす",
+						"3046316998": "土台を壊す",
+						"4284833297": "%土台を緩める",
+						"702986323": ",毒を所持していない",
+						"969156469": ",レンチを所持していない"
 					},
 					"french": {
 						"40710893": ".Quitter",
@@ -1617,7 +1739,31 @@
 						"3878743332": ".Récupérer l'arme",
 						"3988840944": ".Placer",
 						"4050649666": ".Échanger",
-						"4243520597": ".Utiliser poison émétique"
+						"4243520597": ".Utiliser poison émétique",
+						"159056260": "%Déverrouiller",
+						"351249808": "%Déclencher une fuite de gaz",
+						"781781397": "Clé manquante",
+						"867377630": "Élever la fourche",
+						"1248849117": ",Sonner la cloche",
+						"1354329974": ",Manquant : {0}",
+						"1504481854": "Hisser le drapeau",
+						"1922426760": "Abaisser la fourche",
+						"2133460148": ",Relâcher",
+						"2276631323": "Déverrouiller (clé)",
+						"2346291527": "Pousser",
+						"2468488309": "%Créer une fuite d'eau",
+						"2575144850": "Percer",
+						"2941233616": "%Desserrer la soupape",
+						"3017738067": "%Éteindre",
+						"3100411306": "%Activer",
+						"3248629148": "Épingler",
+						"3570668326": "%Déclencher une fuite d'huile",
+						"3716204958": "%Modifier",
+						"17472522080": "Abaisser le drapeau",
+						"3046316998": "Briser le socle",
+						"4284833297": "%Desserrer le socle",
+						"702986323": ",Poison manquant",
+						"969156469": ",Clé anglaise manquante"
 					},
 					"german": {
 						"40710893": ".Verlassen",
@@ -1643,7 +1789,31 @@
 						"3878743332": ".Waffe bergen",
 						"3988840944": ".Platzieren",
 						"4050649666": ".Tauschen",
-						"4243520597": ".Brechmittel verwenden"
+						"4243520597": ".Brechmittel verwenden",
+						"159056260": "%Öffnen",
+						"351249808": "%Gasleck starten",
+						"781781397": "Fehlender Schlüssel",
+						"867377630": "Gabel heben",
+						"1248849117": ",Glocke läuten",
+						"1354329974": ",{0} fehlt",
+						"1504481854": "Flagge hissen",
+						"1922426760": "Gabel senken",
+						"2133460148": ",Auslösen",
+						"2276631323": "Öffnen (Schlüssel)",
+						"2346291527": "Schubsen",
+						"2468488309": "%Wasserleck verursachen",
+						"2575144850": "Durchbohren",
+						"2941233616": "%Ventil öffnen",
+						"3017738067": "%Ausschalten",
+						"3100411306": "%Einschalten",
+						"3248629148": "Stütze drücken",
+						"3570668326": "%Ölleck verursachen",
+						"3716204958": "%Manipulieren",
+						"17472522080": "Flagge einholen",
+						"3046316998": "Befestigung zerstören",
+						"4284833297": "%Befestigung lockern",
+						"702986323": ",Gift fehlt",
+						"969156469": ",Schraubenschlüssel fehlt"
 					},
 					"italian": {
 						"40710893": ".Lasciare",
@@ -1669,7 +1839,31 @@
 						"3878743332": ".Recupera arma",
 						"3988840944": ".Posizionare",
 						"4050649666": ".Scambia",
-						"4243520597": ".Usa veleno emetico"
+						"4243520597": ".Usa veleno emetico",
+						"159056260": "%Apri",
+						"351249808": "%Attiva il rilascio di gas",
+						"781781397": "Chiave mancante",
+						"867377630": "Alza la forca",
+						"1248849117": ",Suona la campana",
+						"1354329974": ",{0} mancante",
+						"1504481854": "Alza la bandiera",
+						"1922426760": "Abbassa la forca",
+						"2133460148": ",Rilascia",
+						"2276631323": "Apri (chiave)",
+						"2346291527": "Spingi",
+						"2468488309": "%Genera una fuoriuscita d'acqua",
+						"2575144850": "Pungi",
+						"2941233616": "%Allenta la valvola",
+						"3017738067": "%Disattiva",
+						"3100411306": "%Attiva",
+						"3248629148": "Spingi il sostegno",
+						"3570668326": "%Genera una fuoriuscita d'olio",
+						"3716204958": "%Manometti",
+						"17472522080": "Abbassa la bandiera",
+						"3046316998": "Rompi il supporto",
+						"4284833297": "%Allenta il supporto",
+						"702986323": ",Veleno mancante",
+						"969156469": ",Chiave inglese mancante"
 					},
 					"russian": {
 						"40710893": ".Уйти",
@@ -1695,7 +1889,31 @@
 						"3878743332": ".Забрать оружие",
 						"3988840944": ".Поместить",
 						"4050649666": ".Обменять",
-						"4243520597": ".Использовать рвотный яд"
+						"4243520597": ".Использовать рвотный яд",
+						"159056260": "%Отпереть",
+						"351249808": "%Устроить утечку газа",
+						"781781397": "Нет ключа",
+						"867377630": "Поднять вилку",
+						"1248849117": ",Позвонить",
+						"1354329974": ",{0} отсутствует",
+						"1504481854": "Поднять флаг",
+						"1922426760": "Опустить вилку",
+						"2133460148": ",Отпустить",
+						"2276631323": "Открыть (ключом)",
+						"2346291527": "Толкнуть",
+						"2468488309": "%Создать утечку воды",
+						"2575144850": "Проколоть",
+						"2941233616": "%Ослабить вентиль",
+						"3017738067": "%Отключить",
+						"3100411306": "%Включить",
+						"3248629148": "Надавить на подпорку",
+						"3570668326": "%Создать утечку масла",
+						"3716204958": "%Манипулировать",
+						"17472522080": "Опустить флаг",
+						"3046316998": "Сломать крепление",
+						"4284833297": "%Ослабить крепление",
+						"702986323": ",Яд отсутствует",
+						"969156469": ",Гаечный ключ отсутствует"
 					},
 					"chineseSimplified": {
 						"40710893": ".离开",
@@ -1721,7 +1939,31 @@
 						"3878743332": ".取回武器",
 						"3988840944": ".放置",
 						"4050649666": ".交换",
-						"4243520597": ".使用催吐毒药"
+						"4243520597": ".使用催吐毒药",
+						"159056260": "%解锁",
+						"351249808": "%启动瓦斯泄漏",
+						"781781397": "缺少钥匙",
+						"867377630": "举起餐叉",
+						"1248849117": ",响铃",
+						"1354329974": ",缺少{0}",
+						"1504481854": "举起旗帜",
+						"1922426760": "放下餐叉",
+						"2133460148": ",释放",
+						"2276631323": "解锁（钥匙）",
+						"2346291527": "推",
+						"2468488309": "%制造漏水",
+						"2575144850": "刺穿",
+						"2941233616": "%拧松阀门",
+						"3017738067": "%关闭",
+						"3100411306": "%打开",
+						"3248629148": "图钉",
+						"3570668326": "%制造漏油事件",
+						"3716204958": "%篡改",
+						"17472522080": "放下旗帜",
+						"3046316998": "破坏固定架",
+						"4284833297": "%拧松固定架",
+						"702986323": ",需要毒药",
+						"969156469": ",缺少扳手"
 					},
 					"chineseTraditional": {
 						"40710893": ".離開",
@@ -1747,7 +1989,31 @@
 						"3878743332": ".取回武器",
 						"3988840944": ".放置",
 						"4050649666": ".交換",
-						"4243520597": ".使用催吐毒藥"
+						"4243520597": ".使用催吐毒藥",
+						"159056260": "%解鎖",
+						"351249808": "%開始瓦斯漏氣",
+						"781781397": "缺少鑰匙",
+						"867377630": "舉起叉子",
+						"1248849117": ",響起鈴聲",
+						"1354329974": ",缺少{0}",
+						"1504481854": "舉旗",
+						"1922426760": "降下叉子",
+						"2133460148": ",釋放",
+						"2276631323": "解鎖（鑰匙）",
+						"2346291527": "推動",
+						"2468488309": "%造成漏水",
+						"2575144850": "穿刺",
+						"2941233616": "%鬆開閥門",
+						"3017738067": "%關閉",
+						"3100411306": "%開啟",
+						"3248629148": "推動針頭",
+						"3570668326": "%造成漏油",
+						"3716204958": "%干預",
+						"17472522080": "降旗",
+						"3046316998": "破壞裝置",
+						"4284833297": "%鬆動裝置",
+						"702986323": ",缺少的毒藥",
+						"969156469": ",缺少扳手"
 					},
 					"spanish": {
 						"40710893": ".Salir",
@@ -1773,7 +2039,31 @@
 						"3878743332": ".Recuperar arma",
 						"3988840944": ".Colocar",
 						"4050649666": ".Cambiar",
-						"4243520597": ".Usar veneno emético"
+						"4243520597": ".Usar veneno emético",
+						"159056260": "%Abrir",
+						"351249808": "%Iniciar fuga de gas",
+						"781781397": "Llave no disponible",
+						"867377630": "Subir montacargas",
+						"1248849117": ",Tocar el timbre",
+						"1354329974": ",Necesitas {0}",
+						"1504481854": "Subir bandera",
+						"1922426760": "Bajar montacargas",
+						"2133460148": ",Liberar",
+						"2276631323": "Abrir (llave)",
+						"2346291527": "Empujar",
+						"2468488309": "%Generar fuga de agua",
+						"2575144850": "Perforar",
+						"2941233616": "%Aflojar válvula",
+						"3017738067": "%Apagar",
+						"3100411306": "%Activar",
+						"3248629148": "Empujar soporte",
+						"3570668326": "%Provocar escape de aceite",
+						"3716204958": "%Manipular",
+						"17472522080": "Bajar bandera",
+						"3046316998": "Romper soporte",
+						"4284833297": "%Aflojar soporte",
+						"702986323": ",Falta el veneno",
+						"969156469": ",Llave inglesa no disponible"
 					}
 				},
 				"001F0F3B7F11E788": {
@@ -1812,6 +2102,80 @@
 					"spanish": {
 						"2477774452": ".Ocultar",
 						"2500943082": ",Recuperar"
+					}
+				},
+				"00749106596AFD39": {
+					"english": {
+						"1904239696": "%Start Mission",
+						"1931909277": "Browse.",
+						"3094776970": "Travel To Destination",
+						"3695877882": ",Complete a campaign to unlock",
+						"3748007860": ",No Destination Set",
+						"4032494691": ",Browse"
+					},
+					"japanese": {
+						"1904239696": "%任務開始",
+						"1931909277": "眺める",
+						"3094776970": "目的地に移動する",
+						"3695877882": ",キャンペーンを完了してアンロック",
+						"3748007860": ",目的地が設定されていません",
+						"4032494691": ",眺める"
+					},
+					"french": {
+						"1904239696": "%Commencer la mission",
+						"1931909277": "Regarder",
+						"3094776970": "Voyager vers la destination",
+						"3695877882": ",Terminez une campagne pour débloquer",
+						"3748007860": ",Aucune destination choisie",
+						"4032494691": ",Regarder"
+					},
+					"german": {
+						"1904239696": "%Mission starten",
+						"1931909277": "Stöbern",
+						"3094776970": "Zu Ziel reisen",
+						"3695877882": ",Schließen Sie für die Freischaltung eine Kampagne ab",
+						"3748007860": ",Kein Ziel festgelegt",
+						"4032494691": ",Stöbern"
+					},
+					"italian": {
+						"1904239696": "%Avvia missione",
+						"1931909277": "Esamina",
+						"3094776970": "Viaggia fino al luogo di destinazione",
+						"3695877882": ",Completa una campagna per sbloccare",
+						"3748007860": ",Nessuna destinazione impostata",
+						"4032494691": ",Esamina"
+					},
+					"russian": {
+						"1904239696": "%Начать миссию",
+						"1931909277": "Просмотреть",
+						"3094776970": "Отправиться в пункт назначения",
+						"3695877882": ",Завершите кампанию, чтобы открыть",
+						"3748007860": ",Пункт назначения не выбран",
+						"4032494691": ",Просмотреть"
+					},
+					"chineseSimplified": {
+						"1904239696": "%开始任务",
+						"1931909277": "浏览",
+						"3094776970": "前往目的地",
+						"3695877882": ",完成一场战役解锁",
+						"3748007860": ",未设置目的地",
+						"4032494691": ",浏览"
+					},
+					"chineseTraditional": {
+						"1904239696": "%開始任務",
+						"1931909277": "瀏覽",
+						"3094776970": "前往目的地",
+						"3695877882": ",完成一次戰役以解鎖",
+						"3748007860": ",未設定目的地",
+						"4032494691": ",瀏覽"
+					},
+					"spanish": {
+						"1904239696": "%Iniciar misión",
+						"1931909277": "Buscar",
+						"3094776970": "Viajar al destino",
+						"3695877882": ",Completa una campaña para desbloquearlo",
+						"3748007860": ",No se ha fijado ningún destino",
+						"4032494691": ",Buscar"
 					}
 				}
 			}
@@ -1866,7 +2230,8 @@
 						"3667079457": "_Pick Up",
 						"3704432103": "Attack",
 						"3935942020": "-Climb Through",
-						"4067482698": "-Pull"
+						"4067482698": "-Pull",
+						"2554645010": "^Use {0}"
 					},
 					"japanese": {
 						"88301328": "-押す",
@@ -1910,7 +2275,8 @@
 						"3667079457": "_拾う",
 						"3704432103": "攻撃",
 						"3935942020": "-通り抜ける",
-						"4067482698": "-引っ張る"
+						"4067482698": "-引っ張る",
+						"2554645010": "^{0} が必要"
 					},
 					"french": {
 						"88301328": "-Pousser",
@@ -1954,7 +2320,8 @@
 						"3667079457": "_Prendre",
 						"3704432103": "Attaquer",
 						"3935942020": "-Passer à travers",
-						"4067482698": "-Tirer"
+						"4067482698": "-Tirer",
+						"2554645010": "^Manquant : {0}"
 					},
 					"german": {
 						"88301328": "-Schubsen",
@@ -1998,7 +2365,8 @@
 						"3667079457": "_Nehmen",
 						"3704432103": "Angreifen",
 						"3935942020": "-Durchklettern",
-						"4067482698": "-Ziehen"
+						"4067482698": "-Ziehen",
+						"2554645010": "^{0} fehlt"
 					},
 					"italian": {
 						"88301328": "-Spingere",
@@ -2042,7 +2410,8 @@
 						"3667079457": "_Raccogli",
 						"3704432103": "Attacca",
 						"3935942020": "-Attraversa",
-						"4067482698": "-Tira"
+						"4067482698": "-Tira",
+						"2554645010": "^{0} mancante"
 					},
 					"russian": {
 						"88301328": "-Толкнуть",
@@ -2086,7 +2455,8 @@
 						"3667079457": "_Взять",
 						"3704432103": "Атаковать",
 						"3935942020": "-Пролезть",
-						"4067482698": "-Потянуть"
+						"4067482698": "-Потянуть",
+						"2554645010": "^{0} отсутствует"
 					},
 					"chineseSimplified": {
 						"88301328": "-推",
@@ -2130,7 +2500,8 @@
 						"3667079457": "_拾取",
 						"3704432103": "攻击",
 						"3935942020": "-攀爬通过",
-						"4067482698": "-拉"
+						"4067482698": "-拉",
+						"2554645010": "^缺少{0}"
 					},
 					"chineseTraditional": {
 						"88301328": "-推",
@@ -2174,7 +2545,8 @@
 						"3667079457": "_拾取",
 						"3704432103": "攻擊",
 						"3935942020": "-爬過",
-						"4067482698": "-拉動"
+						"4067482698": "-拉動",
+						"2554645010": "^缺少{0}"
 					},
 					"spanish": {
 						"88301328": "-Empujar",
@@ -2218,7 +2590,8 @@
 						"3667079457": "_Coger",
 						"3704432103": "Atacar",
 						"3935942020": "-Atravesar",
-						"4067482698": "-Tirar"
+						"4067482698": "-Tirar",
+						"2554645010": "^{0} no disponible"
 					}
 				},
 				"0082FCF9BF0CA18E": {
@@ -2237,7 +2610,7 @@
 						"965810984": "_Overflow",
 						"1167109539": "-Talk",
 						"1248849117": "^Ring Bell",
-						"1354329974": "^Need {0}",
+						"1354329974": "^Use {0}",
 						"1504481854": "Raise Flag",
 						"1922426760": "Lower Fork",
 						"2072302537": "-Drown",
@@ -2266,7 +2639,11 @@
 						"3988840944": "-Place",
 						"4050649666": "_Swap",
 						"4243520597": "-Use Emetic Poison",
-						"17472522080": "Lower Flag"
+						"17472522080": "Lower Flag",
+						"3046316998": "Break Mounting",
+						"4284833297": "$Loosen Mounting",
+						"702986323": "^Use Poison",
+						"969156469": "^Use Wrench"
 					},
 					"japanese": {
 						"40710893": "-立ち去る",
@@ -2312,7 +2689,11 @@
 						"3988840944": "-置く",
 						"4050649666": "_入れ替える",
 						"4243520597": "-催吐毒を使用",
-						"17472522080": "旗を降ろす"
+						"17472522080": "旗を降ろす",
+						"3046316998": "土台を壊す",
+						"4284833297": "$土台を緩める",
+						"702986323": "^毒を所持していない",
+						"969156469": "^レンチを所持していない"
 					},
 					"french": {
 						"40710893": "-Quitter",
@@ -2358,7 +2739,11 @@
 						"3988840944": "-Placer",
 						"4050649666": "_Échanger",
 						"4243520597": "-Utiliser poison émétique",
-						"17472522080": "Abaisser le drapeau"
+						"17472522080": "Abaisser le drapeau",
+						"3046316998": "Briser le socle",
+						"4284833297": "$Desserrer le socle",
+						"702986323": "^Poison manquant",
+						"969156469": "^Clé anglaise manquante"
 					},
 					"german": {
 						"40710893": "-Verlassen",
@@ -2404,7 +2789,11 @@
 						"3988840944": "-Platzieren",
 						"4050649666": "_Tauschen",
 						"4243520597": "-Brechmittel verwenden",
-						"17472522080": "Flagge einholen"
+						"17472522080": "Flagge einholen",
+						"3046316998": "Befestigung zerstören",
+						"4284833297": "$Befestigung lockern",
+						"702986323": "^Gift fehlt",
+						"969156469": "^Schraubenschlüssel fehlt"
 					},
 					"italian": {
 						"40710893": "-Lasciare",
@@ -2450,7 +2839,11 @@
 						"3988840944": "-Posizionare",
 						"4050649666": "_Scambia",
 						"4243520597": "-Usa veleno emetico",
-						"17472522080": "Abbassa la bandiera"
+						"17472522080": "Abbassa la bandiera",
+						"3046316998": "Rompi il supporto",
+						"4284833297": "$Allenta il supporto",
+						"702986323": "^Veleno mancante",
+						"969156469": "^Chiave inglese mancante"
 					},
 					"russian": {
 						"40710893": "-Уйти",
@@ -2496,7 +2889,11 @@
 						"3988840944": "-Поместить",
 						"4050649666": "_Обменять",
 						"4243520597": "-Использовать рвотный яд",
-						"17472522080": "Опустить флаг"
+						"17472522080": "Опустить флаг",
+						"3046316998": "Сломать крепление",
+						"4284833297": "$Ослабить крепление",
+						"702986323": "^Яд отсутствует",
+						"969156469": "^Гаечный ключ отсутствует"
 					},
 					"chineseSimplified": {
 						"40710893": "-离开",
@@ -2542,7 +2939,11 @@
 						"3988840944": "-放置",
 						"4050649666": "_交换",
 						"4243520597": "-使用催吐毒药",
-						"17472522080": "放下旗帜"
+						"17472522080": "放下旗帜",
+						"3046316998": "破坏固定架",
+						"4284833297": "$拧松固定架",
+						"702986323": "^需要毒药",
+						"969156469": "^缺少扳手"
 					},
 					"chineseTraditional": {
 						"40710893": "-離開",
@@ -2588,7 +2989,11 @@
 						"3988840944": "-放置",
 						"4050649666": "_交換",
 						"4243520597": "-使用催吐毒藥",
-						"17472522080": "降旗"
+						"17472522080": "降旗",
+						"3046316998": "破壞裝置",
+						"4284833297": "$鬆動裝置",
+						"702986323": "^缺少的毒藥",
+						"969156469": "^缺少扳手"
 					},
 					"spanish": {
 						"40710893": "-Salir",
@@ -2634,7 +3039,11 @@
 						"3988840944": "-Colocar",
 						"4050649666": "_Cambiar",
 						"4243520597": "-Usar veneno emético",
-						"17472522080": "Bajar bandera"
+						"17472522080": "Bajar bandera",
+						"3046316998": "Romper soporte",
+						"4284833297": "$Aflojar soporte",
+						"702986323": "^Falta el veneno",
+						"969156469": "^Llave inglesa no disponible"
 					}
 				},
 				"001F0F3B7F11E788": {
@@ -2802,7 +3211,7 @@
 						"3704432103": "Attack",
 						"3935942020": "-Climb Through",
 						"4067482698": "-Pull",
-						"2554645010": "^Need {0}"
+						"2554645010": "^Use {0}"
 					},
 					"japanese": {
 						"88301328": "-押す",
@@ -2846,7 +3255,8 @@
 						"3667079457": "^拾う",
 						"3704432103": "攻撃",
 						"3935942020": "-通り抜ける",
-						"4067482698": "-引っ張る"
+						"4067482698": "-引っ張る",
+						"2554645010": "^{0} が必要"
 					},
 					"french": {
 						"88301328": "-Pousser",
@@ -2890,7 +3300,8 @@
 						"3667079457": "^Prendre",
 						"3704432103": "Attaquer",
 						"3935942020": "-Passer à travers",
-						"4067482698": "-Tirer"
+						"4067482698": "-Tirer",
+						"2554645010": "^Manquant : {0}"
 					},
 					"german": {
 						"88301328": "-Schubsen",
@@ -2934,7 +3345,8 @@
 						"3667079457": "^Nehmen",
 						"3704432103": "Angreifen",
 						"3935942020": "-Durchklettern",
-						"4067482698": "-Ziehen"
+						"4067482698": "-Ziehen",
+						"2554645010": "^{0} fehlt"
 					},
 					"italian": {
 						"88301328": "-Spingere",
@@ -2978,7 +3390,8 @@
 						"3667079457": "^Raccogli",
 						"3704432103": "Attacca",
 						"3935942020": "-Attraversa",
-						"4067482698": "-Tira"
+						"4067482698": "-Tira",
+						"2554645010": "^{0} mancante"
 					},
 					"russian": {
 						"88301328": "-Толкнуть",
@@ -3022,7 +3435,8 @@
 						"3667079457": "^Взять",
 						"3704432103": "Атаковать",
 						"3935942020": "-Пролезть",
-						"4067482698": "-Потянуть"
+						"4067482698": "-Потянуть",
+						"2554645010": "^{0} отсутствует"
 					},
 					"chineseSimplified": {
 						"88301328": "-推",
@@ -3066,7 +3480,8 @@
 						"3667079457": "^拾取",
 						"3704432103": "攻击",
 						"3935942020": "-攀爬通过",
-						"4067482698": "-拉"
+						"4067482698": "-拉",
+						"2554645010": "^缺少{0}"
 					},
 					"chineseTraditional": {
 						"88301328": "-推",
@@ -3110,7 +3525,8 @@
 						"3667079457": "^拾取",
 						"3704432103": "攻擊",
 						"3935942020": "-爬過",
-						"4067482698": "-拉動"
+						"4067482698": "-拉動",
+						"2554645010": "^缺少{0}"
 					},
 					"spanish": {
 						"88301328": "-Empujar",
@@ -3154,7 +3570,8 @@
 						"3667079457": "^Coger",
 						"3704432103": "Atacar",
 						"3935942020": "-Atravesar",
-						"4067482698": "-Tirar"
+						"4067482698": "-Tirar",
+						"2554645010": "^{0} no disponible"
 					}
 				},
 				"0082FCF9BF0CA18E": {
@@ -3167,13 +3584,13 @@
 						"398767406": "Trigger",
 						"548237907": "Enter",
 						"585323054": "Activate",
-						"781781397": "Missing Key",
+						"781781397": "^Use Key",
 						"867377630": "Raise Fork",
 						"885282319": "-Conceal item",
 						"965810984": "_Overflow",
 						"1167109539": "-Talk",
 						"1248849117": "^Ring Bell",
-						"1354329974": "^Need {0}",
+						"1354329974": "^Use {0}",
 						"1504481854": "Raise Flag",
 						"1922426760": "Lower Fork",
 						"2072302537": "Drown",
@@ -3205,9 +3622,8 @@
 						"17472522080": "Lower Flag",
 						"3046316998": "Break Mounting",
 						"4284833297": "$Loosen Mounting",
-						"702986323": "^Need poison",
-						"781781397": "^Need Key",
-						"969156469": "^Need Wrench"
+						"702986323": "^Use Poison",
+						"969156469": "^Use Wrench"
 					},
 					"japanese": {
 						"40710893": "立ち去る",
@@ -3253,7 +3669,11 @@
 						"3988840944": "-置く",
 						"4050649666": "^入れ替える",
 						"4243520597": "催吐毒を使用",
-						"17472522080": "旗を降ろす"
+						"17472522080": "旗を降ろす",
+						"3046316998": "土台を壊す",
+						"4284833297": "$土台を緩める",
+						"702986323": "^毒を所持していない",
+						"969156469": "^レンチを所持していない"
 					},
 					"french": {
 						"40710893": "Quitter",
@@ -3299,7 +3719,11 @@
 						"3988840944": "-Placer",
 						"4050649666": "^Échanger",
 						"4243520597": "Utiliser poison émétique",
-						"17472522080": "Abaisser le drapeau"
+						"17472522080": "Abaisser le drapeau",
+						"3046316998": "Briser le socle",
+						"4284833297": "$Desserrer le socle",
+						"702986323": "^Poison manquant",
+						"969156469": "^Clé anglaise manquante"
 					},
 					"german": {
 						"40710893": "Verlassen",
@@ -3345,7 +3769,11 @@
 						"3988840944": "-Platzieren",
 						"4050649666": "^Tauschen",
 						"4243520597": "Brechmittel verwenden",
-						"17472522080": "Flagge einholen"
+						"17472522080": "Flagge einholen",
+						"3046316998": "Befestigung zerstören",
+						"4284833297": "$Befestigung lockern",
+						"702986323": "^Gift fehlt",
+						"969156469": "^Schraubenschlüssel fehlt"
 					},
 					"italian": {
 						"40710893": "Lasciare",
@@ -3391,7 +3819,11 @@
 						"3988840944": "-Posizionare",
 						"4050649666": "^Scambia",
 						"4243520597": "Usa veleno emetico",
-						"17472522080": "Abbassa la bandiera"
+						"17472522080": "Abbassa la bandiera",
+						"3046316998": "Rompi il supporto",
+						"4284833297": "$Allenta il supporto",
+						"702986323": "^Veleno mancante",
+						"969156469": "^Chiave inglese mancante"
 					},
 					"russian": {
 						"40710893": "Уйти",
@@ -3437,7 +3869,11 @@
 						"3988840944": "-Поместить",
 						"4050649666": "^Обменять",
 						"4243520597": "Использовать рвотный яд",
-						"17472522080": "Опустить флаг"
+						"17472522080": "Опустить флаг",
+						"3046316998": "Сломать крепление",
+						"4284833297": "$Ослабить крепление",
+						"702986323": "^Яд отсутствует",
+						"969156469": "^Гаечный ключ отсутствует"
 					},
 					"chineseSimplified": {
 						"40710893": "离开",
@@ -3483,7 +3919,11 @@
 						"3988840944": "-放置",
 						"4050649666": "^交换",
 						"4243520597": "使用催吐毒药",
-						"17472522080": "放下旗帜"
+						"17472522080": "放下旗帜",
+						"3046316998": "破坏固定架",
+						"4284833297": "$拧松固定架",
+						"702986323": "^需要毒药",
+						"969156469": "^缺少扳手"
 					},
 					"chineseTraditional": {
 						"40710893": "離開",
@@ -3529,7 +3969,11 @@
 						"3988840944": "-放置",
 						"4050649666": "^交換",
 						"4243520597": "使用催吐毒藥",
-						"17472522080": "降旗"
+						"17472522080": "降旗",
+						"3046316998": "破壞裝置",
+						"4284833297": "$鬆動裝置",
+						"702986323": "^缺少的毒藥",
+						"969156469": "^缺少扳手"
 					},
 					"spanish": {
 						"40710893": "Salir",
@@ -3575,7 +4019,11 @@
 						"3988840944": "-Colocar",
 						"4050649666": "^Cambiar",
 						"4243520597": "Usar veneno emético",
-						"17472522080": "Bajar bandera"
+						"17472522080": "Bajar bandera",
+						"3046316998": "Romper soporte",
+						"4284833297": "$Aflojar soporte",
+						"702986323": "^Falta el veneno",
+						"969156469": "^Llave inglesa no disponible"
 					}
 				},
 				"001F0F3B7F11E788": {
@@ -3697,7 +4145,7 @@
 				},
 				"00212D5C62DFFC1F": {
 					"english": {
-						"2202956759": "^Need Keycard"
+						"2202956759": "^Use Keycard"
 					}
 				}
 			}
