@@ -20,9 +20,9 @@ package hud
       private const IDX_FIRST_EXTRA_PROMPT:int = 4;
       
       private const MAX_PROMPTS:int = 7;
-
+      
       private const PROMPT_LAYOUT_ORDER:Array = [2,3,0,1,5,6,4];
-
+      
       private const PROMPT_VERTICAL_SPACING:int = 25;
       
       private var m_view:*;
@@ -49,8 +49,8 @@ package hud
       {
          super();
          this.CreateView();
-         this.m_view.x = 925;
-         this.m_view.y = -800;
+         this.m_view.x = 0;
+         this.m_view.y = 0;
          this.getButtonClip(2).y = 0;
          this.getButtonClip(3).y = 25;
          this.getButtonClip(0).y = 50;
@@ -310,7 +310,7 @@ package hud
          }
          this.layoutVisibleButtons();
       }
-
+      
       private function layoutVisibleButtons() : void
       {
          var _loc1_:MovieClip = null;
@@ -377,7 +377,7 @@ package hud
          }
          var _loc16_:Object = MenuConstants.InteractionIndicatorFontSpecs[param2.m_nFontSize ? param2.m_nFontSize : MenuConstants.INTERACTIONPROMPTSIZE_DEFAULT];
          var _loc17_:int = _loc9_ || _loc10_ ? 81 : 1;
-         var _loc21_:uint = _loc9_ ? 16744576 : 16777215;
+         var _loc21_:uint = uint(_loc9_ ? 16744576 : 16777215);
          param1.prompt_mc.label_txt.textColor = _loc21_;
          param1.prompt_mc.desc_txt.textColor = _loc21_;
          param1.illegalIcon_mc.visible = false;
@@ -526,5 +526,4 @@ package hud
       }
    }
 }
-
 

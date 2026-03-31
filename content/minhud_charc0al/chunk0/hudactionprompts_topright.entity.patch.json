@@ -1,0 +1,29 @@
+{
+	"tempHash": "0093B7139387B988",
+	"tbluHash": "004D99E9BEC3EA51",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"6d16d139c710be2f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_eAlignmentType",
+						"value": "E_ALIGNMENT_TYPE_TopRight"
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"6d16d139c710be2f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_vPositionOffset",
+						"value": { "x": 1040.0, "y": 80.0, "z": 0.0 }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
