@@ -2352,15 +2352,17 @@
 				},
 				"00F5817876E691F1": {
 					"english": {
-						"1698695347": "Missing Item",
-						"1729746056": "Missing",
-						"3880361675": "×"
+						"3880361675": "•"
 					}
 				},
 				"00749106596AFD39": {
 					"english": {
 						"1904239696": "$Start Mission",
-						"3094776970": "Travel To Destination"
+						"3094776970": "Travel To Destination",
+						"4032494691": "^Browse",
+						"3748007860": "^No Destination Set",
+						"3695877882": "^Complete a campaign to unlock",
+						"1931909277": "Browse."
 					}
 				}
 			}
