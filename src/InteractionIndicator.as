@@ -32,6 +32,8 @@ package hud
       
       public static const TYPE_GUIDE:int = 5;
       
+      private static const ILLEGAL_ACTION_TEXT_COLOR:uint = 16748688;
+      
       private var m_view:InteractionIndicatorView;
       
       private var m_promptImage:ButtonPromptImage;
@@ -208,7 +210,7 @@ package hud
          this.m_view.prompt_mc.x = param9 ? -28 : 28;
          this.m_view.prompt_mc.label_txt.autoSize = param9 ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT;
          this.m_view.prompt_mc.desc_txt.autoSize = param9 ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT;
-         var _loc20_:uint = param6 || param7 ? 16744576 : 16777215;
+         var _loc20_:uint = param6 || param7 ? ILLEGAL_ACTION_TEXT_COLOR : 16777215;
          this.m_view.prompt_mc.label_txt.textColor = _loc20_;
          this.m_view.prompt_mc.desc_txt.textColor = _loc20_;
          this.m_promptImage.platform = ControlsMain.getControllerType();
@@ -235,11 +237,12 @@ package hud
          var labelWasVisible:Boolean = Boolean(this.m_view.prompt_mc.label_txt.visible);
          var descWasVisible:Boolean = Boolean(this.m_view.prompt_mc.desc_txt.visible);
          var _loc13_:String = param2 != null ? String(param2) : "";
-         var forceHideAllText:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "-" || _loc13_.charAt(0) == "_" || _loc13_.charAt(0) == "+" || _loc13_.charAt(0) == "=");
-         var hideTop:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "-" || _loc13_.charAt(0) == "^" || _loc13_.charAt(0) == ",");
-         var hideEverything:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "_" || _loc13_.charAt(0) == "+" || _loc13_.charAt(0) == "=");
-         var hideBottom:Boolean = hideEverything || _loc13_.length > 0 && (_loc13_.charAt(0) == "$" || _loc13_.charAt(0) == "%");
-         var hidePrompt:Boolean = _loc13_.length > 0 && (_loc13_.charAt(0) == "+" || _loc13_.charAt(0) == "=" || _loc13_.charAt(0) == "." || _loc13_.charAt(0) == "," || _loc13_.charAt(0) == "%");
+         var c:String = _loc13_.length > 0 ? _loc13_.charAt(0) : "";
+         var forceHideAllText:Boolean = c == "-" || c == "_" || c == "+" || c == "=";
+         var hideTop:Boolean = c == "-" || c == "^" || c == ",";
+         var hideEverything:Boolean = c == "_" || c == "+" || c == "=";
+         var hideBottom:Boolean = hideEverything || c == "$" || c == "%";
+         var hidePrompt:Boolean = c == "+" || c == "=" || c == "." || c == "," || c == "%";
          if(hideTop || hidePrompt || hideEverything || hideBottom)
          {
             _loc13_ = _loc13_.substr(1);
@@ -274,11 +277,12 @@ package hud
          if(!hideBottom && (Boolean(param3) && param3.length > 0))
          {
             _loc19_ = param3 != null ? String(param3) : "";
-            var descHideAll:Boolean = _loc19_.length > 0 && (_loc19_.charAt(0) == "=" || _loc19_.charAt(0) == "+");
+            var descC:String = _loc19_.length > 0 ? _loc19_.charAt(0) : "";
+            var descHideAll:Boolean = descC == "=" || descC == "+";
             var descHideEverything:Boolean = descHideAll || _loc19_ == "NOT FOUND";
-            var descHideBoth:Boolean = descHideEverything || _loc19_.length > 0 && _loc19_.charAt(0) == "_";
-            var descHideTop:Boolean = descHideBoth || _loc19_.length > 0 && (_loc19_.charAt(0) == "," || _loc19_.charAt(0) == "-" || _loc19_.charAt(0) == "^");
-            var descHideButton:Boolean = descHideEverything || _loc19_.length > 0 && (_loc19_.charAt(0) == "." || _loc19_.charAt(0) == ",");
+            var descHideBoth:Boolean = descHideEverything || descC == "_";
+            var descHideTop:Boolean = descHideBoth || descC == "," || descC == "-" || descC == "^";
+            var descHideButton:Boolean = descHideEverything || descC == "." || descC == ",";
             if(descHideTop || descHideBoth || descHideButton || descHideAll)
             {
                _loc19_ = _loc19_.substr(1);

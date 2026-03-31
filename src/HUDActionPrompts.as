@@ -25,6 +25,8 @@ package hud
       
       private const PROMPT_VERTICAL_SPACING:int = 25;
       
+      private const ILLEGAL_ACTION_TEXT_COLOR:uint = 16748688;
+      
       private var m_view:*;
       
       private var m_buttonClips:Vector.<MovieClip> = new Vector.<MovieClip>();
@@ -368,16 +370,17 @@ package hud
             param1.prompt.visible = true;
             param1.icon.visible = false;
          }
-         var descriptionOrNothing:Boolean = _loc6_ != null && _loc6_.charAt(0) == ":";
-         var hideTop:Boolean = descriptionOrNothing || _loc6_ != null && (_loc6_.charAt(0) == "_" || _loc6_.charAt(0) == "^" || _loc6_.charAt(0) == "+" || _loc6_.charAt(0) == ",");
-         var hasPrefix:Boolean = _loc6_ != null && (_loc6_.charAt(0) == "-" || _loc6_.charAt(0) == "=" || _loc6_.charAt(0) == "." || _loc6_.charAt(0) == "$" || _loc6_.charAt(0) == "%" || hideTop);
+         var c:String = _loc6_ != null && _loc6_.length > 0 ? _loc6_.charAt(0) : "";
+         var descriptionOrNothing:Boolean = c == ":";
+         var hideTop:Boolean = descriptionOrNothing || c == "_" || c == "^" || c == "+" || c == ",";
+         var hasPrefix:Boolean = c == "$" || c == "-" || c == "_" || c == "^" || c == "+" || c == "=" || c == "." || c == "," || c == "%";
          if(hasPrefix)
          {
             _loc6_ = _loc6_.substr(1);
          }
          var _loc16_:Object = MenuConstants.InteractionIndicatorFontSpecs[param2.m_nFontSize ? param2.m_nFontSize : MenuConstants.INTERACTIONPROMPTSIZE_DEFAULT];
          var _loc17_:int = _loc9_ || _loc10_ ? 81 : 1;
-         var _loc21_:uint = uint(_loc9_ ? 16744576 : 16777215);
+         var _loc21_:uint = uint(_loc9_ ? this.ILLEGAL_ACTION_TEXT_COLOR : 16777215);
          param1.prompt_mc.label_txt.textColor = _loc21_;
          param1.prompt_mc.desc_txt.textColor = _loc21_;
          param1.illegalIcon_mc.visible = false;
@@ -389,8 +392,9 @@ package hud
          _loc8_ = StringUtil.trim(_loc8_);
          if(Boolean(_loc8_) && _loc8_.length > 0)
          {
-            var descHideTop:Boolean = _loc8_ != null && (_loc8_.charAt(0) == "_" || _loc8_.charAt(0) == "^" || _loc8_.charAt(0) == "+" || _loc8_.charAt(0) == ",");
-            var descHasPrefix:Boolean = descHideTop || _loc8_ != null && (_loc8_.charAt(0) == "-" || _loc8_.charAt(0) == "=" || _loc8_.charAt(0) == "." || _loc8_.charAt(0) == "$" || _loc8_.charAt(0) == "%");
+            var descC:String = _loc8_.charAt(0);
+            var descHideTop:Boolean = descC == "_" || descC == "^" || descC == "+" || descC == ",";
+            var descHasPrefix:Boolean = descC == "$" || descC == "-" || descC == "_" || descC == "^" || descC == "+" || descC == "=" || descC == "." || descC == "," || descC == "%";
             if(descHasPrefix)
             {
                _loc8_ = _loc8_.substr(1);
