@@ -122,7 +122,7 @@ package hud
                this.m_view.tap_mc.visible = false;
                this.m_view.hold_mc.visible = false;
             }
-            this.showActionButton(param1.m_nIconId,param1.m_sLabel,param1.m_sDescription,param1.m_sGlyph,param1.m_sCustomIcon,param1.m_bIllegalItem,param1.m_bIllegal,param1.m_bSuspiciousItem,param1.m_bIsTxtDirReversed,param1.m_bHidePrompt,param1.m_bIsActionBlocked);
+            this.showActionButton(param1.m_nIconId,param1.m_sLabel,param1.m_sDescription,param1.m_sGlyph,param1.m_sCustomIcon,param1.m_bIllegalItem,param1.m_bIllegal,param1.m_bSuspiciousItem,param1.m_bIsTxtDirReversed,param1.m_bHidePrompt,param1.m_bIsActionBlocked,param1.m_bNoActionAvailable);
             this.m_view.collapsedEmpty_mc.alpha = 0;
             this.m_view.collapsedFull_mc.alpha = 0;
             this.m_view.prompt_mc.visible = true;
@@ -179,7 +179,7 @@ package hud
             {
                this.m_view.hold_mc.visible = false;
             }
-            this.showActionButton(param1.m_nIconId,param1.m_sLabel,param1.m_sDescription,param1.m_sGlyph,param1.m_sCustomIcon,param1.m_bIllegalItem,param1.m_bIllegal,param1.m_bSuspiciousItem,param1.m_bIsTxtDirReversed,param1.m_bHidePrompt,param1.m_bIsActionBlocked);
+            this.showActionButton(param1.m_nIconId,param1.m_sLabel,param1.m_sDescription,param1.m_sGlyph,param1.m_sCustomIcon,param1.m_bIllegalItem,param1.m_bIllegal,param1.m_bSuspiciousItem,param1.m_bIsTxtDirReversed,param1.m_bHidePrompt,param1.m_bIsActionBlocked,param1.m_bNoActionAvailable);
             this.m_view.collapsedEmpty_mc.alpha = 0;
             this.m_view.collapsedFull_mc.alpha = 0;
             this.m_view.tap_mc.visible = false;
@@ -197,7 +197,7 @@ package hud
          this.m_view.collapsedFull_mc.scaleX = this.m_view.collapsedFull_mc.scaleY = param1;
       }
       
-      private function showActionButton(param1:int, param2:String, param3:String, param4:String, param5:String, param6:Boolean, param7:Boolean, param8:Boolean, param9:Boolean, param10:Boolean, param11:Boolean) : void
+      private function showActionButton(param1:int, param2:String, param3:String, param4:String, param5:String, param6:Boolean, param7:Boolean, param8:Boolean, param9:Boolean, param10:Boolean, param11:Boolean, param12:Boolean) : void
       {
          var _loc16_:Number = NaN;
          var _loc17_:int = 0;
@@ -210,7 +210,7 @@ package hud
          this.m_view.prompt_mc.x = param9 ? -28 : 28;
          this.m_view.prompt_mc.label_txt.autoSize = param9 ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT;
          this.m_view.prompt_mc.desc_txt.autoSize = param9 ? TextFieldAutoSize.LEFT : TextFieldAutoSize.RIGHT;
-         var _loc20_:uint = param6 || param7 ? ILLEGAL_ACTION_TEXT_COLOR : 16777215;
+         var _loc20_:uint = (param6 || param7) && !param12 ? ILLEGAL_ACTION_TEXT_COLOR : 16777215;
          this.m_view.prompt_mc.label_txt.textColor = _loc20_;
          this.m_view.prompt_mc.desc_txt.textColor = _loc20_;
          this.m_promptImage.platform = ControlsMain.getControllerType();

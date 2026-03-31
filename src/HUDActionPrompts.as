@@ -380,7 +380,7 @@ package hud
          }
          var _loc16_:Object = MenuConstants.InteractionIndicatorFontSpecs[param2.m_nFontSize ? param2.m_nFontSize : MenuConstants.INTERACTIONPROMPTSIZE_DEFAULT];
          var _loc17_:int = _loc9_ || _loc10_ ? 81 : 1;
-         var _loc21_:uint = uint(_loc9_ ? this.ILLEGAL_ACTION_TEXT_COLOR : 16777215);
+         var _loc21_:uint = uint(_loc9_ && !_loc12_ ? this.ILLEGAL_ACTION_TEXT_COLOR : 16777215);
          param1.prompt_mc.label_txt.textColor = _loc21_;
          param1.prompt_mc.desc_txt.textColor = _loc21_;
          param1.illegalIcon_mc.visible = false;
