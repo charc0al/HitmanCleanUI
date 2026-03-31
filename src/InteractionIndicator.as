@@ -108,6 +108,8 @@ package hud
          {
             this.m_promptImage.alpha = param1.m_bNoActionAvailable ? 0.33 : 1;
             this.m_icon.alpha = this.m_promptImage.alpha;
+            this.m_view.prompt_mc.label_txt.alpha = this.m_promptImage.alpha;
+            this.m_view.prompt_mc.desc_txt.alpha = this.m_promptImage.alpha;
             this.m_holdAnimFrameOffset = Boolean(param1.m_bIllegal) || Boolean(param1.m_bIllegalItem) || Boolean(param1.m_bSuspiciousItem) ? 81 : 1;
             this.m_view.prompt_mc.x = param1.m_bIsTxtDirReversed ? -28 : 28;
             if(param1.m_eTypeId == TYPE_HOLD || param1.m_eTypeId == TYPE_HOLD_DOWN)
@@ -278,6 +280,7 @@ package hud
             if(_loc13_ != this.m_sLabelCurrent || !labelWasVisible)
             {
                this.m_view.prompt_mc.label_txt.htmlText = _loc13_;
+               this.setLabelBold(!param12);
                this.m_sLabelCurrent = _loc13_;
             }
          }
@@ -330,6 +333,7 @@ package hud
                if(_loc19_ != this.m_sLabelCurrent || !labelWasVisible)
                {
                   this.m_view.prompt_mc.label_txt.htmlText = _loc19_;
+                  this.setLabelBold(!param12);
                   this.m_sLabelCurrent = _loc19_;
                }
             }
@@ -352,6 +356,7 @@ package hud
             if(this.m_view.prompt_mc.label_txt.visible && !labelWasVisible && _loc13_ != this.m_sLabelCurrent)
             {
                this.m_view.prompt_mc.label_txt.htmlText = _loc13_;
+               this.setLabelBold(!param12);
                this.m_sLabelCurrent = _loc13_;
             }
          }
