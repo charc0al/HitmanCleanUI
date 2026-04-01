@@ -1,2 +1,3 @@
 .releaserc
 node_modules
+.codex_tmp_*

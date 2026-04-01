@@ -1,24 +1,95 @@
 {
-	"tempHash": "00D1399ACD41FD9F",
-	"tbluHash": "00430B7BE6F18F94",
-	"patch": [
-		{ "RemoveEntityByID": "642fd16b4840187f" },
-		{
-			"SubEntityOperation": [
-				"b998ca13b5ac605b",
-				{
-					"RemoveAllEventConnectionsForTrigger": ["OnTrue", "Show"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"b998ca13b5ac605b",
-				{
-					"RemoveAllEventConnectionsForTrigger": ["OnFalse", "Hide"]
-				}
-			]
-		}
-	],
-	"patchVersion": 6
+    "tempHash": "00D1399ACD41FD9F",
+    "tbluHash": "00430B7BE6F18F94",
+    "patch": [
+        {
+            "SubEntityOperation": [
+                "b998ca13b5ac605b",
+                {
+                    "RemoveAllEventConnectionsForTrigger": [
+                        "OnTrue",
+                        "Show"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "b998ca13b5ac605b",
+                {
+                    "RemoveAllEventConnectionsForTrigger": [
+                        "OnFalse",
+                        "Hide"
+                    ]
+                }
+            ]
+        },
+        {
+            "AddEntity": [
+                "7c0108e4451af201",
+                {
+                    "parent": "83e952a845b4337c",
+                    "name": "Stash Instinct Active",
+                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "AddEntity": [
+                "7c0108e4451af202",
+                {
+                    "parent": "83e952a845b4337c",
+                    "name": "Stash Instinct State",
+                    "factory": "[modules:/zherostateconditionentity.class].pc_entitytype",
+                    "blueprint": "[modules:/zherostateconditionentity.class].pc_entityblueprint",
+                    "events": {
+                        "OnTrue": {
+                            "SetTrue": [
+                                "7c0108e4451af201"
+                            ]
+                        },
+                        "OnFalse": {
+                            "SetFalse": [
+                                "7c0108e4451af201"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "AddEntity": [
+                "7c0108e4451af203",
+                {
+                    "parent": "83e952a845b4337c",
+                    "name": "Stash Instinct Visible",
+                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+                    "properties": {
+                        "m_aValues": {
+                            "type": "TArray<SEntityTemplateReference>",
+                            "value": [
+                                "b998ca13b5ac605b",
+                                "7c0108e4451af201"
+                            ]
+                        }
+                    },
+                    "events": {
+                        "OnTrue": {
+                            "Show": [
+                                "642fd16b4840187f"
+                            ]
+                        },
+                        "OnFalse": {
+                            "Hide": [
+                                "642fd16b4840187f"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "patchVersion": 6
 }

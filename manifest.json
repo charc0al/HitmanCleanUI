@@ -84,6 +84,14 @@
 			"contentFolders": ["content/freelancer_stash"]
 		},
 		{
+			"name":  "Hide Freelancer Courier Icon",
+			"tooltip":  "Remove freelancer courier icon when not using instinct",
+			"group":  "Other",
+			"type":  "checkbox",
+			"enabledByDefault":  true,
+			"contentFolders":  ["content/freelancer_courier"]
+		},
+		{
 			"name": "Hide Interaction Outline",
 			"tooltip": "Hides the white outline including around NPCs. In-game menu option only affects items.",
 			"group": "Other",
