@@ -3590,7 +3590,8 @@
 						"4050649666": "^Swap",
 						"4243520597": "Use Emetic Poison",
 						"4284833297": "$Loosen Mounting",
-						"17472522080": "Lower Flag"
+						"17472522080": "Lower Flag",
+						"1748502370": "$Currently Busy"
 					},
 					"japanese": {
 						"40710893": "立ち去る",
@@ -4043,7 +4044,12 @@
 						"3094776970": "Travel To Destination",
 						"3695877882": "^Complete a campaign to unlock",
 						"3748007860": "^No Destination Set",
-						"4032494691": "^Browse"
+						"4032494691": "^Browse",
+						"2990929860": "$Shop",
+						"2189163607": "Supplier",
+						"341731541": "^Supply Crate",
+						"1916994746": "^Reward Crate",
+						"381745208": "^Stash"
 					},
 					"japanese": {
 						"1904239696": "$任務開始",
