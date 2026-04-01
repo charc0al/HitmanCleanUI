@@ -1,1104 +1,313 @@
 {
-	"tempHash": "007568D09482220E",
-	"tbluHash": "0025CD93E3A002EF",
-	"patch": [
-		{
-			"RemoveEntityByID": "ae8524595c5e0d17"
-		},
-		{
-			"RemoveEntityByID": "8cef4ea5aa169271"
-		},
-		{
-			"SubEntityOperation": [
-				"a2c7af9409bc8e63",
-				{
-					"RemoveAllEventConnectionsForTrigger": ["PollTrue", "Show"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"55276c377b561708",
-				{
-					"RemoveAllEventConnectionsForTrigger": ["Out", "Hide"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"a818226c974883b8",
-				{
-					"RemoveEventConnection": ["Out04", "Hide", "ae8524595c5e0d17"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"a818226c974883b8",
-				{
-					"RemoveEventConnection": ["Out04", "Show", "8cef4ea5aa169271"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"4f4500d339b8ce5a",
-				{
-					"RemoveAllEventConnectionsForTrigger": ["OwnedByHitman", "Hide"]
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af001",
-				{
-					"parent": "e14d12a26af8b5bc",
-					"name": "Courier Instinct Icon",
-					"factory": "[modules:/zentity.class].pc_entitytype",
-					"blueprint": "[modules:/zentity.class].pc_entityblueprint",
-					"properties": {
-						"Actor": {
-							"type": "SEntityTemplateReference",
-							"value": "825b14dea9466359"
-						}
-					},
-					"propertyAliases": {
-						"Actor": [
-							{
-								"originalProperty": "m_rActor",
-								"originalEntity": "7c0108e4451af002"
-							},
-							{
-								"originalProperty": "m_linkedEntity",
-								"originalEntity": "7c0108e4451af004"
-							}
-						]
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af002",
-				{
-					"parent": "7c0108e4451af001",
-					"name": "Courier Actor Alive",
-					"factory": "[modules:/zactoralivecondition.class].pc_entitytype",
-					"blueprint": "[modules:/zactoralivecondition.class].pc_entityblueprint",
-					"properties": {
-						"m_bTreatDyingAsDead": {
-							"type": "bool",
-							"value": true
-						},
-						"m_bTreatUnconsciousAsAlive": {
-							"type": "bool",
-							"value": true
-						},
-						"m_rActor": {
-							"type": "SEntityTemplateReference",
-							"value": null
-						}
-					},
-					"events": {
-						"OnTrue": {
-							"SetTrue": ["7c0108e4451af003"]
-						},
-						"OnFalse": {
-							"SetFalse": ["7c0108e4451af003"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af003",
-				{
-					"parent": "7c0108e4451af001",
-					"name": "Courier Icon Active",
-					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af004",
-				{
-					"parent": "7c0108e4451af001",
-					"name": "Courier Tracker",
-					"factory": "[assembly:/templates/ui/maptrackercontrols.template?/generalobjectivtracker.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/templates/ui/maptrackercontrols.template?/generalobjectivtracker.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_eLayer": {
-							"type": "UIMapLayer.EUIMapLayerID",
-							"value": "eUIMLI_OPPORTUNITY"
-						},
-						"m_eRoomBehaviour": {
-							"type": "ZSpatialEntity.ERoomBehaviour",
-							"value": "ROOM_DYNAMIC"
-						},
-						"m_bVisible": {
-							"type": "bool",
-							"value": false
-						},
-						"m_bShowOnEdge": {
-							"type": "bool",
-							"value": true
-						},
-						"m_bShowOnMenuMap": {
-							"type": "bool",
-							"value": true
-						},
-						"m_pViewFactory": {
-							"type": "ZRuntimeResourceID",
-							"value": {
-								"resource": "[assembly:/templates/ui/maptrackercontrols.template?/ui_tracker_icon_evergreenmule.entitytemplate].pc_entitytemplate",
-								"flag": "5F"
-							}
-						},
-						"m_sIconId": {
-							"type": "ZString",
-							"value": "Money Mule"
-						},
-						"m_mTransform": {
-							"type": "SMatrix43",
-							"value": {
-								"rotation": {
-									"x": 0,
-									"y": 0,
-									"z": 0
-								},
-								"position": {
-									"x": 0,
-									"y": 0,
-									"z": 0
-								}
-							}
-						},
-						"m_pJSONResource": {
-							"type": "ZRuntimeResourceID",
-							"value": {
-								"resource": "[assembly:/ui/data/menu3/map/evergreen_mule_tracker_data.json].pc_json",
-								"flag": "5F"
-							}
-						},
-						"m_linkedEntity": {
-							"type": "SEntityTemplateReference",
-							"value": null
-						},
-						"m_eidParent": {
-							"type": "SEntityTemplateReference",
-							"value": "c8574dbf9cb7f6c8",
-							"postInit": true
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af005",
-				{
-					"parent": "7c0108e4451af001",
-					"name": "Courier Icon Gate Condition",
-					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_aValues": {
-							"type": "TArray<SEntityTemplateReference>",
-							"value": ["7c0108e4451af003", "68794b593e271d4a"]
-						}
-					},
-					"events": {
-						"OnTrue": {
-							"MakeVisible": ["7c0108e4451af004"]
-						},
-						"OnFalse": {
-							"MakeInvisible": ["7c0108e4451af004"],
-							"Hide": ["7c0108e4451af006"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af006",
-				{
-					"parent": "7c0108e4451af001",
-					"name": "Courier Instinct UI",
-					"factory": "[modules:/zentity.class].pc_entitytype",
-					"blueprint": "[modules:/zentity.class].pc_entityblueprint",
-					"properties": {
-						"m_pSpatial": {
-							"type": "SEntityTemplateReference",
-							"value": "a1eed999f6569cb2"
-						},
-						"m_bIsVisible": {
-							"type": "bool",
-							"value": false
-						},
-						"Icon": {
-							"type": "ZString",
-							"value": "mule"
-						},
-						"m_vWorldOffset": {
-							"type": "SVector3",
-							"value": {
-								"x": 0,
-								"y": 0,
-								"z": 0
-							}
-						}
-					},
-					"inputCopying": {
-						"Show": {
-							"Show": ["7c0108e4451af00b"]
-						},
-						"Hide": {
-							"Hide": ["7c0108e4451af00b"]
-						},
-						"SetSpatial": {
-							"SetSpatial": ["7c0108e4451af007"]
-						}
-					},
-					"propertyAliases": {
-						"Icon": [
-							{
-								"originalProperty": "Icon",
-								"originalEntity": "7c0108e4451af00a"
-							}
-						],
-						"m_bIsVisible": [
-							{
-								"originalProperty": "m_bIsVisible",
-								"originalEntity": "7c0108e4451af00a"
-							}
-						],
-						"m_pSpatial": [
-							{
-								"originalProperty": "m_pSpatial",
-								"originalEntity": "7c0108e4451af007"
-							}
-						],
-						"m_vWorldOffset": [
-							{
-								"originalProperty": "m_vWorldOffset",
-								"originalEntity": "7c0108e4451af007"
-							}
-						]
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af007",
-				{
-					"parent": "7c0108e4451af006",
-					"name": "Courier SpatialController",
-					"factory": "[modules:/zuispatialcontrollerentity.class].pc_entitytype",
-					"blueprint": "[modules:/zuispatialcontrollerentity.class].pc_entityblueprint",
-					"properties": {
-						"m_vWorldOffset": {
-							"type": "SVector3",
-							"value": {
-								"x": 0,
-								"y": 0,
-								"z": 0
-							}
-						},
-						"m_pTargetControl": {
-							"type": "SEntityTemplateReference",
-							"value": "7c0108e4451af008"
-						},
-						"m_pDataControl": {
-							"type": "SEntityTemplateReference",
-							"value": "7c0108e4451af00a"
-						},
-						"m_25DProjectionSettings": {
-							"type": "S25DProjectionSettings",
-							"value": {
-								"fNearDistance": 5,
-								"fFarDistance": 10000,
-								"fNearScale": 110,
-								"fFarScale": 110,
-								"fNearFov": 40,
-								"fFarFov": 40,
-								"fNearScaleFov": 1,
-								"fFarScaleFov": 1,
-								"enableWorldSizeScaling": false,
-								"fWorldSizeScalingBaseDistance": 10,
-								"fWorldSizeScalingFactorMax": 2.5,
-								"fWorldSizeScalingFactorMin": 0.5,
-								"fScaleFactor": 1,
-								"fNearAlpha": 100,
-								"fFarAlpha": 100,
-								"fAlphaFactor": 1,
-								"aScaleCurve": [],
-								"aAlphaCurve": [],
-								"eViewportLock": "VPL_None",
-								"fViewportGutter": 64,
-								"sWorldSpaceSettings": {
-									"fCloseupDistance": 0.75,
-									"fScale": 8,
-									"bDynamicScale": true,
-									"fDynamicScaleAlpha": 0.6000000238418579,
-									"fDynamicScaleCloseupDistance": 0,
-									"fDynamicScaleNearDistance": 5,
-									"fDynamicScaleBlendRange": 2
-								}
-							}
-						},
-						"m_bShowOnTop": {
-							"type": "bool",
-							"value": true
-						},
-						"m_pSpatial": {
-							"type": "SEntityTemplateReference",
-							"value": "a1eed999f6569cb2"
-						}
-					},
-					"outputCopying": {
-						"WithinProximityChanged": {
-							"WithinProximityChanged": ["7c0108e4451af006"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af008",
-				{
-					"parent": "7c0108e4451af006",
-					"name": "Courier ResolutionScaleContainer",
-					"factory": "[assembly:/templates/ui/controls/basiccontrols.template?/container.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/templates/ui/controls/basiccontrols.template?/container.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_aChildren": {
-							"type": "TArray<SEntityTemplateReference>",
-							"value": ["7c0108e4451af009"]
-						},
-						"m_eAlignmentType": {
-							"type": "ZUIControlLayoutLegacyAspect.EAlignmentType",
-							"value": "E_ALIGNMENT_TYPE_TopLeft"
-						},
-						"m_vSize": {
-							"type": "SVector2",
-							"value": {
-								"x": 100,
-								"y": 100
-							}
-						},
-						"m_bIsVisible": {
-							"type": "bool",
-							"value": true
-						},
-						"m_vPositionOffset": {
-							"type": "SVector3",
-							"value": {
-								"x": 0,
-								"y": 0,
-								"z": 0
-							}
-						},
-						"m_eSizeMode": {
-							"type": "ZUIControlLayoutLegacyAspect.ELayoutMode",
-							"value": "E_LAYOUT_MODE_Proportional"
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af009",
-				{
-					"parent": "7c0108e4451af006",
-					"name": "Courier ResolutionScaler",
-					"factory": "[assembly:/templates/ui/controls/basiccontrols.template?/container.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/templates/ui/controls/basiccontrols.template?/container.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_aChildren": {
-							"type": "TArray<SEntityTemplateReference>",
-							"value": ["7c0108e4451af00a"]
-						},
-						"m_eAlignmentType": {
-							"type": "ZUIControlLayoutLegacyAspect.EAlignmentType",
-							"value": "E_ALIGNMENT_TYPE_TopLeft"
-						},
-						"m_vSize": {
-							"type": "SVector2",
-							"value": {
-								"x": 100,
-								"y": 100
-							}
-						},
-						"m_bIsVisible": {
-							"type": "bool",
-							"value": true
-						},
-						"m_vPositionOffset": {
-							"type": "SVector3",
-							"value": {
-								"x": 0,
-								"y": 0,
-								"z": 0
-							}
-						},
-						"m_eSizeMode": {
-							"type": "ZUIControlLayoutLegacyAspect.ELayoutMode",
-							"value": "E_LAYOUT_MODE_Proportional_Scale_MaintainAspect"
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af00a",
-				{
-					"parent": "7c0108e4451af006",
-					"name": "Courier EvergreenBreadcrumb",
-					"factory": "[assembly:/ui/controls/hud.swf?/hud.evergreen.evergreenbreadcrumb.uic].pc_entitytype",
-					"blueprint": "[assembly:/ui/controls/hud.swf?/hud.evergreen.evergreenbreadcrumb.uic].pc_entityblueprint",
-					"properties": {
-						"m_pMovieResource": {
-							"type": "ZRuntimeResourceID",
-							"value": {
-								"resource": "[assembly:/ui/controls/hud.swf].pc_swf",
-								"flag": "5F"
-							}
-						},
-						"m_sClassName": {
-							"type": "ZString",
-							"value": "hud.evergreen.EvergreenBreadcrumb"
-						},
-						"Icon": {
-							"type": "ZString",
-							"value": "mule"
-						},
-						"m_bIsVisible": {
-							"type": "bool",
-							"value": false
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af00b",
-				{
-					"parent": "7c0108e4451af006",
-					"name": "Courier VisibilityController",
-					"factory": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entitytype",
-					"blueprint": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entityblueprint",
-					"properties": {
-						"m_pTargetControl": {
-							"type": "SEntityTemplateReference",
-							"value": "7c0108e4451af00a",
-							"postInit": true
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af101",
-				{
-					"parent": "e14d12a26af8b5bc",
-					"name": "Courier Drop Active",
-					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af102",
-				{
-					"parent": "e14d12a26af8b5bc",
-					"name": "Courier Drop Instinct Icon",
-					"factory": "[modules:/zentity.class].pc_entitytype",
-					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af103",
-				{
-					"parent": "7c0108e4451af102",
-					"name": "Courier Drop Tracker",
-					"factory": "[assembly:/templates/ui/maptrackercontrols.template?/generalobjectivtracker.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/templates/ui/maptrackercontrols.template?/generalobjectivtracker.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_eLayer": {
-							"type": "UIMapLayer.EUIMapLayerID",
-							"value": "eUIMLI_OPPORTUNITY"
-						},
-						"m_eRoomBehaviour": {
-							"type": "ZSpatialEntity.ERoomBehaviour",
-							"value": "ROOM_DYNAMIC"
-						},
-						"m_bVisible": {
-							"type": "bool",
-							"value": false
-						},
-						"m_bShowOnEdge": {
-							"type": "bool",
-							"value": true
-						},
-						"m_bShowOnMenuMap": {
-							"type": "bool",
-							"value": true
-						},
-						"m_pViewFactory": {
-							"type": "ZRuntimeResourceID",
-							"value": {
-								"resource": "[assembly:/templates/ui/maptrackercontrols.template?/ui_tracker_icon_evergreenmule.entitytemplate].pc_entitytemplate",
-								"flag": "5F"
-							}
-						},
-						"m_sIconId": {
-							"type": "ZString",
-							"value": "Money Mule"
-						},
-						"m_mTransform": {
-							"type": "SMatrix43",
-							"value": {
-								"rotation": {
-									"x": 0,
-									"y": 0,
-									"z": 0
-								},
-								"position": {
-									"x": 0,
-									"y": 0,
-									"z": 0
-								}
-							}
-						},
-						"m_pJSONResource": {
-							"type": "ZRuntimeResourceID",
-							"value": {
-								"resource": "[assembly:/ui/data/menu3/map/evergreen_mule_tracker_data.json].pc_json",
-								"flag": "5F"
-							}
-						},
-						"m_linkedEntity": {
-							"type": "SEntityTemplateReference",
-							"value": "551c0a27cb460af5"
-						},
-						"m_eidParent": {
-							"type": "SEntityTemplateReference",
-							"value": "c8574dbf9cb7f6c8",
-							"postInit": true
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af104",
-				{
-					"parent": "7c0108e4451af102",
-					"name": "Courier Drop Gate Condition",
-					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_aValues": {
-							"type": "TArray<SEntityTemplateReference>",
-							"value": ["7c0108e4451af101"]
-						}
-					},
-					"events": {
-						"OnTrue": {
-							"MakeVisible": ["7c0108e4451af103"]
-						},
-						"OnFalse": {
-							"MakeInvisible": ["7c0108e4451af103"],
-							"Hide": ["7c0108e4451af105"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af105",
-				{
-					"parent": "7c0108e4451af102",
-					"name": "Courier Drop Instinct UI",
-					"factory": "[modules:/zentity.class].pc_entitytype",
-					"blueprint": "[modules:/zentity.class].pc_entityblueprint",
-					"properties": {
-						"m_pSpatial": {
-							"type": "SEntityTemplateReference",
-							"value": "551c0a27cb460af5"
-						},
-						"m_bIsVisible": {
-							"type": "bool",
-							"value": false
-						},
-						"Icon": {
-							"type": "ZString",
-							"value": "mule"
-						},
-						"m_vWorldOffset": {
-							"type": "SVector3",
-							"value": {
-								"x": 0,
-								"y": 0,
-								"z": 0.30000001192092896
-							}
-						}
-					},
-					"inputCopying": {
-						"Show": {
-							"Show": ["7c0108e4451af10a"]
-						},
-						"Hide": {
-							"Hide": ["7c0108e4451af10a"]
-						},
-						"SetSpatial": {
-							"SetSpatial": ["7c0108e4451af106"]
-						}
-					},
-					"propertyAliases": {
-						"Icon": [
-							{
-								"originalProperty": "Icon",
-								"originalEntity": "7c0108e4451af109"
-							}
-						],
-						"m_bIsVisible": [
-							{
-								"originalProperty": "m_bIsVisible",
-								"originalEntity": "7c0108e4451af109"
-							}
-						],
-						"m_pSpatial": [
-							{
-								"originalProperty": "m_pSpatial",
-								"originalEntity": "7c0108e4451af106"
-							}
-						],
-						"m_vWorldOffset": [
-							{
-								"originalProperty": "m_vWorldOffset",
-								"originalEntity": "7c0108e4451af106"
-							}
-						]
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af106",
-				{
-					"parent": "7c0108e4451af105",
-					"name": "Courier Drop SpatialController",
-					"factory": "[modules:/zuispatialcontrollerentity.class].pc_entitytype",
-					"blueprint": "[modules:/zuispatialcontrollerentity.class].pc_entityblueprint",
-					"properties": {
-						"m_vWorldOffset": {
-							"type": "SVector3",
-							"value": {
-								"x": 0,
-								"y": 0,
-								"z": 0.30000001192092896
-							}
-						},
-						"m_pTargetControl": {
-							"type": "SEntityTemplateReference",
-							"value": "7c0108e4451af107"
-						},
-						"m_pDataControl": {
-							"type": "SEntityTemplateReference",
-							"value": "7c0108e4451af109"
-						},
-						"m_25DProjectionSettings": {
-							"type": "S25DProjectionSettings",
-							"value": {
-								"fNearDistance": 5,
-								"fFarDistance": 10000,
-								"fNearScale": 110,
-								"fFarScale": 110,
-								"fNearFov": 40,
-								"fFarFov": 40,
-								"fNearScaleFov": 1,
-								"fFarScaleFov": 1,
-								"enableWorldSizeScaling": false,
-								"fWorldSizeScalingBaseDistance": 10,
-								"fWorldSizeScalingFactorMax": 2.5,
-								"fWorldSizeScalingFactorMin": 0.5,
-								"fScaleFactor": 1,
-								"fNearAlpha": 100,
-								"fFarAlpha": 100,
-								"fAlphaFactor": 1,
-								"aScaleCurve": [],
-								"aAlphaCurve": [],
-								"eViewportLock": "VPL_None",
-								"fViewportGutter": 64,
-								"sWorldSpaceSettings": {
-									"fCloseupDistance": 0.75,
-									"fScale": 8,
-									"bDynamicScale": true,
-									"fDynamicScaleAlpha": 0.6000000238418579,
-									"fDynamicScaleCloseupDistance": 0,
-									"fDynamicScaleNearDistance": 5,
-									"fDynamicScaleBlendRange": 2
-								}
-							}
-						},
-						"m_bShowOnTop": {
-							"type": "bool",
-							"value": true
-						},
-						"m_pSpatial": {
-							"type": "SEntityTemplateReference",
-							"value": "551c0a27cb460af5"
-						}
-					},
-					"outputCopying": {
-						"WithinProximityChanged": {
-							"WithinProximityChanged": ["7c0108e4451af105"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af107",
-				{
-					"parent": "7c0108e4451af105",
-					"name": "Courier Drop ResolutionScaleContainer",
-					"factory": "[assembly:/templates/ui/controls/basiccontrols.template?/container.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/templates/ui/controls/basiccontrols.template?/container.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_aChildren": {
-							"type": "TArray<SEntityTemplateReference>",
-							"value": ["7c0108e4451af108"]
-						},
-						"m_eAlignmentType": {
-							"type": "ZUIControlLayoutLegacyAspect.EAlignmentType",
-							"value": "E_ALIGNMENT_TYPE_TopLeft"
-						},
-						"m_vSize": {
-							"type": "SVector2",
-							"value": {
-								"x": 100,
-								"y": 100
-							}
-						},
-						"m_bIsVisible": {
-							"type": "bool",
-							"value": true
-						},
-						"m_vPositionOffset": {
-							"type": "SVector3",
-							"value": {
-								"x": 0,
-								"y": 0,
-								"z": 0
-							}
-						},
-						"m_eSizeMode": {
-							"type": "ZUIControlLayoutLegacyAspect.ELayoutMode",
-							"value": "E_LAYOUT_MODE_Proportional"
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af108",
-				{
-					"parent": "7c0108e4451af105",
-					"name": "Courier Drop ResolutionScaler",
-					"factory": "[assembly:/templates/ui/controls/basiccontrols.template?/container.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/templates/ui/controls/basiccontrols.template?/container.entitytemplate].pc_entityblueprint",
-					"properties": {
-						"m_aChildren": {
-							"type": "TArray<SEntityTemplateReference>",
-							"value": ["7c0108e4451af109"]
-						},
-						"m_eAlignmentType": {
-							"type": "ZUIControlLayoutLegacyAspect.EAlignmentType",
-							"value": "E_ALIGNMENT_TYPE_TopLeft"
-						},
-						"m_vSize": {
-							"type": "SVector2",
-							"value": {
-								"x": 100,
-								"y": 100
-							}
-						},
-						"m_bIsVisible": {
-							"type": "bool",
-							"value": true
-						},
-						"m_vPositionOffset": {
-							"type": "SVector3",
-							"value": {
-								"x": 0,
-								"y": 0,
-								"z": 0
-							}
-						},
-						"m_eSizeMode": {
-							"type": "ZUIControlLayoutLegacyAspect.ELayoutMode",
-							"value": "E_LAYOUT_MODE_Proportional_Scale_MaintainAspect"
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af109",
-				{
-					"parent": "7c0108e4451af105",
-					"name": "Courier Drop EvergreenBreadcrumb",
-					"factory": "[assembly:/ui/controls/hud.swf?/hud.evergreen.evergreenbreadcrumb.uic].pc_entitytype",
-					"blueprint": "[assembly:/ui/controls/hud.swf?/hud.evergreen.evergreenbreadcrumb.uic].pc_entityblueprint",
-					"properties": {
-						"m_pMovieResource": {
-							"type": "ZRuntimeResourceID",
-							"value": {
-								"resource": "[assembly:/ui/controls/hud.swf].pc_swf",
-								"flag": "5F"
-							}
-						},
-						"m_sClassName": {
-							"type": "ZString",
-							"value": "hud.evergreen.EvergreenBreadcrumb"
-						},
-						"Icon": {
-							"type": "ZString",
-							"value": "mule"
-						},
-						"m_bIsVisible": {
-							"type": "bool",
-							"value": false
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af10a",
-				{
-					"parent": "7c0108e4451af105",
-					"name": "Courier Drop VisibilityController",
-					"factory": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entitytype",
-					"blueprint": "[modules:/zuicontrolvisibilitycontrollerentity.class].pc_entityblueprint",
-					"properties": {
-						"m_pTargetControl": {
-							"type": "SEntityTemplateReference",
-							"value": "7c0108e4451af109",
-							"postInit": true
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af00c",
-				{
-					"parent": "7c0108e4451af001",
-					"name": "Courier Instinct Active",
-					"factory": "[modules:/zherostateconditionentity.class].pc_entitytype",
-					"blueprint": "[modules:/zherostateconditionentity.class].pc_entityblueprint",
-					"events": {
-						"OnTrue": {
-							"In": ["7c0108e4451af00d"]
-						},
-						"OnFalse": {
-							"In": ["7c0108e4451af00e"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af00d",
-				{
-					"parent": "7c0108e4451af001",
-					"name": "Courier Instinct Gate",
-					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
-					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
-					"properties": {
-						"m_rCondition": {
-							"type": "SEntityTemplateReference",
-							"value": "7c0108e4451af005",
-							"postInit": true
-						}
-					},
-					"events": {
-						"Out": {
-							"Show": ["7c0108e4451af006"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af00e",
-				{
-					"parent": "7c0108e4451af001",
-					"name": "Courier Normal Gate",
-					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
-					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
-					"properties": {
-						"m_rCondition": {
-							"type": "SEntityTemplateReference",
-							"value": "7c0108e4451af005",
-							"postInit": true
-						}
-					},
-					"events": {
-						"Out": {
-							"Hide": ["7c0108e4451af006"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af10b",
-				{
-					"parent": "7c0108e4451af102",
-					"name": "Courier Drop Instinct Active",
-					"factory": "[modules:/zherostateconditionentity.class].pc_entitytype",
-					"blueprint": "[modules:/zherostateconditionentity.class].pc_entityblueprint",
-					"events": {
-						"OnTrue": {
-							"In": ["7c0108e4451af10c"]
-						},
-						"OnFalse": {
-							"In": ["7c0108e4451af10d"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af10c",
-				{
-					"parent": "7c0108e4451af102",
-					"name": "Courier Drop Instinct Gate",
-					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
-					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
-					"properties": {
-						"m_rCondition": {
-							"type": "SEntityTemplateReference",
-							"value": "7c0108e4451af104",
-							"postInit": true
-						}
-					},
-					"events": {
-						"Out": {
-							"Show": ["7c0108e4451af105"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"7c0108e4451af10d",
-				{
-					"parent": "7c0108e4451af102",
-					"name": "Courier Drop Normal Gate",
-					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
-					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
-					"properties": {
-						"m_rCondition": {
-							"type": "SEntityTemplateReference",
-							"value": "7c0108e4451af104",
-							"postInit": true
-						}
-					},
-					"events": {
-						"Out": {
-							"Hide": ["7c0108e4451af105"]
-						}
-					}
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"55276c377b561708",
-				{
-					"AddEventConnection": ["Out", "SetFalse", "7c0108e4451af101"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"a818226c974883b8",
-				{
-					"AddEventConnection": ["Out04", "SetTrue", "7c0108e4451af101"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"4f4500d339b8ce5a",
-				{
-					"AddEventConnection": ["OwnedByHitman", "SetFalse", "7c0108e4451af101"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"55276c377b561708",
-				{
-					"AddEventConnection": ["Out", "SetTrue", "7c0108e4451af003"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"a818226c974883b8",
-				{
-					"AddEventConnection": ["Out04", "SetFalse", "7c0108e4451af003"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"4f4500d339b8ce5a",
-				{
-					"AddEventConnection": ["OwnedByHitman", "SetFalse", "7c0108e4451af003"]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"e1d014fc3a0ca6ab",
-				{
-					"AddEventConnection": ["Out02", "SetFalse", "7c0108e4451af003"]
-				}
-			]
-		}
-	],
-	"patchVersion": 6
+    "tempHash": "007568D09482220E",
+    "tbluHash": "0025CD93E3A002EF",
+    "patch": [
+        {
+            "SubEntityOperation": [
+                "a2c7af9409bc8e63",
+                {
+                    "RemoveAllEventConnectionsForTrigger": [
+                        "PollTrue",
+                        "Show"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a818226c974883b8",
+                {
+                    "RemoveEventConnection": [
+                        "Out04",
+                        "Hide",
+                        "ae8524595c5e0d17"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a818226c974883b8",
+                {
+                    "RemoveEventConnection": [
+                        "Out04",
+                        "Show",
+                        "8cef4ea5aa169271"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "4f4500d339b8ce5a",
+                {
+                    "RemoveAllEventConnectionsForTrigger": [
+                        "OwnedByHitman",
+                        "Hide"
+                    ]
+                }
+            ]
+        },
+        {
+            "AddEntity": [
+                "7c0108e4451af301",
+                {
+                    "parent": "e14d12a26af8b5bc",
+                    "name": "Courier Instinct Active",
+                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "AddEntity": [
+                "7c0108e4451af302",
+                {
+                    "parent": "e14d12a26af8b5bc",
+                    "name": "Courier Actor Icon Active",
+                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "AddEntity": [
+                "7c0108e4451af303",
+                {
+                    "parent": "e14d12a26af8b5bc",
+                    "name": "Courier Drop Icon Active",
+                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+                }
+            ]
+        },
+        {
+            "AddEntity": [
+                "7c0108e4451af304",
+                {
+                    "parent": "e14d12a26af8b5bc",
+                    "name": "Courier Instinct State",
+                    "factory": "[modules:/zherostateconditionentity.class].pc_entitytype",
+                    "blueprint": "[modules:/zherostateconditionentity.class].pc_entityblueprint",
+                    "events": {
+                        "OnTrue": {
+                            "SetTrue": [
+                                "7c0108e4451af301"
+                            ]
+                        },
+                        "OnFalse": {
+                            "SetFalse": [
+                                "7c0108e4451af301"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "AddEntity": [
+                "7c0108e4451af307",
+                {
+                    "parent": "e14d12a26af8b5bc",
+                    "name": "Courier Actor Fade Spatial",
+                    "factory": "[modules:/zspatialentity.class].pc_entitytype",
+                    "blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+                    "properties": {
+                        "m_mTransform": {
+                            "type": "SMatrix43",
+                            "value": {
+                                "rotation": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 0
+                                },
+                                "position": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 1.75
+                                }
+                            }
+                        },
+                        "m_eidParent": {
+                            "type": "SEntityTemplateReference",
+                            "value": "825b14dea9466359",
+                            "postInit": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "ae8524595c5e0d17",
+                {
+                    "SetPropertyValue": {
+                        "property_name": "m_pSpatial",
+                        "value": "7c0108e4451af307"
+                    }
+                }
+            ]
+        },
+        {
+            "AddEntity": [
+                "7c0108e4451af305",
+                {
+                    "parent": "e14d12a26af8b5bc",
+                    "name": "Courier Actor Instinct Visible",
+                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+                    "properties": {
+                        "m_aValues": {
+                            "type": "TArray<SEntityTemplateReference>",
+                            "value": [
+                                "7c0108e4451af302",
+                                "7c0108e4451af301"
+                            ]
+                        }
+                    },
+                    "events": {
+                        "OnTrue": {
+                            "Show": [
+                                "ae8524595c5e0d17"
+                            ]
+                        },
+                        "OnFalse": {
+                            "Hide": [
+                                "ae8524595c5e0d17"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "AddEntity": [
+                "7c0108e4451af306",
+                {
+                    "parent": "e14d12a26af8b5bc",
+                    "name": "Courier Drop Instinct Visible",
+                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+                    "properties": {
+                        "m_aValues": {
+                            "type": "TArray<SEntityTemplateReference>",
+                            "value": [
+                                "7c0108e4451af303",
+                                "7c0108e4451af301"
+                            ]
+                        }
+                    },
+                    "events": {
+                        "OnTrue": {
+                            "Show": [
+                                "8cef4ea5aa169271"
+                            ]
+                        },
+                        "OnFalse": {
+                            "Hide": [
+                                "8cef4ea5aa169271"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "55276c377b561708",
+                {
+                    "AddEventConnection": [
+                        "Out",
+                        "SetFalse",
+                        "7c0108e4451af303"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "55276c377b561708",
+                {
+                    "AddEventConnection": [
+                        "Out",
+                        "SetFalse",
+                        "7c0108e4451af302"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a2c7af9409bc8e63",
+                {
+                    "AddEventConnection": [
+                        "PollTrue",
+                        "SetTrue",
+                        "7c0108e4451af302"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a818226c974883b8",
+                {
+                    "AddEventConnection": [
+                        "Out04",
+                        "SetTrue",
+                        "7c0108e4451af303"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a818226c974883b8",
+                {
+                    "AddEventConnection": [
+                        "Out04",
+                        "SetFalse",
+                        "7c0108e4451af302"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "4f4500d339b8ce5a",
+                {
+                    "AddEventConnection": [
+                        "OwnedByHitman",
+                        "SetFalse",
+                        "7c0108e4451af303"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "4f4500d339b8ce5a",
+                {
+                    "AddEventConnection": [
+                        "OwnedByHitman",
+                        "SetFalse",
+                        "7c0108e4451af302"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "e1d014fc3a0ca6ab",
+                {
+                    "AddEventConnection": [
+                        "Out02",
+                        "SetFalse",
+                        "7c0108e4451af302"
+                    ]
+                }
+            ]
+        }
+    ],
+    "patchVersion": 6
 }
