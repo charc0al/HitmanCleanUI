@@ -1,5 +1,5 @@
 {
-	"version": "4.8.1",
+	"version": "4.9.0",
 	"updateCheck": "https://github.com/charc0al/HitmanCleanUI/releases/latest/download/updates.json",
 	"id": "Charc0al.MinimalistUI",
 	"name": "Minimalist HUD",
@@ -84,12 +84,12 @@
 			"contentFolders": ["content/freelancer_stash"]
 		},
 		{
-			"name":  "Hide Freelancer Courier Icon",
-			"tooltip":  "Remove freelancer courier icon when not using instinct",
-			"group":  "Other",
-			"type":  "checkbox",
-			"enabledByDefault":  true,
-			"contentFolders":  ["content/freelancer_courier"]
+			"name": "Hide Freelancer Courier Icon",
+			"tooltip": "Remove freelancer courier icon when not using instinct",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/freelancer_courier"]
 		},
 		{
 			"name": "Hide Interaction Outline",
