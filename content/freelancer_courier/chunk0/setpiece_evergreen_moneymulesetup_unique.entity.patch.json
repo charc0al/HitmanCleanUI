@@ -1,0 +1,49 @@
+{
+	"tempHash": "007568D09482220E",
+	"tbluHash": "0025CD93E3A002EF",
+	"patch": [
+		{ "RemoveEntityByID": "ae8524595c5e0d17" },
+		{ "RemoveEntityByID": "8cef4ea5aa169271" },
+		{
+			"SubEntityOperation": [
+				"a2c7af9409bc8e63",
+				{
+					"RemoveAllEventConnectionsForTrigger": ["PollTrue", "Show"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"55276c377b561708",
+				{
+					"RemoveAllEventConnectionsForTrigger": ["Out", "Hide"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"a818226c974883b8",
+				{
+					"RemoveEventConnection": ["Out04", "Hide", "ae8524595c5e0d17"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"a818226c974883b8",
+				{
+					"RemoveEventConnection": ["Out04", "Show", "8cef4ea5aa169271"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"4f4500d339b8ce5a",
+				{
+					"RemoveAllEventConnectionsForTrigger": ["OwnedByHitman", "Hide"]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
