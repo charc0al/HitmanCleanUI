@@ -1,89 +1,63 @@
 {
-    "tempHash": "0031D64438EDE508",
-    "tbluHash": "00EA78EDBE5A496E",
-    "patch": [
-        {
-            "SubEntityOperation": [
-                "30cbfbb146a597b4",
-                {
-                    "RemoveAllEventConnectionsForTrigger": [
-                        "Out",
-                        "Hide"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "cafd9f6f1c5e5676",
-                {
-                    "RemoveAllEventConnectionsForTrigger": [
-                        "Out",
-                        "Show"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "374c0d0d577a1c97",
-                {
-                    "RemoveEventConnection": [
-                        "OnFalse",
-                        "Hide",
-                        "10322b49772eec16"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "864a4f8d09dfc391",
-                {
-                    "RemoveEventConnection": [
-                        "OnTrue",
-                        "In",
-                        "cafd9f6f1c5e5676"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "864a4f8d09dfc391",
-                {
-                    "RemoveEventConnection": [
-                        "OnFalse",
-                        "In",
-                        "30cbfbb146a597b4"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "864a4f8d09dfc391",
-                {
-                    "AddEventConnection": [
-                        "OnTrue",
-                        "In",
-                        "30cbfbb146a597b4"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "864a4f8d09dfc391",
-                {
-                    "AddEventConnection": [
-                        "OnFalse",
-                        "In",
-                        "cafd9f6f1c5e5676"
-                    ]
-                }
-            ]
-        }
-    ],
-    "patchVersion": 6
+	"tempHash": "0031D64438EDE508",
+	"tbluHash": "00EA78EDBE5A496E",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"30cbfbb146a597b4",
+				{
+					"RemoveAllEventConnectionsForTrigger": ["Out", "Hide"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"cafd9f6f1c5e5676",
+				{
+					"RemoveAllEventConnectionsForTrigger": ["Out", "Show"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"374c0d0d577a1c97",
+				{
+					"RemoveEventConnection": ["OnFalse", "Hide", "10322b49772eec16"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"864a4f8d09dfc391",
+				{
+					"RemoveEventConnection": ["OnTrue", "In", "cafd9f6f1c5e5676"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"864a4f8d09dfc391",
+				{
+					"RemoveEventConnection": ["OnFalse", "In", "30cbfbb146a597b4"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"864a4f8d09dfc391",
+				{
+					"AddEventConnection": ["OnTrue", "In", "30cbfbb146a597b4"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"864a4f8d09dfc391",
+				{
+					"AddEventConnection": ["OnFalse", "In", "cafd9f6f1c5e5676"]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
 }

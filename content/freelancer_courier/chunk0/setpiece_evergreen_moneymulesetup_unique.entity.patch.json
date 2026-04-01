@@ -1,313 +1,249 @@
 {
-    "tempHash": "007568D09482220E",
-    "tbluHash": "0025CD93E3A002EF",
-    "patch": [
-        {
-            "SubEntityOperation": [
-                "a2c7af9409bc8e63",
-                {
-                    "RemoveAllEventConnectionsForTrigger": [
-                        "PollTrue",
-                        "Show"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "a818226c974883b8",
-                {
-                    "RemoveEventConnection": [
-                        "Out04",
-                        "Hide",
-                        "ae8524595c5e0d17"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "a818226c974883b8",
-                {
-                    "RemoveEventConnection": [
-                        "Out04",
-                        "Show",
-                        "8cef4ea5aa169271"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "4f4500d339b8ce5a",
-                {
-                    "RemoveAllEventConnectionsForTrigger": [
-                        "OwnedByHitman",
-                        "Hide"
-                    ]
-                }
-            ]
-        },
-        {
-            "AddEntity": [
-                "7c0108e4451af301",
-                {
-                    "parent": "e14d12a26af8b5bc",
-                    "name": "Courier Instinct Active",
-                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
-                }
-            ]
-        },
-        {
-            "AddEntity": [
-                "7c0108e4451af302",
-                {
-                    "parent": "e14d12a26af8b5bc",
-                    "name": "Courier Actor Icon Active",
-                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
-                }
-            ]
-        },
-        {
-            "AddEntity": [
-                "7c0108e4451af303",
-                {
-                    "parent": "e14d12a26af8b5bc",
-                    "name": "Courier Drop Icon Active",
-                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
-                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
-                }
-            ]
-        },
-        {
-            "AddEntity": [
-                "7c0108e4451af304",
-                {
-                    "parent": "e14d12a26af8b5bc",
-                    "name": "Courier Instinct State",
-                    "factory": "[modules:/zherostateconditionentity.class].pc_entitytype",
-                    "blueprint": "[modules:/zherostateconditionentity.class].pc_entityblueprint",
-                    "events": {
-                        "OnTrue": {
-                            "SetTrue": [
-                                "7c0108e4451af301"
-                            ]
-                        },
-                        "OnFalse": {
-                            "SetFalse": [
-                                "7c0108e4451af301"
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "AddEntity": [
-                "7c0108e4451af307",
-                {
-                    "parent": "e14d12a26af8b5bc",
-                    "name": "Courier Actor Fade Spatial",
-                    "factory": "[modules:/zspatialentity.class].pc_entitytype",
-                    "blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
-                    "properties": {
-                        "m_mTransform": {
-                            "type": "SMatrix43",
-                            "value": {
-                                "rotation": {
-                                    "x": 0,
-                                    "y": 0,
-                                    "z": 0
-                                },
-                                "position": {
-                                    "x": 0,
-                                    "y": 0,
-                                    "z": 1.75
-                                }
-                            }
-                        },
-                        "m_eidParent": {
-                            "type": "SEntityTemplateReference",
-                            "value": "825b14dea9466359",
-                            "postInit": true
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "ae8524595c5e0d17",
-                {
-                    "SetPropertyValue": {
-                        "property_name": "m_pSpatial",
-                        "value": "7c0108e4451af307"
-                    }
-                }
-            ]
-        },
-        {
-            "AddEntity": [
-                "7c0108e4451af305",
-                {
-                    "parent": "e14d12a26af8b5bc",
-                    "name": "Courier Actor Instinct Visible",
-                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-                    "properties": {
-                        "m_aValues": {
-                            "type": "TArray<SEntityTemplateReference>",
-                            "value": [
-                                "7c0108e4451af302",
-                                "7c0108e4451af301"
-                            ]
-                        }
-                    },
-                    "events": {
-                        "OnTrue": {
-                            "Show": [
-                                "ae8524595c5e0d17"
-                            ]
-                        },
-                        "OnFalse": {
-                            "Hide": [
-                                "ae8524595c5e0d17"
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "AddEntity": [
-                "7c0108e4451af306",
-                {
-                    "parent": "e14d12a26af8b5bc",
-                    "name": "Courier Drop Instinct Visible",
-                    "factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
-                    "blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
-                    "properties": {
-                        "m_aValues": {
-                            "type": "TArray<SEntityTemplateReference>",
-                            "value": [
-                                "7c0108e4451af303",
-                                "7c0108e4451af301"
-                            ]
-                        }
-                    },
-                    "events": {
-                        "OnTrue": {
-                            "Show": [
-                                "8cef4ea5aa169271"
-                            ]
-                        },
-                        "OnFalse": {
-                            "Hide": [
-                                "8cef4ea5aa169271"
-                            ]
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "55276c377b561708",
-                {
-                    "AddEventConnection": [
-                        "Out",
-                        "SetFalse",
-                        "7c0108e4451af303"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "55276c377b561708",
-                {
-                    "AddEventConnection": [
-                        "Out",
-                        "SetFalse",
-                        "7c0108e4451af302"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "a2c7af9409bc8e63",
-                {
-                    "AddEventConnection": [
-                        "PollTrue",
-                        "SetTrue",
-                        "7c0108e4451af302"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "a818226c974883b8",
-                {
-                    "AddEventConnection": [
-                        "Out04",
-                        "SetTrue",
-                        "7c0108e4451af303"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "a818226c974883b8",
-                {
-                    "AddEventConnection": [
-                        "Out04",
-                        "SetFalse",
-                        "7c0108e4451af302"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "4f4500d339b8ce5a",
-                {
-                    "AddEventConnection": [
-                        "OwnedByHitman",
-                        "SetFalse",
-                        "7c0108e4451af303"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "4f4500d339b8ce5a",
-                {
-                    "AddEventConnection": [
-                        "OwnedByHitman",
-                        "SetFalse",
-                        "7c0108e4451af302"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
-                "e1d014fc3a0ca6ab",
-                {
-                    "AddEventConnection": [
-                        "Out02",
-                        "SetFalse",
-                        "7c0108e4451af302"
-                    ]
-                }
-            ]
-        }
-    ],
-    "patchVersion": 6
+	"tempHash": "007568D09482220E",
+	"tbluHash": "0025CD93E3A002EF",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"a2c7af9409bc8e63",
+				{
+					"RemoveAllEventConnectionsForTrigger": ["PollTrue", "Show"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"a818226c974883b8",
+				{
+					"RemoveEventConnection": ["Out04", "Hide", "ae8524595c5e0d17"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"a818226c974883b8",
+				{
+					"RemoveEventConnection": ["Out04", "Show", "8cef4ea5aa169271"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"4f4500d339b8ce5a",
+				{
+					"RemoveAllEventConnectionsForTrigger": ["OwnedByHitman", "Hide"]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"7c0108e4451af301",
+				{
+					"parent": "e14d12a26af8b5bc",
+					"name": "Courier Instinct Active",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"7c0108e4451af302",
+				{
+					"parent": "e14d12a26af8b5bc",
+					"name": "Courier Actor Icon Active",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"7c0108e4451af303",
+				{
+					"parent": "e14d12a26af8b5bc",
+					"name": "Courier Drop Icon Active",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"7c0108e4451af304",
+				{
+					"parent": "e14d12a26af8b5bc",
+					"name": "Courier Instinct State",
+					"factory": "[modules:/zherostateconditionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zherostateconditionentity.class].pc_entityblueprint",
+					"events": {
+						"OnTrue": {
+							"SetTrue": ["7c0108e4451af301"]
+						},
+						"OnFalse": {
+							"SetFalse": ["7c0108e4451af301"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"7c0108e4451af307",
+				{
+					"parent": "e14d12a26af8b5bc",
+					"name": "Courier Actor Fade Spatial",
+					"factory": "[modules:/zspatialentity.class].pc_entitytype",
+					"blueprint": "[modules:/zspatialentity.class].pc_entityblueprint",
+					"properties": {
+						"m_mTransform": {
+							"type": "SMatrix43",
+							"value": {
+								"rotation": {
+									"x": 0,
+									"y": 0,
+									"z": 0
+								},
+								"position": {
+									"x": 0,
+									"y": 0,
+									"z": 1.75
+								}
+							}
+						},
+						"m_eidParent": {
+							"type": "SEntityTemplateReference",
+							"value": "825b14dea9466359",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"ae8524595c5e0d17",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_pSpatial",
+						"value": "7c0108e4451af307"
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"7c0108e4451af305",
+				{
+					"parent": "e14d12a26af8b5bc",
+					"name": "Courier Actor Instinct Visible",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["7c0108e4451af302", "7c0108e4451af301"]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"Show": ["ae8524595c5e0d17"]
+						},
+						"OnFalse": {
+							"Hide": ["ae8524595c5e0d17"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"7c0108e4451af306",
+				{
+					"parent": "e14d12a26af8b5bc",
+					"name": "Courier Drop Instinct Visible",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_aValues": {
+							"type": "TArray<SEntityTemplateReference>",
+							"value": ["7c0108e4451af303", "7c0108e4451af301"]
+						}
+					},
+					"events": {
+						"OnTrue": {
+							"Show": ["8cef4ea5aa169271"]
+						},
+						"OnFalse": {
+							"Hide": ["8cef4ea5aa169271"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"55276c377b561708",
+				{
+					"AddEventConnection": ["Out", "SetFalse", "7c0108e4451af303"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"55276c377b561708",
+				{
+					"AddEventConnection": ["Out", "SetFalse", "7c0108e4451af302"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"a2c7af9409bc8e63",
+				{
+					"AddEventConnection": ["PollTrue", "SetTrue", "7c0108e4451af302"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"a818226c974883b8",
+				{
+					"AddEventConnection": ["Out04", "SetTrue", "7c0108e4451af303"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"a818226c974883b8",
+				{
+					"AddEventConnection": ["Out04", "SetFalse", "7c0108e4451af302"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"4f4500d339b8ce5a",
+				{
+					"AddEventConnection": ["OwnedByHitman", "SetFalse", "7c0108e4451af303"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"4f4500d339b8ce5a",
+				{
+					"AddEventConnection": ["OwnedByHitman", "SetFalse", "7c0108e4451af302"]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"e1d014fc3a0ca6ab",
+				{
+					"AddEventConnection": ["Out02", "SetFalse", "7c0108e4451af302"]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
 }
