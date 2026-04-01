@@ -1159,18 +1159,6 @@
         },
         {
             "SubEntityOperation": [
-                "e1d014fc3a0ca6ab",
-                {
-                    "AddEventConnection": [
-                        "Out02",
-                        "SetFalse",
-                        "7c0108e4451af101"
-                    ]
-                }
-            ]
-        },
-        {
-            "SubEntityOperation": [
                 "55276c377b561708",
                 {
                     "AddEventConnection": [
