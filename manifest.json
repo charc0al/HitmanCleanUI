@@ -106,7 +106,7 @@
                     },
                     {
                         "name":  "Hide Freelancer Courier Icon",
-                        "tooltip":  "Remove freelancer courier icon. SMF currently rejects the added instinct-only courier breadcrumb branch, so this option hides it completely for now.",
+                        "tooltip":  "Remove freelancer courier icon when not using instinct",
                         "group":  "Other",
                         "type":  "checkbox",
                         "enabledByDefault":  true,
@@ -4378,3 +4378,4 @@
                     }
                 ]
 }
+
