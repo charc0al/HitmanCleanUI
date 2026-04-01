@@ -1168,6 +1168,54 @@
                     ]
                 }
             ]
+        },
+        {
+            "SubEntityOperation": [
+                "55276c377b561708",
+                {
+                    "AddEventConnection": [
+                        "Out",
+                        "SetTrue",
+                        "7c0108e4451af003"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "a818226c974883b8",
+                {
+                    "AddEventConnection": [
+                        "Out04",
+                        "SetFalse",
+                        "7c0108e4451af003"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "4f4500d339b8ce5a",
+                {
+                    "AddEventConnection": [
+                        "OwnedByHitman",
+                        "SetFalse",
+                        "7c0108e4451af003"
+                    ]
+                }
+            ]
+        },
+        {
+            "SubEntityOperation": [
+                "e1d014fc3a0ca6ab",
+                {
+                    "AddEventConnection": [
+                        "Out02",
+                        "SetFalse",
+                        "7c0108e4451af003"
+                    ]
+                }
+            ]
         }
     ],
     "patchVersion": 6
