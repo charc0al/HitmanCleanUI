@@ -92,6 +92,14 @@
 			"contentFolders": ["content/freelancer_courier"]
 		},
 		{
+			"name": "Hide Camera Widget",
+			"tooltip": "Hides the big ugly UI widget in the bottom left of the camera. Goes well with Tumbler's Camera Upgrades scroll to zoom.",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/camera_widget"]
+		},
+		{
 			"name": "Hide Interaction Outline",
 			"tooltip": "Hides the white outline including around NPCs. In-game menu option only affects items.",
 			"group": "Other",
