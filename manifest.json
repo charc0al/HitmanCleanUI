@@ -4,7 +4,7 @@
 	"id": "Charc0al.MinimalistUI",
 	"name": "Minimalist HUD",
 	"description": "Removes unnecessary HUD clutter that can't be disabled via the menu.",
-	"authors": ["Charc0al", "Burn, the witch"],
+	"authors": ["Charc0al"],
 	"frameworkVersion": "2.33.26",
 	"loadAfter": ["BurnTheWitch.HeritageUI"],
 	"options": [
@@ -98,6 +98,14 @@
 			"type": "checkbox",
 			"enabledByDefault": true,
 			"contentFolders": ["content/camera_widget"]
+		},
+		{
+			"name": "Hide Camera Widget (Suspect Cam)",
+			"tooltip": "Hides the zoom widget in the bottom left of the spy cam. Also dims the main widget. NOTE: also hides the button prompt text for tagging suspects, but the buttons still work.",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/camera_widget_spy"]
 		},
 		{
 			"name": "Hide Interaction Outline",
