@@ -6,10 +6,7 @@
 			"SubEntityOperation": [
 				"fcc67b9c8c66dcc5",
 				{
-					"AddProperty": [
-						"m_bIsVisible",
-						{ "type": "bool", "value": false }
-					]
+					"AddProperty": ["m_bIsVisible", { "type": "bool", "value": false }]
 				}
 			]
 		}
