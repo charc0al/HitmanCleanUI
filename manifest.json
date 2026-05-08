@@ -152,6 +152,28 @@
 			"contentFolders": ["content/shotgun_dot"]
 		},
 		{
+			"name": "Hide Control Layout on Pause",
+			"tooltip": "Hides the controller layout graphic shown on the pause menu.",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/pausemenu"]
+		},
+		{
+			"name": "Hide View Intel",
+			"tooltip": "Hides the little View Intel message at the top left of the screen",
+			"group": "other",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"localisationOverrides": {
+				"008C4B8D68BA3D1E": {
+					"english": {
+						"283372716": "---",
+					}
+				}
+			}	
+		},
+		{
 			"name": "Fix - stadia icons",
 			"tooltip": "Check this box ONLY IF you're not using Heritage UI AND have hide exit icon unchecked",
 			"group": "Other",
