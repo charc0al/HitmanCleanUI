@@ -144,13 +144,45 @@
 		},
 		{
 			"name": "Hide View Intel",
-			"tooltip": "Hides the little View Intel message at the top left of the screen",
+			"tooltip": "Hides the little View Intel message at the top left of the screen at the start of a mission.",
 			"group": "other",
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"localisationOverrides": {
 				"00F5817876E691F1": {
 					"english": {
+						"283372716": " ",
+						"1509653145": " "
+					},
+					"japanese": {
+						"283372716": " ",
+						"1509653145": " "
+					},
+					"french": {
+						"283372716": " ",
+						"1509653145": " "
+					},
+					"german": {
+						"283372716": " ",
+						"1509653145": " "
+					},
+					"italian": {
+						"283372716": " ",
+						"1509653145": " "
+					},
+					"russian": {
+						"283372716": " ",
+						"1509653145": " "
+					},
+					"chineseSimplified": {
+						"283372716": " ",
+						"1509653145": " "
+					},
+					"chineseTraditional": {
+						"283372716": " ",
+						"1509653145": " "
+					},
+					"spanish": {
 						"283372716": " ",
 						"1509653145": " "
 					}
