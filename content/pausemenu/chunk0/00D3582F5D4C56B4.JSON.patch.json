@@ -1,0 +1,10 @@
+{
+	"file": "00D3582F5D4C56B4",
+	"type": "JSON",
+	"patch": [
+		{
+			"op": "remove",
+			"path": "/children/0/children/0"
+		}
+	]
+}
