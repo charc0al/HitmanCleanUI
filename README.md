@@ -6,4 +6,4 @@ Removes unnecessary HUD clutter that can't be disabled via the menu.
 
 ---
 
-`Charc0al.MinimalistUI` v4.12.0, by Charc0al. This README was automatically generated from the mod's manifest.
+`Charc0al.MinimalistUI` v4.12.1, by Charc0al. This README was automatically generated from the mod's manifest.
