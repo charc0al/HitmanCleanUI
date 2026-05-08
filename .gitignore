@@ -1,3 +1,4 @@
 .releaserc
 node_modules
 .codex_tmp_*
+src/rpkg/GFXF/chunk0patch300.rpkg/004A314BA75429D7.GFXF/GFXF.rebuilt/
