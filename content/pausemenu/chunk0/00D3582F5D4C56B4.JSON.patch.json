@@ -3,6 +3,16 @@
 	"type": "JSON",
 	"patch": [
 		{
+			"op": "test",
+			"path": "/children/0/children/0/id",
+			"value": "controller_layout"
+		},
+		{
+			"op": "test",
+			"path": "/children/0/children/1/view",
+			"value": "menu3.containers.ScrollingListContainer"
+		},
+		{
 			"op": "remove",
 			"path": "/children/0/children/0"
 		}

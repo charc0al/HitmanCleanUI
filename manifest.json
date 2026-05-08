@@ -135,6 +135,29 @@
 			"contentFolders": ["content/skeleton"]
 		},
 		{
+			"name": "Hide Control Layout on Pause",
+			"tooltip": "Hides the controller layout graphic shown on the pause menu.",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"contentFolders": ["content/pausemenu"]
+		},
+		{
+			"name": "Hide View Intel",
+			"tooltip": "Hides the little View Intel message at the top left of the screen",
+			"group": "other",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"localisationOverrides": {
+				"00F5817876E691F1": {
+					"english": {
+						"283372716": " ",
+						"1509653145": " "
+					}
+				}
+			}
+		},
+		{
 			"name": "Minimal Instinct",
 			"tooltip": "No instinct filter, no outlines, more faint NPC highlights",
 			"group": "Other",
@@ -150,28 +173,6 @@
 			"type": "checkbox",
 			"enabledByDefault": false,
 			"contentFolders": ["content/shotgun_dot"]
-		},
-		{
-			"name": "Hide Control Layout on Pause",
-			"tooltip": "Hides the controller layout graphic shown on the pause menu.",
-			"group": "Other",
-			"type": "checkbox",
-			"enabledByDefault": true,
-			"contentFolders": ["content/pausemenu"]
-		},
-		{
-			"name": "Hide View Intel",
-			"tooltip": "Hides the little View Intel message at the top left of the screen",
-			"group": "other",
-			"type": "checkbox",
-			"enabledByDefault": false,
-			"localisationOverrides": {
-				"008C4B8D68BA3D1E": {
-					"english": {
-						"283372716": "---",
-					}
-				}
-			}	
 		},
 		{
 			"name": "Fix - stadia icons",
