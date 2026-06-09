@@ -139,8 +139,16 @@
 			"tooltip": "Hides the controller layout graphic shown on the pause menu.",
 			"group": "Other",
 			"type": "checkbox",
-			"enabledByDefault": true,
+			"enabledByDefault": false,
 			"contentFolders": ["content/pausemenu"]
+		},
+		{
+			"name": "Hide Control Layout on Pause (HUI compatibility option)",
+			"tooltip": "Use this checkbox if the above checkbox fails to deploy with Hit UI. Let me know if this works, I haven't had time to test it. Don't check both boxes at once.",
+			"group": "Other",
+			"type": "checkbox",
+			"enabledByDefault": false,
+			"contentFolders": ["content/pausemenu_hui"]
 		},
 		{
 			"name": "Hide View Intel",
