@@ -1,0 +1,397 @@
+{
+  "tempHash": "0092AAB2AF8AC127",
+  "tbluHash": "00FD344E2C85A39D",
+  "patch": [
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_vGlowTraversalVignetteRadii",
+            "value": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_vGlowCivilianVignetteRadii",
+            "value": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_vGlowTagFocusTaggedVignetteRadii",
+            "value": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_vGlowTagFocusUntaggedVignetteRadii",
+            "value": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_vGlowTaggedVignetteRadii",
+            "value": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_vGlowAlliesVignetteRadii",
+            "value": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_vGlowBackgroundUnmaskedVignetteRadii",
+            "value": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_vGlowCameraVignetteRadii",
+            "value": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowContractTargetSpecialColor",
+            "value": "#00500096"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowContractTargetSpecialOutlineColor",
+            "value": "#00B900FF"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowTraversalColor",
+            "value": "#003B7375"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowTraversalOutlineColor",
+            "value": "#00A7FF00"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowCivilianColor",
+            "value": "#55555550"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowCivilianOutlineColor",
+            "value": "#84848400"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowEnforcerColor",
+            "value": "#AEB10040"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowEnforcerOutlineColor",
+            "value": "#FBFF0000"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowEnemiesColor",
+            "value": "#FFFEFF50"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowEnemiesOutlineColor",
+            "value": "#FFFFFF00"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowGunsColor",
+            "value": "#003B7300"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowGunsOutlineColor",
+            "value": "#00A7FFAA"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowSetPieceColor",
+            "value": "#003B7375"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowSetPieceOutlineColor",
+            "value": "#00A7FF00"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowBackgroundUnmaskedColor",
+            "value": "#003B7375"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowBackgroundUnmaskedOutlineColor",
+            "value": "#00A7FF00"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowContractTargetColor",
+            "value": "#74000070"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowContractTargetOutlineColor",
+            "value": "#FF000000"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowObjectivesColor",
+            "value": "#74000070"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowObjectivesOutlineColor",
+            "value": "#FF0000FF"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowLTMemoryColor",
+            "value": "#74380070"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowLTMemoryOutlineColor",
+            "value": "#FF880000"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_vGlowLTMemoryFadeNearFar",
+            "value": {
+              "x": 9999,
+              "y": 9999
+            }
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowContractSuspectOutlineColor",
+            "value": "#00000000"
+          }
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "f55806ff6135965f",
+        {
+          "SetPropertyValue": {
+            "property_name": "m_GlowContractSuspectColor",
+            "value": "#7204e064"
+          }
+        }
+      ]
+    }
+  ],
+  "patchVersion": 6
+}
